@@ -1,0 +1,299 @@
+[
+  {
+    "sourceStatId": "AtkAdd",
+    "statId": "attack",
+    "names": {
+      "ja": "攻撃力",
+      "en": "ATK",
+      "zhHans": "攻击力"
+    },
+    "isPercent": false,
+    "valuesBySize": {
+      "2": {
+        "blue": 10,
+        "purple": 13,
+        "orange": 16
+      },
+      "3": {
+        "blue": 14,
+        "purple": 19,
+        "orange": 24
+      },
+      "4": {
+        "blue": 19,
+        "purple": 26,
+        "orange": 33
+      }
+    }
+  },
+  {
+    "sourceStatId": "AtkUp",
+    "statId": "attackPercent",
+    "names": {
+      "ja": "攻撃力 %",
+      "en": "ATK %",
+      "zhHans": "攻击力 %"
+    },
+    "isPercent": true,
+    "valuesBySize": {
+      "2": {
+        "blue": 1.5,
+        "purple": 2,
+        "orange": 2.5
+      },
+      "3": {
+        "blue": 2.25,
+        "purple": 3,
+        "orange": 3.75
+      },
+      "4": {
+        "blue": 3,
+        "purple": 4,
+        "orange": 5
+      }
+    }
+  },
+  {
+    "sourceStatId": "HPMaxAdd",
+    "statId": "hp",
+    "names": {
+      "ja": "HP",
+      "en": "HP",
+      "zhHans": "生命值"
+    },
+    "isPercent": false,
+    "valuesBySize": {
+      "2": {
+        "blue": 120,
+        "purple": 160,
+        "orange": 200
+      },
+      "3": {
+        "blue": 180,
+        "purple": 240,
+        "orange": 300
+      },
+      "4": {
+        "blue": 240,
+        "purple": 320,
+        "orange": 400
+      }
+    }
+  },
+  {
+    "sourceStatId": "HPMaxUp",
+    "statId": "hpPercent",
+    "names": {
+      "ja": "HP %",
+      "en": "HP %",
+      "zhHans": "生命值 %"
+    },
+    "isPercent": true,
+    "valuesBySize": {
+      "2": {
+        "blue": 1.5,
+        "purple": 2,
+        "orange": 2.5
+      },
+      "3": {
+        "blue": 2.25,
+        "purple": 3,
+        "orange": 3.75
+      },
+      "4": {
+        "blue": 3,
+        "purple": 4,
+        "orange": 5
+      }
+    }
+  },
+  {
+    "sourceStatId": "DefAdd",
+    "statId": "defense",
+    "names": {
+      "ja": "防御力",
+      "en": "DEF",
+      "zhHans": "防御力"
+    },
+    "isPercent": false,
+    "valuesBySize": {
+      "2": {
+        "blue": 10,
+        "purple": 13,
+        "orange": 16
+      },
+      "3": {
+        "blue": 14,
+        "purple": 19,
+        "orange": 24
+      },
+      "4": {
+        "blue": 19,
+        "purple": 26,
+        "orange": 33
+      }
+    }
+  },
+  {
+    "sourceStatId": "DefUp",
+    "statId": "defensePercent",
+    "names": {
+      "ja": "防御力 %",
+      "en": "DEF %",
+      "zhHans": "防御力 %"
+    },
+    "isPercent": true,
+    "valuesBySize": {
+      "2": {
+        "blue": 2.1,
+        "purple": 2.8,
+        "orange": 3.5
+      },
+      "3": {
+        "blue": 3.15,
+        "purple": 4.2,
+        "orange": 5.25
+      },
+      "4": {
+        "blue": 4.2,
+        "purple": 5.6,
+        "orange": 7
+      }
+    }
+  },
+  {
+    "sourceStatId": "CritBase",
+    "statId": "critRate",
+    "names": {
+      "ja": "クリティカル率 %",
+      "en": "CRIT Rate %",
+      "zhHans": "暴击率 %"
+    },
+    "isPercent": true,
+    "valuesBySize": {
+      "2": {
+        "blue": 1.2,
+        "purple": 1.6,
+        "orange": 2
+      },
+      "3": {
+        "blue": 1.8,
+        "purple": 2.4,
+        "orange": 3
+      },
+      "4": {
+        "blue": 2.4,
+        "purple": 3.2,
+        "orange": 4
+      }
+    }
+  },
+  {
+    "sourceStatId": "CritDamageBase",
+    "statId": "critDamage",
+    "names": {
+      "ja": "クリティカルダメージ %",
+      "en": "CRIT DMG %",
+      "zhHans": "暴击伤害 %"
+    },
+    "isPercent": true,
+    "valuesBySize": {
+      "2": {
+        "blue": 2.4,
+        "purple": 3.2,
+        "orange": 4
+      },
+      "3": {
+        "blue": 3.6,
+        "purple": 4.8,
+        "orange": 6
+      },
+      "4": {
+        "blue": 4.8,
+        "purple": 6.4,
+        "orange": 8
+      }
+    }
+  },
+  {
+    "sourceStatId": "DamageUpGeneralBase",
+    "statId": null,
+    "names": {
+      "ja": "汎用ダメージ強化 %",
+      "en": "Universal DMG Bonus %",
+      "zhHans": "通用伤害增强 %"
+    },
+    "isPercent": true,
+    "valuesBySize": {
+      "2": {
+        "blue": 1.2,
+        "purple": 1.6,
+        "orange": 2
+      },
+      "3": {
+        "blue": 1.8,
+        "purple": 2.4,
+        "orange": 3
+      },
+      "4": {
+        "blue": 2.4,
+        "purple": 3.2,
+        "orange": 4
+      }
+    }
+  },
+  {
+    "sourceStatId": "MagAdd",
+    "statId": null,
+    "names": {
+      "ja": "連環パワー",
+      "en": "Cycle Intensity",
+      "zhHans": "环合强度"
+    },
+    "isPercent": false,
+    "valuesBySize": {
+      "2": {
+        "blue": 7,
+        "purple": 10,
+        "orange": 13
+      },
+      "3": {
+        "blue": 11,
+        "purple": 14,
+        "orange": 17
+      },
+      "4": {
+        "blue": 14,
+        "purple": 19,
+        "orange": 24
+      }
+    }
+  },
+  {
+    "sourceStatId": "UnbalIntensityAdd",
+    "statId": null,
+    "names": {
+      "ja": "ブレイクパワー",
+      "en": "Break Intensity",
+      "zhHans": "倾陷强度"
+    },
+    "isPercent": false,
+    "valuesBySize": {
+      "2": {
+        "blue": 7,
+        "purple": 10,
+        "orange": 13
+      },
+      "3": {
+        "blue": 11,
+        "purple": 14,
+        "orange": 17
+      },
+      "4": {
+        "blue": 14,
+        "purple": 19,
+        "orange": 24
+      }
+    }
+  }
+]

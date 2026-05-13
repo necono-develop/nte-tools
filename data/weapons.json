@@ -1,0 +1,11 @@
+[
+  {
+    "id": "weapon_placeholder",
+    "name": {
+      "ja": "武器データ受け皿",
+      "en": "Weapon Data Placeholder"
+    },
+    "rarity": "S",
+    "assets": {}
+  }
+]

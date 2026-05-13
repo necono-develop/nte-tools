@@ -1,0 +1,2234 @@
+[
+  {
+    "id": "Cosmos_blue",
+    "name": {
+      "ja": "「失われた光」",
+      "en": "Lost Radiance",
+      "zhHans": "「失落光芒」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Cosmos_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：光異能ダメージ+10％",
+            "en": "Epic (2): Cosmos DMG +10%.",
+            "zhHans": "史诗！[2]：光属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「EXレール終結」を発動後、与えるダメージが防御力を25％無視する（20秒持続、この効果はスタックしない）",
+            "en": "Legendary (4): Ignores 25% of enemies' DEF for 20s after the wearer casts Ultimate. Effect does not stack.",
+            "zhHans": "传说！[4]：装备者释放「极轨终结」后，造成的伤害将无视25%防御力，持续20秒，该效果不可叠加。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Cosmos_purple",
+    "name": {
+      "ja": "「失われた光」",
+      "en": "Lost Radiance",
+      "zhHans": "「失落光芒」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Cosmos_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：光異能ダメージ+10％",
+            "en": "Epic (2): Cosmos DMG +10%.",
+            "zhHans": "史诗！[2]：光属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「EXレール終結」を発動後、与えるダメージが防御力を25％無視する（20秒持続、この効果はスタックしない）",
+            "en": "Legendary (4): Ignores 25% of enemies' DEF for 20s after the wearer casts Ultimate. Effect does not stack.",
+            "zhHans": "传说！[4]：装备者释放「极轨终结」后，造成的伤害将无视25%防御力，持续20秒，该效果不可叠加。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Cosmos_orange",
+    "name": {
+      "ja": "「失われた光」",
+      "en": "Lost Radiance",
+      "zhHans": "「失落光芒」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Cosmos_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：光異能ダメージ+10％",
+            "en": "Epic (2): Cosmos DMG +10%.",
+            "zhHans": "史诗！[2]：光属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「EXレール終結」を発動後、与えるダメージが防御力を25％無視する（20秒持続、この効果はスタックしない）",
+            "en": "Legendary (4): Ignores 25% of enemies' DEF for 20s after the wearer casts Ultimate. Effect does not stack.",
+            "zhHans": "传说！[4]：装备者释放「极轨终结」后，造成的伤害将无视25%防御力，持续20秒，该效果不可叠加。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Nature_blue",
+    "name": {
+      "ja": "「森に棲む蛍の心」",
+      "en": "Fireflies and the Forest",
+      "zhHans": "「森林萤火之心」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Nature_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：霊異能ダメージ+10％",
+            "en": "Epic (2): Anima DMG +10%.",
+            "zhHans": "史诗！[2]：灵属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：近くの敵が味方チームによる霊異能ダメージを受けるたびに、装備者のクリティカルダメージ+8％（最大7スタック、1スタックにつき10秒持続）、装備すると常時有効。",
+            "en": "Legendary (4): Increases wearer's CRIT DMG by 8% when a nearby enemy takes Anima DMG from the Team, up to 7 stacks. Each stack lasts 10s. Effect remains active when the character is off-field.",
+            "zhHans": "传说！[4]：附近每有敌人受到由己方编队造成的灵属性异能伤害，则装备者暴击伤害提升8%，最多叠加7层，每层持续10秒，角色位于后台依旧生效。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Nature_purple",
+    "name": {
+      "ja": "「森に棲む蛍の心」",
+      "en": "Fireflies and the Forest",
+      "zhHans": "「森林萤火之心」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Nature_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：霊異能ダメージ+10％",
+            "en": "Epic (2): Anima DMG +10%.",
+            "zhHans": "史诗！[2]：灵属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：近くの敵が味方チームによる霊異能ダメージを受けるたびに、装備者のクリティカルダメージ+8％（最大7スタック、1スタックにつき10秒持続）、装備すると常時有効。",
+            "en": "Legendary (4): Increases wearer's CRIT DMG by 8% when a nearby enemy takes Anima DMG from the Team, up to 7 stacks. Each stack lasts 10s. Effect remains active when the character is off-field.",
+            "zhHans": "传说！[4]：附近每有敌人受到由己方编队造成的灵属性异能伤害，则装备者暴击伤害提升8%，最多叠加7层，每层持续10秒，角色位于后台依旧生效。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Nature_orange",
+    "name": {
+      "ja": "「森に棲む蛍の心」",
+      "en": "Fireflies and the Forest",
+      "zhHans": "「森林萤火之心」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Nature_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：霊異能ダメージ+10％",
+            "en": "Epic (2): Anima DMG +10%.",
+            "zhHans": "史诗！[2]：灵属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：近くの敵が味方チームによる霊異能ダメージを受けるたびに、装備者のクリティカルダメージ+8％（最大7スタック、1スタックにつき10秒持続）、装備すると常時有効。",
+            "en": "Legendary (4): Increases wearer's CRIT DMG by 8% when a nearby enemy takes Anima DMG from the Team, up to 7 stacks. Each stack lasts 10s. Effect remains active when the character is off-field.",
+            "zhHans": "传说！[4]：附近每有敌人受到由己方编队造成的灵属性异能伤害，则装备者暴击伤害提升8%，最多叠加7层，每层持续10秒，角色位于后台依旧生效。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Incantation_blue",
+    "name": {
+      "ja": "「深紅の双生蝶」",
+      "en": "Crimson: Twin Butterflies",
+      "zhHans": "「真红：双生蝶」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Incantation_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：呪異能ダメージ+10％",
+            "en": "Epic (2): Incantation DMG +10%.",
+            "zhHans": "史诗！[2]：咒属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：近くの敵が味方チームによる呪異能ダメージを受けるたびに、装備者の攻撃力+6％（最大6スタック、1スタックにつき10秒持続）、装備すると常時有効。",
+            "en": "Legendary (4): Increases wearer's ATK by 6% when a nearby enemy takes Incantation DMG from the Team, up to 6 stacks. Each stack lasts 10s. Effect remains active when the character is off-field.",
+            "zhHans": "传说！[4]：附近敌人每受到一次己方编队造成的咒属性异能伤害，则装备者攻击力提升6%，最多叠加6层，每层持续10秒，角色位于后台依旧生效。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Incantation_purple",
+    "name": {
+      "ja": "「深紅の双生蝶」",
+      "en": "Crimson: Twin Butterflies",
+      "zhHans": "「真红：双生蝶」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Incantation_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：呪異能ダメージ+10％",
+            "en": "Epic (2): Incantation DMG +10%.",
+            "zhHans": "史诗！[2]：咒属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：近くの敵が味方チームによる呪異能ダメージを受けるたびに、装備者の攻撃力+6％（最大6スタック、1スタックにつき10秒持続）、装備すると常時有効。",
+            "en": "Legendary (4): Increases wearer's ATK by 6% when a nearby enemy takes Incantation DMG from the Team, up to 6 stacks. Each stack lasts 10s. Effect remains active when the character is off-field.",
+            "zhHans": "传说！[4]：附近敌人每受到一次己方编队造成的咒属性异能伤害，则装备者攻击力提升6%，最多叠加6层，每层持续10秒，角色位于后台依旧生效。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Incantation_orange",
+    "name": {
+      "ja": "「深紅の双生蝶」",
+      "en": "Crimson: Twin Butterflies",
+      "zhHans": "「真红：双生蝶」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Incantation_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：呪異能ダメージ+10％",
+            "en": "Epic (2): Incantation DMG +10%.",
+            "zhHans": "史诗！[2]：咒属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：近くの敵が味方チームによる呪異能ダメージを受けるたびに、装備者の攻撃力+6％（最大6スタック、1スタックにつき10秒持続）、装備すると常時有効。",
+            "en": "Legendary (4): Increases wearer's ATK by 6% when a nearby enemy takes Incantation DMG from the Team, up to 6 stacks. Each stack lasts 10s. Effect remains active when the character is off-field.",
+            "zhHans": "传说！[4]：附近敌人每受到一次己方编队造成的咒属性异能伤害，则装备者攻击力提升6%，最多叠加6层，每层持续10秒，角色位于后台依旧生效。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Chaos_blue",
+    "name": {
+      "ja": "「ディアボロス」",
+      "en": "Diabolos",
+      "zhHans": "「迪亚波罗斯」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Chaos_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：闇異能ダメージ+10％",
+            "en": "Epic (2): Chaos DMG +10%.",
+            "zhHans": "史诗！[2]：暗属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：敵の闇異能ダメージ耐性を12％無視する。装備者が「暗星」または「濁燃」反応の発生に関与したあと、無視する効果が24％まで増加する（20秒持続）",
+            "en": "Legendary (4): Ignores 12% of enemies' Chaos Resistance. Ignores 24% of enemies' Chaos Resistance for 20s after the wearer participates in Nova or Scorch reactions.",
+            "zhHans": "传说！[4]：无视敌人12%暗属性异能抗性。当装备者参与触发「黯星」或「浊燃」反应之后则提升至无视敌人24%暗属性异能抗性，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Chaos_purple",
+    "name": {
+      "ja": "「ディアボロス」",
+      "en": "Diabolos",
+      "zhHans": "「迪亚波罗斯」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Chaos_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：闇異能ダメージ+10％",
+            "en": "Epic (2): Chaos DMG +10%.",
+            "zhHans": "史诗！[2]：暗属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：敵の闇異能ダメージ耐性を12％無視する。装備者が「暗星」または「濁燃」反応の発生に関与したあと、無視する効果が24％まで増加する（20秒持続）",
+            "en": "Legendary (4): Ignores 12% of enemies' Chaos Resistance. Ignores 24% of enemies' Chaos Resistance for 20s after the wearer participates in Nova or Scorch reactions.",
+            "zhHans": "传说！[4]：无视敌人12%暗属性异能抗性。当装备者参与触发「黯星」或「浊燃」反应之后则提升至无视敌人24%暗属性异能抗性，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Chaos_orange",
+    "name": {
+      "ja": "「ディアボロス」",
+      "en": "Diabolos",
+      "zhHans": "「迪亚波罗斯」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Chaos_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：闇異能ダメージ+10％",
+            "en": "Epic (2): Chaos DMG +10%.",
+            "zhHans": "史诗！[2]：暗属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：敵の闇異能ダメージ耐性を12％無視する。装備者が「暗星」または「濁燃」反応の発生に関与したあと、無視する効果が24％まで増加する（20秒持続）",
+            "en": "Legendary (4): Ignores 12% of enemies' Chaos Resistance. Ignores 24% of enemies' Chaos Resistance for 20s after the wearer participates in Nova or Scorch reactions.",
+            "zhHans": "传说！[4]：无视敌人12%暗属性异能抗性。当装备者参与触发「黯星」或「浊燃」反应之后则提升至无视敌人24%暗属性异能抗性，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Psyche_blue",
+    "name": {
+      "ja": "「悪魔の血：呪い」",
+      "en": "Devil's Blood: Curse",
+      "zhHans": "「恶魔之血：诅咒」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Psyche_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：魂異能ダメージ+10％",
+            "en": "Epic (2): Psyche DMG +10%.",
+            "zhHans": "史诗！[2]：魂属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：与ダメージ+18％。「暗星」または「浸染」が付与されているユニットを攻撃する時、ダメージアップ効果が36％になる。",
+            "en": "Legendary (4): Increases wearer's DMG by 18%. The bonus becomes 36% against units affected by Nova or Stain.",
+            "zhHans": "传说！[4]：造成的伤害提升18%。攻击受到「黯星」或「浸染」影响的单位时，伤害提升效果变为36%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Psyche_purple",
+    "name": {
+      "ja": "「悪魔の血：呪い」",
+      "en": "Devil's Blood: Curse",
+      "zhHans": "「恶魔之血：诅咒」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Psyche_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：魂異能ダメージ+10％",
+            "en": "Epic (2): Psyche DMG +10%.",
+            "zhHans": "史诗！[2]：魂属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：与ダメージ+18％。「暗星」または「浸染」が付与されているユニットを攻撃する時、ダメージアップ効果が36％になる。",
+            "en": "Legendary (4): Increases wearer's DMG by 18%. The bonus becomes 36% against units affected by Nova or Stain.",
+            "zhHans": "传说！[4]：造成的伤害提升18%。攻击受到「黯星」或「浸染」影响的单位时，伤害提升效果变为36%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Psyche_orange",
+    "name": {
+      "ja": "「悪魔の血：呪い」",
+      "en": "Devil's Blood: Curse",
+      "zhHans": "「恶魔之血：诅咒」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Psyche_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：魂異能ダメージ+10％",
+            "en": "Epic (2): Psyche DMG +10%.",
+            "zhHans": "史诗！[2]：魂属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：与ダメージ+18％。「暗星」または「浸染」が付与されているユニットを攻撃する時、ダメージアップ効果が36％になる。",
+            "en": "Legendary (4): Increases wearer's DMG by 18%. The bonus becomes 36% against units affected by Nova or Stain.",
+            "zhHans": "传说！[4]：造成的伤害提升18%。攻击受到「黯星」或「浸染」影响的单位时，伤害提升效果变为36%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Lakshana_blue",
+    "name": {
+      "ja": "「ストリート拳王」",
+      "en": "Street Boxer",
+      "zhHans": "「街头拳王」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Lakshana_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：相異能ダメージ+10％",
+            "en": "Epic (2): Lakshana DMG +10%.",
+            "zhHans": "史诗！[2]：相属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：クリティカル率+14％。味方チームが「延滞」または「浸染」を発動すると、クリティカル率が追加で+14％（20秒持続）",
+            "en": "Legendary (4): Increases Crit Chance by 14%. Team triggering Remora or Stain increases the bonus to 14% for 20s.",
+            "zhHans": "传说！[4]：暴击率提升14%。己方编队触发「延滞」或「浸染」之后，则暴击率额外提升14%，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Lakshana_purple",
+    "name": {
+      "ja": "「ストリート拳王」",
+      "en": "Street Boxer",
+      "zhHans": "「街头拳王」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Lakshana_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：相異能ダメージ+10％",
+            "en": "Epic (2): Lakshana DMG +10%.",
+            "zhHans": "史诗！[2]：相属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：クリティカル率+14％。味方チームが「延滞」または「浸染」を発動すると、クリティカル率が追加で+14％（20秒持続）",
+            "en": "Legendary (4): Increases Crit Chance by 14%. Team triggering Remora or Stain increases the bonus to 14% for 20s.",
+            "zhHans": "传说！[4]：暴击率提升14%。己方编队触发「延滞」或「浸染」之后，则暴击率额外提升14%，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Lakshana_orange",
+    "name": {
+      "ja": "「ストリート拳王」",
+      "en": "Street Boxer",
+      "zhHans": "「街头拳王」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Lakshana_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：相異能ダメージ+10％",
+            "en": "Epic (2): Lakshana DMG +10%.",
+            "zhHans": "史诗！[2]：相属性异能伤害提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：クリティカル率+14％。味方チームが「延滞」または「浸染」を発動すると、クリティカル率が追加で+14％（20秒持続）",
+            "en": "Legendary (4): Increases Crit Chance by 14%. Team triggering Remora or Stain increases the bonus to 14% for 20s.",
+            "zhHans": "传说！[4]：暴击率提升14%。己方编队触发「延滞」或「浸染」之后，则暴击率额外提升14%，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Shield_blue",
+    "name": {
+      "ja": "「王国の守り」",
+      "en": "Kingdom's Guard",
+      "zhHans": "「守卫王国」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Shield_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：防御力+15％",
+            "en": "Epic (2): DEF +15%.",
+            "zhHans": "史诗！[2]：防御力提升15%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者のシールド効果+20％",
+            "en": "Legendary (4): Increases wearer's shields by 20%.",
+            "zhHans": "传说！[4]：装备者的护盾效果提升20%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Shield_purple",
+    "name": {
+      "ja": "「王国の守り」",
+      "en": "Kingdom's Guard",
+      "zhHans": "「守卫王国」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Shield_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：防御力+15％",
+            "en": "Epic (2): DEF +15%.",
+            "zhHans": "史诗！[2]：防御力提升15%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者のシールド効果+20％",
+            "en": "Legendary (4): Increases wearer's shields by 20%.",
+            "zhHans": "传说！[4]：装备者的护盾效果提升20%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Shield_orange",
+    "name": {
+      "ja": "「王国の守り」",
+      "en": "Kingdom's Guard",
+      "zhHans": "「守卫王国」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Shield_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：防御力+15％",
+            "en": "Epic (2): DEF +15%.",
+            "zhHans": "史诗！[2]：防御力提升15%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者のシールド効果+20％",
+            "en": "Legendary (4): Increases wearer's shields by 20%.",
+            "zhHans": "传说！[4]：装备者的护盾效果提升20%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Attack_blue",
+    "name": {
+      "ja": "「影の信条」",
+      "en": "Shadow Creed",
+      "zhHans": "「影之信条」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Attack_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：攻撃力+10％",
+            "en": "Epic (2): ATK +10%.",
+            "zhHans": "史诗！[2]：攻击力提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「バイレールスキル」を発動した後、攻撃力+25％（20秒持続）",
+            "en": "Legendary (4): Increases wearer's ATK by 25% for 20s after casting a Skill.",
+            "zhHans": "传说！[4]：装备者释放「变轨技能」以后，攻击力增加25%，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Attack_purple",
+    "name": {
+      "ja": "「影の信条」",
+      "en": "Shadow Creed",
+      "zhHans": "「影之信条」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Attack_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：攻撃力+10％",
+            "en": "Epic (2): ATK +10%.",
+            "zhHans": "史诗！[2]：攻击力提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「バイレールスキル」を発動した後、攻撃力+25％（20秒持続）",
+            "en": "Legendary (4): Increases wearer's ATK by 25% for 20s after casting a Skill.",
+            "zhHans": "传说！[4]：装备者释放「变轨技能」以后，攻击力增加25%，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Attack_orange",
+    "name": {
+      "ja": "「影の信条」",
+      "en": "Shadow Creed",
+      "zhHans": "「影之信条」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Attack_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：攻撃力+10％",
+            "en": "Epic (2): ATK +10%.",
+            "zhHans": "史诗！[2]：攻击力提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「バイレールスキル」を発動した後、攻撃力+25％（20秒持続）",
+            "en": "Legendary (4): Increases wearer's ATK by 25% for 20s after casting a Skill.",
+            "zhHans": "传说！[4]：装备者释放「变轨技能」以后，攻击力增加25%，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Heal_blue",
+    "name": {
+      "ja": "「ティアの夜間酒場」",
+      "en": "Thea's Night Tavern",
+      "zhHans": "「缇娅的夜间酒馆」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Heal_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：HP+10％",
+            "en": "Epic (2): HP +10%.",
+            "zhHans": "史诗！[2]：生命值提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者の治療効率+20％",
+            "en": "Legendary (4): Increases wearer's Healing Bonus by 20%.",
+            "zhHans": "传说！[4]：装备者的治疗效率提升20%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Heal_purple",
+    "name": {
+      "ja": "「ティアの夜間酒場」",
+      "en": "Thea's Night Tavern",
+      "zhHans": "「缇娅的夜间酒馆」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Heal_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：HP+10％",
+            "en": "Epic (2): HP +10%.",
+            "zhHans": "史诗！[2]：生命值提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者の治療効率+20％",
+            "en": "Legendary (4): Increases wearer's Healing Bonus by 20%.",
+            "zhHans": "传说！[4]：装备者的治疗效率提升20%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Heal_orange",
+    "name": {
+      "ja": "「ティアの夜間酒場」",
+      "en": "Thea's Night Tavern",
+      "zhHans": "「缇娅的夜间酒馆」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Heal_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：HP+10％",
+            "en": "Epic (2): HP +10%.",
+            "zhHans": "史诗！[2]：生命值提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者の治療効率+20％",
+            "en": "Legendary (4): Increases wearer's Healing Bonus by 20%.",
+            "zhHans": "传说！[4]：装备者的治疗效率提升20%。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Mag_blue",
+    "name": {
+      "ja": "「小さな大冒険」",
+      "en": "Tiny Big Adventure",
+      "zhHans": "「小小大冒险」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Mag_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：HP+10％",
+            "en": "Epic (2): HP +10%.",
+            "zhHans": "史诗！[2]：生命值提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者のHPが減少するたびに、最大HP+4％（最大10スタック、1スタックにつき10秒持続）。「EXレール終結」発動時、即座にこの効果を10スタック獲得する。",
+            "en": "Legendary (4): Increases wearer's Max HP by 4% when taking damage, up to 10 stacks. Each stack lasts 10s. Casting Ultimate instantly grants 10 stacks.",
+            "zhHans": "传说！[4]：装备者每次降低血量时，生命值上限提升4%，最多叠加10层，每层持续10秒。释放「极轨终结」时，直接获得10层该效果。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Mag_purple",
+    "name": {
+      "ja": "「小さな大冒険」",
+      "en": "Tiny Big Adventure",
+      "zhHans": "「小小大冒险」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Mag_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：HP+10％",
+            "en": "Epic (2): HP +10%.",
+            "zhHans": "史诗！[2]：生命值提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者のHPが減少するたびに、最大HP+4％（最大10スタック、1スタックにつき10秒持続）。「EXレール終結」発動時、即座にこの効果を10スタック獲得する。",
+            "en": "Legendary (4): Increases wearer's Max HP by 4% when taking damage, up to 10 stacks. Each stack lasts 10s. Casting Ultimate instantly grants 10 stacks.",
+            "zhHans": "传说！[4]：装备者每次降低血量时，生命值上限提升4%，最多叠加10层，每层持续10秒。释放「极轨终结」时，直接获得10层该效果。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Mag_orange",
+    "name": {
+      "ja": "「小さな大冒険」",
+      "en": "Tiny Big Adventure",
+      "zhHans": "「小小大冒险」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Mag_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：HP+10％",
+            "en": "Epic (2): HP +10%.",
+            "zhHans": "史诗！[2]：生命值提升10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者のHPが減少するたびに、最大HP+4％（最大10スタック、1スタックにつき10秒持続）。「EXレール終結」発動時、即座にこの効果を10スタック獲得する。",
+            "en": "Legendary (4): Increases wearer's Max HP by 4% when taking damage, up to 10 stacks. Each stack lasts 10s. Casting Ultimate instantly grants 10 stacks.",
+            "zhHans": "传说！[4]：装备者每次降低血量时，生命值上限提升4%，最多叠加10层，每层持续10秒。释放「极轨终结」时，直接获得10层该效果。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "GetEfficiency_blue",
+    "name": {
+      "ja": "「音速ヘッジホッグ」",
+      "en": "Speedy Hedgehog",
+      "zhHans": "「音速蓝刺猬」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/GetEfficiency_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：チャージ効率+12％",
+            "en": "Epic (2): Charge Efficiency +12%.",
+            "zhHans": "史诗！[2]：充能效率提高12%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「EXレール終結」発動後、チーム全員のキャラの攻撃力+15％（20秒持続、この効果はスタックしない）",
+            "en": "Legendary (4): Increases all allies' ATK by 15% for 20s after the wearer casts Ultimate. Effect does not stack.",
+            "zhHans": "传说！[4]：装备者释放「极轨终结」以后，全队角色获得15%攻击力提升(该效果不可叠加)，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "GetEfficiency_purple",
+    "name": {
+      "ja": "「音速ヘッジホッグ」",
+      "en": "Speedy Hedgehog",
+      "zhHans": "「音速蓝刺猬」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/GetEfficiency_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：チャージ効率+12％",
+            "en": "Epic (2): Charge Efficiency +12%.",
+            "zhHans": "史诗！[2]：充能效率提高12%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「EXレール終結」発動後、チーム全員のキャラの攻撃力+15％（20秒持続、この効果はスタックしない）",
+            "en": "Legendary (4): Increases all allies' ATK by 15% for 20s after the wearer casts Ultimate. Effect does not stack.",
+            "zhHans": "传说！[4]：装备者释放「极轨终结」以后，全队角色获得15%攻击力提升(该效果不可叠加)，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "GetEfficiency_orange",
+    "name": {
+      "ja": "「音速ヘッジホッグ」",
+      "en": "Speedy Hedgehog",
+      "zhHans": "「音速蓝刺猬」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/GetEfficiency_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：チャージ効率+12％",
+            "en": "Epic (2): Charge Efficiency +12%.",
+            "zhHans": "史诗！[2]：充能效率提高12%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が「EXレール終結」発動後、チーム全員のキャラの攻撃力+15％（20秒持続、この効果はスタックしない）",
+            "en": "Legendary (4): Increases all allies' ATK by 15% for 20s after the wearer casts Ultimate. Effect does not stack.",
+            "zhHans": "传说！[4]：装备者释放「极轨终结」以后，全队角色获得15%攻击力提升(该效果不可叠加)，持续20秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Psychically_blue",
+    "name": {
+      "ja": "「静寂な山荘」",
+      "en": "Quiet Manor",
+      "zhHans": "「静谧山庄」"
+    },
+    "rarity": "B",
+    "quality": "blue",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Psychically_blue.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：精神ダメージ+10％",
+            "en": "Epic (2): Mental DMG +10%.",
+            "zhHans": "史诗！[2]：心灵伤害提高10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が通常攻撃を行うと、精神ダメージ+12％（最大3スタックまで、1スタックにつき6秒持続）",
+            "en": "Legendary (4): Grants wearer a 12% Mental DMG Bonus per Basic Attack, up to 3 stacks. Each stack lasts 6s.",
+            "zhHans": "传说！[4]：装备者普通攻击后，造成的心灵伤害提升12%，最多叠加3层，每层持续6秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Psychically_purple",
+    "name": {
+      "ja": "「静寂な山荘」",
+      "en": "Quiet Manor",
+      "zhHans": "「静谧山庄」"
+    },
+    "rarity": "A",
+    "quality": "purple",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Psychically_purple.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：精神ダメージ+10％",
+            "en": "Epic (2): Mental DMG +10%.",
+            "zhHans": "史诗！[2]：心灵伤害提高10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が通常攻撃を行うと、精神ダメージ+12％（最大3スタックまで、1スタックにつき6秒持続）",
+            "en": "Legendary (4): Grants wearer a 12% Mental DMG Bonus per Basic Attack, up to 3 stacks. Each stack lasts 6s.",
+            "zhHans": "传说！[4]：装备者普通攻击后，造成的心灵伤害提升12%，最多叠加3层，每层持续6秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  },
+  {
+    "id": "Psychically_orange",
+    "name": {
+      "ja": "「静寂な山荘」",
+      "en": "Quiet Manor",
+      "zhHans": "「静谧山庄」"
+    },
+    "rarity": "S",
+    "quality": "orange",
+    "typeId": "core",
+    "typeGeometry": "EquipmentGeometry_Core",
+    "ownGridNum": 0,
+    "assets": {
+      "icon": "assets/equipment/core/Psychically_orange.webp"
+    },
+    "baseStats": [],
+    "mainStats": [
+      {
+        "sourceStatId": "strength_randompool_Coremain",
+        "statId": null,
+        "names": {},
+        "values": []
+      }
+    ],
+    "mainStat": {
+      "sourceStatId": "strength_randompool_Coremain",
+      "statId": null,
+      "names": {},
+      "valueIndexing": "level_zero_to_twenty",
+      "values": []
+    },
+    "subStats": [
+      {
+        "sourceStatId": "strength_randompool_Coresub",
+        "names": {},
+        "amountStats": 4
+      }
+    ],
+    "setEffect": {
+      "conditions": [
+        {
+          "condition": 2,
+          "description": {
+            "ja": "エピック[2]：精神ダメージ+10％",
+            "en": "Epic (2): Mental DMG +10%.",
+            "zhHans": "史诗！[2]：心灵伤害提高10%。"
+          }
+        },
+        {
+          "condition": 4,
+          "description": {
+            "ja": "レジェンド[4]：装備者が通常攻撃を行うと、精神ダメージ+12％（最大3スタックまで、1スタックにつき6秒持続）",
+            "en": "Legendary (4): Grants wearer a 12% Mental DMG Bonus per Basic Attack, up to 3 stacks. Each stack lasts 6s.",
+            "zhHans": "传说！[4]：装备者普通攻击后，造成的心灵伤害提升12%，最多叠加3层，每层持续6秒。"
+          }
+        }
+      ]
+    },
+    "availableMainStats": [
+      "strength_randompool_Coremain"
+    ]
+  }
+]

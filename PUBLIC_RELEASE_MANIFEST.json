@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-05-13T14:27:23.178Z",
+  "sourceSite": "public-site",
+  "outputSite": "public-release",
+  "implementedCharacters": [
+    "nanally",
+    "chiz",
+    "mint",
+    "adler",
+    "baicang",
+    "daffodil",
+    "edgar",
+    "fadia",
+    "haniel",
+    "hathor",
+    "jiuyuan",
+    "mitsuki",
+    "sakiri",
+    "skia",
+    "xun",
+    "zero_female",
+    "zero_male"
+  ],
+  "excludedCharacters": [
+    "fly"
+  ],
+  "jsonFiles": [
+    "arcs.json",
+    "characters.json",
+    "gearStatOptions.json",
+    "gears.json",
+    "items.json",
+    "moduleShapes.json",
+    "moduleStatOptions.json",
+    "modules.json",
+    "statIcons.json",
+    "stats.json",
+    "weapons.json"
+  ],
+  "assetCount": 222,
+  "warnings": []
+}

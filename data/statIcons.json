@@ -1,0 +1,228 @@
+{
+  "records": [
+    {
+      "key": "hp",
+      "statIds": [
+        "hp",
+        "hpPercent"
+      ],
+      "sourceStatIds": [
+        "HPMaxAdd",
+        "HPMaxUp"
+      ],
+      "label": {
+        "ja": "HP",
+        "en": "HP"
+      },
+      "assets": {
+        "icon": "assets/stats/hp.webp"
+      }
+    },
+    {
+      "key": "attack",
+      "statIds": [
+        "attack",
+        "attackPercent"
+      ],
+      "sourceStatIds": [
+        "AtkAdd",
+        "AtkUp"
+      ],
+      "label": {
+        "ja": "攻撃力",
+        "en": "ATK"
+      },
+      "assets": {
+        "icon": "assets/stats/attack.webp"
+      }
+    },
+    {
+      "key": "defense",
+      "statIds": [
+        "defense",
+        "defensePercent"
+      ],
+      "sourceStatIds": [
+        "DefAdd",
+        "DefUp"
+      ],
+      "label": {
+        "ja": "防御力",
+        "en": "DEF"
+      },
+      "assets": {
+        "icon": "assets/stats/defense.webp"
+      }
+    },
+    {
+      "key": "critRate",
+      "statIds": [
+        "critRate"
+      ],
+      "sourceStatIds": [
+        "CritBase"
+      ],
+      "label": {
+        "ja": "クリティカル率",
+        "en": "CRIT Rate"
+      },
+      "assets": {
+        "icon": "assets/stats/critRate.webp"
+      }
+    },
+    {
+      "key": "critDamage",
+      "statIds": [
+        "critDamage"
+      ],
+      "sourceStatIds": [
+        "CritDamageBase"
+      ],
+      "label": {
+        "ja": "クリティカルダメージ",
+        "en": "CRIT DMG"
+      },
+      "assets": {
+        "icon": "assets/stats/critDamage.webp"
+      }
+    },
+    {
+      "key": "chargeEfficiency",
+      "statIds": [
+        "chargeEfficiency"
+      ],
+      "sourceStatIds": [
+        "ChargeGetEfficiencyBase"
+      ],
+      "label": {
+        "ja": "チャージ効率",
+        "en": "Charge Efficiency"
+      },
+      "assets": {
+        "icon": "assets/stats/chargeEfficiency.webp"
+      }
+    },
+    {
+      "key": "cyclePower",
+      "statIds": [
+        "cyclePower"
+      ],
+      "sourceStatIds": [
+        "MagAdd",
+        "MagBase"
+      ],
+      "label": {
+        "ja": "連環パワー",
+        "en": "Cycle Power"
+      },
+      "assets": {
+        "icon": "assets/stats/cyclePower.webp"
+      }
+    },
+    {
+      "key": "generalDamage",
+      "statIds": [
+        "generalDamage"
+      ],
+      "sourceStatIds": [
+        "DamageUpGeneralBase"
+      ],
+      "label": {
+        "ja": "汎用ダメージ強化",
+        "en": "Universal DMG Bonus"
+      },
+      "assets": {
+        "icon": "assets/stats/generalDamage.webp"
+      }
+    },
+    {
+      "key": "attributeDamage",
+      "statIds": [
+        "attributeDamage"
+      ],
+      "sourceStatIds": [
+        "DamageUpCosmosBase",
+        "DamageUpNatureBase",
+        "DamageUpIncantationBase",
+        "DamageUpPsycheBase",
+        "DamageUpChaosBase",
+        "DamageUpLakshanaBase",
+        "DamageUpPsychicallyBase"
+      ],
+      "label": {
+        "ja": "属性ダメージ強化",
+        "en": "Attribute DMG Bonus"
+      },
+      "assets": {
+        "icon": "assets/stats/attributeDamage.webp"
+      }
+    },
+    {
+      "key": "unbalIntensity",
+      "statIds": [
+        "unbalIntensity"
+      ],
+      "sourceStatIds": [
+        "UnbalIntensityAdd",
+        "UnbalIntensityBase"
+      ],
+      "label": {
+        "ja": "ブレイクパワー",
+        "en": "Break Intensity"
+      },
+      "assets": {
+        "icon": "assets/stats/unbalIntensity.webp"
+      }
+    }
+  ],
+  "byKey": {
+    "hp": "assets/stats/hp.webp",
+    "attack": "assets/stats/attack.webp",
+    "defense": "assets/stats/defense.webp",
+    "critRate": "assets/stats/critRate.webp",
+    "critDamage": "assets/stats/critDamage.webp",
+    "chargeEfficiency": "assets/stats/chargeEfficiency.webp",
+    "cyclePower": "assets/stats/cyclePower.webp",
+    "generalDamage": "assets/stats/generalDamage.webp",
+    "attributeDamage": "assets/stats/attributeDamage.webp",
+    "unbalIntensity": "assets/stats/unbalIntensity.webp"
+  },
+  "byStatId": {
+    "hp": "assets/stats/hp.webp",
+    "hpPercent": "assets/stats/hp.webp",
+    "attack": "assets/stats/attack.webp",
+    "attackPercent": "assets/stats/attack.webp",
+    "defense": "assets/stats/defense.webp",
+    "defensePercent": "assets/stats/defense.webp",
+    "critRate": "assets/stats/critRate.webp",
+    "critDamage": "assets/stats/critDamage.webp",
+    "chargeEfficiency": "assets/stats/chargeEfficiency.webp",
+    "cyclePower": "assets/stats/cyclePower.webp",
+    "generalDamage": "assets/stats/generalDamage.webp",
+    "attributeDamage": "assets/stats/attributeDamage.webp",
+    "unbalIntensity": "assets/stats/unbalIntensity.webp"
+  },
+  "bySourceStatId": {
+    "HPMaxAdd": "assets/stats/hp.webp",
+    "HPMaxUp": "assets/stats/hp.webp",
+    "AtkAdd": "assets/stats/attack.webp",
+    "AtkUp": "assets/stats/attack.webp",
+    "DefAdd": "assets/stats/defense.webp",
+    "DefUp": "assets/stats/defense.webp",
+    "CritBase": "assets/stats/critRate.webp",
+    "CritDamageBase": "assets/stats/critDamage.webp",
+    "ChargeGetEfficiencyBase": "assets/stats/chargeEfficiency.webp",
+    "MagAdd": "assets/stats/cyclePower.webp",
+    "MagBase": "assets/stats/cyclePower.webp",
+    "DamageUpGeneralBase": "assets/stats/generalDamage.webp",
+    "DamageUpCosmosBase": "assets/stats/attributeDamage.webp",
+    "DamageUpNatureBase": "assets/stats/attributeDamage.webp",
+    "DamageUpIncantationBase": "assets/stats/attributeDamage.webp",
+    "DamageUpPsycheBase": "assets/stats/attributeDamage.webp",
+    "DamageUpChaosBase": "assets/stats/attributeDamage.webp",
+    "DamageUpLakshanaBase": "assets/stats/attributeDamage.webp",
+    "DamageUpPsychicallyBase": "assets/stats/attributeDamage.webp",
+    "UnbalIntensityAdd": "assets/stats/unbalIntensity.webp",
+    "UnbalIntensityBase": "assets/stats/unbalIntensity.webp"
+  }
+}

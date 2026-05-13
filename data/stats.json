@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hp",
+    "label": {
+      "ja": "HP",
+      "en": "HP"
+    },
+    "unit": "flat",
+    "category": "survival",
+    "valueType": "number",
+    "isAggregatable": true
+  },
+  {
+    "id": "attack",
+    "label": {
+      "ja": "攻撃力",
+      "en": "Attack"
+    },
+    "unit": "flat",
+    "category": "offense",
+    "valueType": "number",
+    "isAggregatable": true
+  },
+  {
+    "id": "defense",
+    "label": {
+      "ja": "防御力",
+      "en": "Defense"
+    },
+    "unit": "flat",
+    "category": "survival",
+    "valueType": "number",
+    "isAggregatable": true
+  },
+  {
+    "id": "critRate",
+    "label": {
+      "ja": "会心率",
+      "en": "CRIT Rate"
+    },
+    "unit": "%",
+    "category": "offense",
+    "valueType": "percent",
+    "isAggregatable": true
+  },
+  {
+    "id": "critDamage",
+    "label": {
+      "ja": "会心ダメージ",
+      "en": "CRIT DMG"
+    },
+    "unit": "%",
+    "category": "offense",
+    "valueType": "percent",
+    "isAggregatable": true
+  }
+]

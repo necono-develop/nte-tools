@@ -1,0 +1,322 @@
+[
+  {
+    "id": "shard_double_1",
+    "name": "Type II Module",
+    "names": {
+      "ja": "駆動ブロックⅡ型",
+      "en": "Type II Module",
+      "zhHans": "驱动模块Ⅱ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_11_Equip13.webp",
+    "ownGridNum": 2
+  },
+  {
+    "id": "shard_double_2",
+    "name": "Type II Module",
+    "names": {
+      "ja": "駆動ブロックⅡ型",
+      "en": "Type II Module",
+      "zhHans": "驱动模块Ⅱ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_12_Equip14.webp",
+    "ownGridNum": 2
+  },
+  {
+    "id": "shard_triple_1",
+    "name": "Type III Module",
+    "names": {
+      "ja": "駆動ブロックⅢ型",
+      "en": "Type III Module",
+      "zhHans": "驱动模块Ⅲ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_01_Equip01.webp",
+    "ownGridNum": 3
+  },
+  {
+    "id": "shard_triple_2",
+    "name": "Type III Module",
+    "names": {
+      "ja": "駆動ブロックⅢ型",
+      "en": "Type III Module",
+      "zhHans": "驱动模块Ⅲ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 2
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_02_Equip02.webp",
+    "ownGridNum": 3
+  },
+  {
+    "id": "shard_triple_3",
+    "name": "Type III Module",
+    "names": {
+      "ja": "駆動ブロックⅢ型",
+      "en": "Type III Module",
+      "zhHans": "驱动模块Ⅲ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_03_Equip03.webp",
+    "ownGridNum": 3
+  },
+  {
+    "id": "shard_triple_4",
+    "name": "Type III Module",
+    "names": {
+      "ja": "駆動ブロックⅢ型",
+      "en": "Type III Module",
+      "zhHans": "驱动模块Ⅲ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_04_Equip04.webp",
+    "ownGridNum": 3
+  },
+  {
+    "id": "shard_triple_5",
+    "name": "Type III Module",
+    "names": {
+      "ja": "駆動ブロックⅢ型",
+      "en": "Type III Module",
+      "zhHans": "驱动模块Ⅲ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_05_Equip05.webp",
+    "ownGridNum": 3
+  },
+  {
+    "id": "shard_triple_6",
+    "name": "Type III Module",
+    "names": {
+      "ja": "駆動ブロックⅢ型",
+      "en": "Type III Module",
+      "zhHans": "驱动模块Ⅲ型"
+    },
+    "cells": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_06_Equip06.webp",
+    "ownGridNum": 3
+  },
+  {
+    "id": "shard_quadruple_1",
+    "name": "Type IV Module",
+    "names": {
+      "ja": "駆動ブロックⅣ型",
+      "en": "Type IV Module",
+      "zhHans": "驱动模块Ⅳ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_09_Equip11.webp",
+    "ownGridNum": 4
+  },
+  {
+    "id": "shard_quadruple_2",
+    "name": "Type IV Module",
+    "names": {
+      "ja": "駆動ブロックⅣ型",
+      "en": "Type IV Module",
+      "zhHans": "驱动模块Ⅳ型"
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 2
+      },
+      {
+        "x": 0,
+        "y": 3
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_10_Equip12.webp",
+    "ownGridNum": 4
+  },
+  {
+    "id": "shard_quadruple_5",
+    "name": "Type IV Module",
+    "names": {
+      "ja": "駆動ブロックⅣ型",
+      "en": "Type IV Module",
+      "zhHans": "驱动模块Ⅳ型"
+    },
+    "cells": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_07_Equip08.webp",
+    "ownGridNum": 4
+  },
+  {
+    "id": "shard_quadruple_6",
+    "name": "Type IV Module",
+    "names": {
+      "ja": "駆動ブロックⅣ型",
+      "en": "Type IV Module",
+      "zhHans": "驱动模块Ⅳ型"
+    },
+    "cells": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 2
+      }
+    ],
+    "rotatable": false,
+    "asset": "assets/modules/extracted/shape_block_256/color_01/shape_block_256_color_01_08_Equip09.webp",
+    "ownGridNum": 4
+  }
+]
