@@ -47,7 +47,6 @@ const attributeDamageSourceIds = new Set([
 ]);
 
 const moduleSubStatOptions: ModuleStatOption[] = gearStatOptions.subStats
-  .filter((row) => row.moduleRolls?.length)
   .map((row) => ({
     sourceStatId: row.sourceStatId,
     statId: row.statId,
@@ -287,6 +286,8 @@ function statIdFromSourceStatId(sourceStatId?: string | null): StatId | null {
     CritDamageBase: "critDamage",
     ChargeGetEfficiencyBase: "chargeEfficiency",
     UnbalIntensityBase: "unbalIntensity",
+    UnbalIntensityAdd: "unbalIntensity",
+    MagAdd: "unbalIntensity",
     DamageUpGeneralBase: "generalDamage",
   };
   if (!sourceStatId) return null;
@@ -1013,10 +1014,23 @@ export default function BuildCardApp() {
                   return (
                     <label key={index}>
                       サブ {index + 1}
-                      <select value={selectedSourceId} onChange={(event) => updateSelectedModuleSubStat(index, event.target.value)}>
-                        <option value="">-- 選択してください --</option>
-                        {moduleSubStatOptions.map((candidate) => <option key={candidate.sourceStatId} value={candidate.sourceStatId}>{candidate.names?.ja ?? candidate.sourceStatId}</option>)}
-                      </select>
+                      <details className="module-sub-picker">
+                        <summary className="module-sub-trigger">
+                          {option?.names?.ja ?? "-- 選択してください --"}
+                        </summary>
+                        <div className="module-sub-menu">
+                          <button type="button" className={!selectedSourceId ? "selected" : ""} onClick={(event) => {
+                            updateSelectedModuleSubStat(index, "");
+                            event.currentTarget.closest("details")?.removeAttribute("open");
+                          }}>-- 選択してください --</button>
+                          {moduleSubStatOptions.map((candidate) => (
+                            <button type="button" key={candidate.sourceStatId} className={selectedSourceId === candidate.sourceStatId ? "selected" : ""} onClick={(event) => {
+                              updateSelectedModuleSubStat(index, candidate.sourceStatId);
+                              event.currentTarget.closest("details")?.removeAttribute("open");
+                            }}>{candidate.names?.ja ?? candidate.sourceStatId}</button>
+                          ))}
+                        </div>
+                      </details>
                       <span className="module-sub-value">{option && row ? formatStatValue(row.value, option.isPercent) : ""}</span>
                     </label>
                   );
