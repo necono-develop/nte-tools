@@ -3,7 +3,7 @@
 import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties, DragEvent, ReactNode, Ref } from "react";
 import { toPng } from "html-to-image";
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Download, RotateCw, Save, Share2, Trash2, X } from "lucide-react";
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Download, Info, RotateCw, Save, Share2, Trash2, X } from "lucide-react";
 import charactersJson from "@/data/characters.json";
 import gearsJson from "@/data/gears.json";
 import gearStatOptionsJson from "@/data/gearStatOptions.json";
@@ -26,6 +26,8 @@ const moduleShapes = moduleShapesJson as unknown as ModuleShape[];
 const QR_IMAGE_PATH = "assets/qr/nte-tools.webp";
 const SITE_URL = "https://nte-tools.com/buildcard";
 const X_POST_TEXT = "Built with NTE Tools\n\n#NTE #NTE_BuildCard";
+const BUILD_CARD_WIDTH = 520;
+const BUILD_CARD_HEIGHT = 650;
 type ModuleStatOption = {
   sourceStatId: string;
   statId?: StatId | null;
@@ -333,6 +335,8 @@ export default function BuildCardApp() {
   const [comment, setComment] = useState("");
   const [message, setMessage] = useState("盤面をクリックしてモジュールを配置");
   const cardRef = useRef<HTMLDivElement>(null);
+  const previewFrameRef = useRef<HTMLDivElement>(null);
+  const [previewScale, setPreviewScale] = useState(1);
 
   const character = characters.find((row) => row.id === characterId) ?? characters[0];
   const gear = gears.find((row) => row.id === gearId) ?? gears[0];
@@ -423,6 +427,24 @@ export default function BuildCardApp() {
       setBuildId(createBuildId());
       setMessage("保存データを読み込めませんでした");
     }
+  }, []);
+
+  useEffect(() => {
+    const frame = previewFrameRef.current;
+    if (!frame) return;
+
+    const updateScale = () => {
+      setPreviewScale(Math.min(1, frame.clientWidth / BUILD_CARD_WIDTH));
+    };
+
+    updateScale();
+    const observer = new ResizeObserver(updateScale);
+    observer.observe(frame);
+    window.addEventListener("resize", updateScale);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", updateScale);
+    };
   }, []);
 
   useEffect(() => {
@@ -1036,21 +1058,49 @@ export default function BuildCardApp() {
       <section className="preview-panel">
         <div className="preview-toolbar">
           <span>4:5 Preview</span>
+          <div className="score-help">
+            <button type="button" aria-label="Score計算式">
+              <Info size={16} />
+            </button>
+            <div className="score-help-popover" role="tooltip">
+              <strong>Score計算式</strong>
+              <span>対象: Gearのメイン/サブ + Moduleのサブ</span>
+              <span>各項目: max(重み付き合計, 会心合計) / 2</span>
+              <span>重み付き合計:</span>
+              <span className="score-formula-line">攻撃力x0.5 + 攻撃力%x0.8</span>
+              <span className="score-formula-line">+ クリダメ + クリ率x2</span>
+              <span className="score-formula-line">+ 汎用ダメ + 有効属性ダメ</span>
+              <span>会心合計: クリ率x2 + クリダメ</span>
+              <span>小数第1位で切り捨て</span>
+              <span>属性ダメージはキャラクター属性と一致するものだけ加算</span>
+            </div>
+          </div>
         </div>
-        <BuildCard
-          ref={cardRef}
-          character={character}
-          characterLevel={characterLevel}
-          gear={gear}
-          arc={arc}
-          modules={modules}
-          moduleShapes={moduleShapes}
-          finalStats={finalStats}
-          arcLevel={arcLevel}
-          gearRows={gearRows}
-          buildId={buildId}
-          comment={comment}
-        />
+        <div
+          className="preview-frame"
+          ref={previewFrameRef}
+          style={{ height: BUILD_CARD_HEIGHT * previewScale } as CSSProperties}
+        >
+          <div
+            className="preview-scale-layer"
+            style={{ transform: `scale(${previewScale})` } as CSSProperties}
+          >
+            <BuildCard
+              ref={cardRef}
+              character={character}
+              characterLevel={characterLevel}
+              gear={gear}
+              arc={arc}
+              modules={modules}
+              moduleShapes={moduleShapes}
+              finalStats={finalStats}
+              arcLevel={arcLevel}
+              gearRows={gearRows}
+              buildId={buildId}
+              comment={comment}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );

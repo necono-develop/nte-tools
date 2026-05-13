@@ -1020,11 +1020,88 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+.score-help {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.score-help button {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.04);
+  color: var(--muted);
+}
+
+.score-help button:hover,
+.score-help button:focus-visible {
+  border-color: color-mix(in srgb, var(--accent) 70%, white);
+  color: var(--text);
+  outline: none;
+}
+
+.score-help-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(360px, calc(100vw - 32px));
+  display: none;
+  flex-direction: column;
+  gap: 7px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line));
+  border-radius: 7px;
+  background: rgba(12, 15, 21, .96);
+  box-shadow: 0 18px 48px rgba(0,0,0,.42);
+  color: #dbe5f0;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.score-help-popover strong {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.score-formula-line {
+  padding-left: 10px;
+  color: #c8d4df;
+}
+
+.score-help:hover .score-help-popover,
+.score-help:focus-within .score-help-popover {
+  display: flex;
+}
+
+.preview-frame {
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.preview-scale-layer {
+  width: 520px;
+  height: 650px;
+  flex: 0 0 auto;
+  transform-origin: top center;
 }
 
 .build-card {
-  width: min(100%, 520px);
-  aspect-ratio: 4 / 5;
+  width: 520px;
+  height: 650px;
+  flex: 0 0 auto;
   align-self: center;
   background: var(--theme-deep);
   border: 0;
@@ -1936,21 +2013,6 @@ a {
   background: #fff;
   object-fit: contain;
   padding: 3px;
-}
-
-@media (max-width: 520px) {
-  .build-card-showcase {
-    padding: 10px;
-    gap: 7px;
-  }
-
-  .showcase-heading h2 {
-    font-size: 21px;
-  }
-
-  .character-block h3 {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 1120px) {
