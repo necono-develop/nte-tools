@@ -180,6 +180,14 @@ export type GearStatOption = {
     purple?: number[] | number;
     orange?: number[] | number;
   };
+  moduleRolls?: {
+    size: number;
+    rolls: {
+      blue?: number;
+      purple?: number;
+      orange?: number;
+    };
+  }[];
 };
 
 export type GearStatSelection = {
@@ -288,6 +296,7 @@ export type PlacedModule = {
     statId: StatId;
     value: number;
   };
+  subStatSourceIds?: string[];
   subStats: {
     sourceStatId?: string;
     statId: StatId;

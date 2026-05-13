@@ -9,7 +9,6 @@ import gearsJson from "@/data/gears.json";
 import gearStatOptionsJson from "@/data/gearStatOptions.json";
 import arcsJson from "@/data/arcs.json";
 import modulesJson from "@/data/modules.json";
-import moduleStatOptionsJson from "@/data/moduleStatOptions.json";
 import moduleShapesJson from "@/data/moduleShapes.json";
 import statIconsJson from "@/data/statIcons.json";
 import statsJson from "@/data/stats.json";
@@ -47,7 +46,17 @@ const attributeDamageSourceIds = new Set([
   "DamageUpPsychicallyBase",
 ]);
 
-const moduleSubStatOptions = (moduleStatOptionsJson as unknown as ModuleStatOption[]).filter((row) => row.statId || statIdFromSourceStatId(row.sourceStatId));
+const moduleSubStatOptions: ModuleStatOption[] = gearStatOptions.subStats
+  .filter((row) => row.moduleRolls?.length)
+  .map((row) => ({
+    sourceStatId: row.sourceStatId,
+    statId: row.statId,
+    names: row.names,
+    isPercent: Boolean(row.isPercent),
+    sourceIcon: row.sourceIcon,
+    valuesBySize: Object.fromEntries((row.moduleRolls ?? []).map((roll) => [String(roll.size), roll.rolls])),
+  }))
+  .filter((row) => row.statId || statIdFromSourceStatId(row.sourceStatId));
 const statIcons = statIconsJson as unknown as { byKey: Record<string, string>; byStatId: Record<string, string>; bySourceStatId: Record<string, string> };
 const stats = statsJson as unknown as { id: keyof StatBlock; label: { ja: string }; unit: string }[];
 
@@ -143,6 +152,10 @@ function moduleStatValue(option: ModuleStatOption | undefined, rarity: PlacedMod
   return Number(option?.valuesBySize?.[String(shapeSize)]?.[moduleQuality(rarity)] ?? 0);
 }
 
+function normalizeModuleSubStatSourceIds(values?: string[]) {
+  return Array.from({ length: 4 }, (_, index) => values?.[index] ?? "");
+}
+
 function buildModuleMainStats(module: Module | undefined, level: number) {
   return (module?.mainStats ?? [])
     .filter((row) => row.statId === "hp" || row.statId === "attack")
@@ -155,7 +168,11 @@ function buildModuleMainStats(module: Module | undefined, level: number) {
 
 function normalizeModuleSubStats(values: PlacedModule["subStats"] | undefined, rarity: PlacedModule["rarity"], shapeSize: number) {
   const sourceIds = Array.from({ length: 4 }, (_, index) => values?.[index]?.sourceStatId ?? "");
-  return sourceIds
+  return moduleSubStatsFromSourceIds(sourceIds, rarity, shapeSize);
+}
+
+function moduleSubStatsFromSourceIds(sourceIds: string[] | undefined, rarity: PlacedModule["rarity"], shapeSize: number) {
+  return normalizeModuleSubStatSourceIds(sourceIds)
     .map((sourceStatId) => moduleSubStatOptions.find((row) => row.sourceStatId === sourceStatId))
     .map((row) => row && (row.statId || statIdFromSourceStatId(row.sourceStatId)) ? {
       sourceStatId: row.sourceStatId,
@@ -464,6 +481,7 @@ export default function BuildCardApp() {
       rarity,
       level,
       mainStats: buildModuleMainStats(definition, level),
+      subStatSourceIds: normalizeModuleSubStatSourceIds(),
       subStats: normalizeModuleSubStats(undefined, rarity, definition?.ownGridNum ?? moduleShapeSize(targetShapeId)),
     };
   }
@@ -606,12 +624,14 @@ export default function BuildCardApp() {
     const level = clampModuleLevel(module.level);
     const definition = moduleData.find((row) => row.shapeId === module.shapeId && row.rarity === rarity) ?? moduleData.find((row) => row.shapeId === module.shapeId);
     const shapeSize = definition?.ownGridNum ?? moduleShapeSize(module.shapeId);
+    const subStatSourceIds = normalizeModuleSubStatSourceIds(module.subStatSourceIds ?? module.subStats?.map((row) => row?.sourceStatId ?? ""));
     return {
       ...module,
       rarity,
       level,
       mainStats: module.mainStats?.length ? module.mainStats : buildModuleMainStats(definition, level),
-      subStats: normalizeModuleSubStats(module.subStats, rarity, shapeSize),
+      subStatSourceIds,
+      subStats: moduleSubStatsFromSourceIds(subStatSourceIds, rarity, shapeSize),
     };
   }
 
@@ -642,7 +662,8 @@ export default function BuildCardApp() {
     updateSelectedModule({
       level: nextLevel,
       mainStats: buildModuleMainStats(definition, nextLevel),
-      subStats: normalizeModuleSubStats(selectedModule.subStats, selectedModule.rarity, shapeSize),
+      subStatSourceIds: normalizeModuleSubStatSourceIds(selectedModule.subStatSourceIds ?? selectedModule.subStats.map((row) => row?.sourceStatId ?? "")),
+      subStats: moduleSubStatsFromSourceIds(selectedModule.subStatSourceIds ?? selectedModule.subStats.map((row) => row?.sourceStatId ?? ""), selectedModule.rarity, shapeSize),
     });
   }
 
@@ -653,27 +674,20 @@ export default function BuildCardApp() {
     updateSelectedModule({
       rarity,
       mainStats: buildModuleMainStats(definition, selectedModule.level),
-      subStats: normalizeModuleSubStats(selectedModule.subStats, rarity, shapeSize),
+      subStatSourceIds: normalizeModuleSubStatSourceIds(selectedModule.subStatSourceIds ?? selectedModule.subStats.map((row) => row?.sourceStatId ?? "")),
+      subStats: moduleSubStatsFromSourceIds(selectedModule.subStatSourceIds ?? selectedModule.subStats.map((row) => row?.sourceStatId ?? ""), rarity, shapeSize),
     });
   }
 
   function updateSelectedModuleSubStat(index: number, sourceStatId: string) {
     if (!selectedModule) return;
     const shapeSize = moduleData.find((row) => row.shapeId === selectedModule.shapeId && row.rarity === selectedModule.rarity)?.ownGridNum ?? moduleShapeSize(selectedModule.shapeId);
-    const next = [...normalizeModuleSubStats(selectedModule.subStats, selectedModule.rarity, shapeSize)];
-    if (!sourceStatId) {
-      updateSelectedModule({ subStats: next.filter((_, rowIndex) => rowIndex !== index).slice(0, 4) });
-      return;
-    }
-    const option = moduleSubStatOptions.find((row) => row.sourceStatId === sourceStatId) ?? moduleSubStatOptions[0];
-    const statId = option?.statId ?? statIdFromSourceStatId(option?.sourceStatId);
-    if (!option || !statId) return;
-    next[index] = {
-      sourceStatId: option.sourceStatId,
-      statId,
-      value: moduleStatValue(option, selectedModule.rarity, shapeSize),
-    };
-    updateSelectedModule({ subStats: next.slice(0, 4) });
+    const nextSourceIds = normalizeModuleSubStatSourceIds(selectedModule.subStatSourceIds ?? selectedModule.subStats.map((row) => row?.sourceStatId ?? ""));
+    nextSourceIds[index] = sourceStatId;
+    updateSelectedModule({
+      subStatSourceIds: nextSourceIds,
+      subStats: moduleSubStatsFromSourceIds(nextSourceIds, selectedModule.rarity, shapeSize),
+    });
   }
 
   function saveLocal() {
@@ -992,13 +1006,14 @@ export default function BuildCardApp() {
                     ))}
                   </div>
                   {Array.from({ length: 4 }, (_, index) => {
-                    const row = selectedModule.subStats[index];
-                  const option = moduleSubStatOptions.find((candidate) => candidate.sourceStatId === row?.sourceStatId);
-                  const shapeSize = moduleData.find((candidate) => candidate.shapeId === selectedModule.shapeId && candidate.rarity === selectedModule.rarity)?.ownGridNum ?? moduleShapeSize(selectedModule.shapeId);
+                    const shapeSize = moduleData.find((candidate) => candidate.shapeId === selectedModule.shapeId && candidate.rarity === selectedModule.rarity)?.ownGridNum ?? moduleShapeSize(selectedModule.shapeId);
+                    const selectedSourceId = normalizeModuleSubStatSourceIds(selectedModule.subStatSourceIds ?? selectedModule.subStats.map((row) => row?.sourceStatId ?? ""))[index];
+                    const option = moduleSubStatOptions.find((candidate) => candidate.sourceStatId === selectedSourceId);
+                    const row = option ? moduleSubStatsFromSourceIds([selectedSourceId], selectedModule.rarity, shapeSize)[0] : undefined;
                   return (
                     <label key={index}>
                       サブ {index + 1}
-                      <select value={option?.sourceStatId ?? ""} onChange={(event) => updateSelectedModuleSubStat(index, event.target.value)}>
+                      <select value={selectedSourceId} onChange={(event) => updateSelectedModuleSubStat(index, event.target.value)}>
                         <option value="">-- 選択してください --</option>
                         {moduleSubStatOptions.map((candidate) => <option key={candidate.sourceStatId} value={candidate.sourceStatId}>{candidate.names?.ja ?? candidate.sourceStatId}</option>)}
                       </select>
