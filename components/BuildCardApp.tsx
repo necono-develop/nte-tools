@@ -25,7 +25,7 @@ const moduleData = modulesJson as unknown as Module[];
 const moduleShapes = moduleShapesJson as unknown as ModuleShape[];
 const QR_IMAGE_PATH = "assets/qr/nte-tools.webp";
 const SITE_URL = "https://nte-tools.com/buildcard";
-const X_POST_TEXT = "このビルドカードはNTE Toolsによって生成されました\n#NTE #NTE_BuildCard";
+const X_POST_TEXT = "Built with NTE Tools\n\n#NTE #NTE_BuildCard";
 type ModuleStatOption = {
   sourceStatId: string;
   statId?: StatId | null;
@@ -704,9 +704,8 @@ export default function BuildCardApp() {
     setMessage("ビルドをリセットしました");
   }
 
-  async function exportPng() {
+  async function downloadBuildPng() {
     if (!cardRef.current) return;
-    setMessage("PNGを書き出しています");
     const dataUrl = await toPng(cardRef.current, {
       cacheBust: true,
       pixelRatio: 2,
@@ -716,15 +715,38 @@ export default function BuildCardApp() {
     link.download = `nte-build-${character.slug}.png`;
     link.href = dataUrl;
     link.click();
+  }
+
+  async function exportPng() {
+    setMessage("PNGを書き出しています");
+    await downloadBuildPng();
     setMessage("PNGを書き出しました");
   }
 
-  function postToX() {
+  async function postToX() {
     const params = new URLSearchParams({
       text: X_POST_TEXT,
       url: SITE_URL,
     });
-    window.open(`https://twitter.com/intent/tweet?${params.toString()}`, "_blank", "noopener,noreferrer");
+    const intentUrl = `https://twitter.com/intent/tweet?${params.toString()}`;
+    const popup = window.open("about:blank", "_blank");
+    if (popup) {
+      popup.opener = null;
+    }
+    try {
+      setMessage("PNGを書き出してXを開きます");
+      await downloadBuildPng();
+      setMessage("PNGを書き出しました。Xで投稿できます");
+      if (popup) {
+        popup.location.href = intentUrl;
+      } else {
+        window.open(intentUrl, "_blank", "noopener,noreferrer");
+      }
+    } catch (error) {
+      popup?.close();
+      setMessage("PNGの書き出しに失敗しました");
+      throw error;
+    }
   }
 
   return (
