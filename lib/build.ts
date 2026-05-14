@@ -11,6 +11,7 @@ const EMPTY_STATS: StatBlock = {
   generalDamage: 0,
   attributeDamage: 0,
 };
+const STAT_BLOCK_KEYS = new Set<keyof StatBlock>(Object.keys(EMPTY_STATS) as (keyof StatBlock)[]);
 
 type EquipmentStats = StatBlock & {
   attackPercent: number;
@@ -188,11 +189,20 @@ function isCharacterAttributeDamageSource(character: Character, sourceStatId: st
 
 export function getCharacterStatsAtLevel(character: Character, level: number): StatBlock {
   const normalizedLevel = clampLevel(level, character.levelStats?.supportedLevels.min ?? 1, character.levelStats?.supportedLevels.max ?? 80);
-  const stats = { ...EMPTY_STATS, ...character.baseStats };
+  const stats = { ...EMPTY_STATS };
+  const levelStatIds = new Set<StatId>();
   for (const slot of character.levelStats?.statSlots ?? []) {
     if (!slot.statId || !slot.values?.length) continue;
     const value = slot.values[normalizedLevel - 1] ?? slot.values.at(-1);
-    if (typeof value === "number") stats[slot.statId] = value;
+    if (typeof value === "number") {
+      stats[slot.statId] = value;
+      levelStatIds.add(slot.statId);
+    }
+  }
+  for (const [statId, value] of Object.entries(character.baseStats ?? {}) as [keyof StatBlock, number][]) {
+    if (!Number.isFinite(value)) continue;
+    if (!STAT_BLOCK_KEYS.has(statId)) continue;
+    if (!levelStatIds.has(statId)) stats[statId] = value;
   }
   return stats;
 }

@@ -779,30 +779,14 @@ export default function BuildCardApp() {
     setMessage("PNGを書き出しました");
   }
 
-  async function postToX() {
+  function postToX() {
     const params = new URLSearchParams({
       text: X_POST_TEXT,
       url: SITE_URL,
     });
     const intentUrl = `https://twitter.com/intent/tweet?${params.toString()}`;
-    const popup = window.open("about:blank", "_blank");
-    if (popup) {
-      popup.opener = null;
-    }
-    try {
-      setMessage("PNGを書き出してXを開きます");
-      await downloadBuildPng();
-      setMessage("PNGを書き出しました。Xで投稿できます");
-      if (popup) {
-        popup.location.href = intentUrl;
-      } else {
-        window.open(intentUrl, "_blank", "noopener,noreferrer");
-      }
-    } catch (error) {
-      popup?.close();
-      setMessage("PNGの書き出しに失敗しました");
-      throw error;
-    }
+    setMessage("Xの投稿画面を開きます");
+    window.open(intentUrl, "_blank", "noopener,noreferrer");
   }
 
   async function waitForCardAssets(root: HTMLElement) {
