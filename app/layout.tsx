@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/assets/brand/nte-tools-icon.webp",
-    apple: "/assets/brand/nte-tools-icon.webp",
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "NTE Tools",
