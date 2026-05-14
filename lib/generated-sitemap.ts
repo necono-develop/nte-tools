@@ -6,31 +6,31 @@ export const SITE_URL = "https://nte-tools.com";
 export const SITE_ROUTES = [
   {
     "route": "/",
-    "lastModified": "2026-05-13",
+    "lastModified": "2026-05-15",
     "priority": 1,
     "changeFrequency": "weekly"
   },
   {
     "route": "/buildcard",
-    "lastModified": "2026-05-13",
+    "lastModified": "2026-05-15",
     "priority": 0.9,
     "changeFrequency": "weekly"
   },
   {
     "route": "/contact",
-    "lastModified": "2026-05-13",
+    "lastModified": "2026-05-15",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/privacy",
-    "lastModified": "2026-05-13",
+    "lastModified": "2026-05-15",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/terms",
-    "lastModified": "2026-05-13",
+    "lastModified": "2026-05-15",
     "priority": 0.4,
     "changeFrequency": "monthly"
   }

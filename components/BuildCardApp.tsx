@@ -149,7 +149,7 @@ function moduleShapeSize(shapeId: string) {
 
 function moduleStatValue(option: ModuleStatOption | undefined, rarity: PlacedModule["rarity"], shapeSize: number) {
   const value = Number(option?.valuesBySize?.[String(shapeSize)]?.[moduleQuality(rarity)] ?? 0);
-  return isIntegerStatSource(option?.sourceStatId) || option?.statId === "unbalIntensity" ? Math.trunc(value) : value;
+  return isModuleIntegerStatSource(option?.sourceStatId, option?.statId) ? Math.trunc(value) : value;
 }
 
 function normalizeModuleSubStatSourceIds(values?: string[]) {
@@ -219,8 +219,16 @@ function isIntegerStatSource(sourceStatId?: string | null) {
     || sourceStatId === "UnbalIntensityBase";
 }
 
+function isModuleIntegerStatSource(sourceStatId?: string | null, statId?: string | null) {
+  return sourceStatId === "AtkAdd"
+    || sourceStatId === "HPMaxAdd"
+    || sourceStatId === "DefAdd"
+    || isIntegerStatSource(sourceStatId)
+    || statId === "unbalIntensity";
+}
+
 function formatModuleSubStatValue(value: number, option: ModuleStatOption) {
-  if (isIntegerStatSource(option.sourceStatId) || option.statId === "unbalIntensity") {
+  if (isModuleIntegerStatSource(option.sourceStatId, option.statId)) {
     return formatIntegerNumber(value);
   }
   return formatStatValue(value, option.isPercent);
