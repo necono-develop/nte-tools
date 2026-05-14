@@ -1,5 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "Terms",
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
   return (

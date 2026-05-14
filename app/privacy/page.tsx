@@ -1,5 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  alternates: {
+    canonical: "/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (

@@ -12,3 +12,10 @@ Regenerate this folder from the editing workspace with:
 cd public-site
 npm run prepare:public-release
 ```
+
+Existing public WebP assets are reused by default to keep image diffs stable.
+Only regenerate raster assets when intentionally refreshing image output:
+
+```powershell
+node ../tools/prepare-public-release.mjs --regenerate-assets
+```

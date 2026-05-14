@@ -1,5 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -20,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <div className="site-hero-visual" aria-hidden="true">
-          <img src="/assets/characters/nanally/icon.webp" alt="" />
+          <img src="/assets/brand/nte-tools-icon.webp" alt="" />
           <div>
             <strong>Build Card</strong>
             <span>Character / Arc / Gear / Modules</span>

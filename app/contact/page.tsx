@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
