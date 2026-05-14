@@ -1240,28 +1240,29 @@
         {
           "size": 2,
           "rolls": {
-            "blue": 10,
-            "purple": 13,
-            "orange": 16
+            "blue": 5,
+            "purple": 6,
+            "orange": 8
           }
         },
         {
           "size": 3,
           "rolls": {
-            "blue": 14,
-            "purple": 19,
-            "orange": 24
+            "blue": 7,
+            "purple": 10,
+            "orange": 12
           }
         },
         {
           "size": 4,
           "rolls": {
-            "blue": 19,
-            "purple": 26,
-            "orange": 33
+            "blue": 10,
+            "purple": 13,
+            "orange": 16
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "AtkUp",
@@ -1302,7 +1303,8 @@
             "orange": 5
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "HPMaxAdd",
@@ -1322,28 +1324,29 @@
         {
           "size": 2,
           "rolls": {
-            "blue": 120,
-            "purple": 160,
-            "orange": 200
+            "blue": 67,
+            "purple": 89,
+            "orange": 112
           }
         },
         {
           "size": 3,
           "rolls": {
-            "blue": 180,
-            "purple": 240,
-            "orange": 300
+            "blue": 100,
+            "purple": 134,
+            "orange": 168
           }
         },
         {
           "size": 4,
           "rolls": {
-            "blue": 240,
-            "purple": 320,
-            "orange": 400
+            "blue": 134,
+            "purple": 179,
+            "orange": 224
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "HPMaxUp",
@@ -1384,7 +1387,8 @@
             "orange": 5
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "DefAdd",
@@ -1425,7 +1429,8 @@
             "orange": 33
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "DefUp",
@@ -1466,7 +1471,8 @@
             "orange": 7
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "CritBase",
@@ -1507,7 +1513,8 @@
             "orange": 4
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "CritDamageBase",
@@ -1548,7 +1555,8 @@
             "orange": 8
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "DamageUpGeneralBase",
@@ -1589,7 +1597,8 @@
             "orange": 4
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "MagAdd",
@@ -1609,28 +1618,29 @@
         {
           "size": 2,
           "rolls": {
-            "blue": 7,
-            "purple": 10,
-            "orange": 13
+            "blue": 7.2,
+            "purple": 9.6,
+            "orange": 12.6
           }
         },
         {
           "size": 3,
           "rolls": {
-            "blue": 11,
-            "purple": 14,
-            "orange": 17
+            "blue": 10.8,
+            "purple": 14.4,
+            "orange": 16.8
           }
         },
         {
           "size": 4,
           "rolls": {
-            "blue": 14,
-            "purple": 19,
+            "blue": 14.4,
+            "purple": 19.2,
             "orange": 24
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     },
     {
       "sourceStatId": "UnbalIntensityAdd",
@@ -1650,28 +1660,29 @@
         {
           "size": 2,
           "rolls": {
-            "blue": 7,
-            "purple": 10,
-            "orange": 13
+            "blue": 7.2,
+            "purple": 9.6,
+            "orange": 12.6
           }
         },
         {
           "size": 3,
           "rolls": {
-            "blue": 11,
-            "purple": 14,
-            "orange": 17
+            "blue": 10.8,
+            "purple": 14.4,
+            "orange": 16.8
           }
         },
         {
           "size": 4,
           "rolls": {
-            "blue": 14,
-            "purple": 19,
+            "blue": 14.4,
+            "purple": 19.2,
             "orange": 24
           }
         }
-      ]
+      ],
+      "valueSource": "public_db_snapshot_preserved_until_local_substat_source_decoded"
     }
   ]
 }

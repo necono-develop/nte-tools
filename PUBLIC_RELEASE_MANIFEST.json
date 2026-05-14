@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T16:47:01.948Z",
+  "generatedAt": "2026-05-14T15:14:43.392Z",
   "sourceSite": "public-site",
   "outputSite": "public-release",
   "implementedCharacters": [
@@ -24,6 +24,9 @@
   "excludedCharacters": [
     "fly"
   ],
+  "excludedArcs": [
+    "fork_rose"
+  ],
   "jsonFiles": [
     "arcs.json",
     "characters.json",
@@ -37,6 +40,6 @@
     "stats.json",
     "weapons.json"
   ],
-  "assetCount": 222,
+  "assetCount": 221,
   "warnings": []
 }

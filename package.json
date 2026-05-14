@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "prebuild": "npm run generate:sitemap",
     "build": "next build",
     "start": "next start",
+    "preprepare:public-release": "npm run generate:sitemap",
     "prepare:public-release": "node ../tools/prepare-public-release.mjs",
     "lint": "next lint"
   },

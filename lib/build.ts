@@ -105,9 +105,9 @@ export function calculateStats(
   const defensePercent = equipment.defensePercent + Number(arcStats.defensePercent ?? 0);
 
   return {
-    hp: Math.round(hpBase * (1 + hpPercent / 100) + equipment.hp),
-    attack: Math.round(attackBase * (1 + attackPercent / 100) + equipment.attack),
-    defense: Math.round(defenseBase * (1 + defensePercent / 100) + equipment.defense),
+    hp: Math.trunc(hpBase * (1 + hpPercent / 100) + equipment.hp),
+    attack: Math.trunc(attackBase * (1 + attackPercent / 100) + equipment.attack),
+    defense: Math.trunc(defenseBase * (1 + defensePercent / 100) + equipment.defense),
     critRate: base.critRate + Number(arcStats.critRate ?? 0) + equipment.critRate,
     critDamage: base.critDamage + Number(arcStats.critDamage ?? 0) + equipment.critDamage,
     chargeEfficiency: base.chargeEfficiency + Number(arcStats.chargeEfficiency ?? 0) + equipment.chargeEfficiency,

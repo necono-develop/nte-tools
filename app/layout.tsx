@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL } from "../lib/generated-sitemap";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nte-tools.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "NTE Tools",
     template: "%s | NTE Tools",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NTE Tools",
     description: "Neverness to Evernessのビルドカード作成と共有を支援する非公式ファンツールです。",
-    url: "https://nte-tools.com",
+    url: SITE_URL,
     siteName: "NTE Tools",
     images: [
       {

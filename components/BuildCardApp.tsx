@@ -148,7 +148,8 @@ function moduleShapeSize(shapeId: string) {
 }
 
 function moduleStatValue(option: ModuleStatOption | undefined, rarity: PlacedModule["rarity"], shapeSize: number) {
-  return Number(option?.valuesBySize?.[String(shapeSize)]?.[moduleQuality(rarity)] ?? 0);
+  const value = Number(option?.valuesBySize?.[String(shapeSize)]?.[moduleQuality(rarity)] ?? 0);
+  return isIntegerStatSource(option?.sourceStatId) || option?.statId === "unbalIntensity" ? Math.trunc(value) : value;
 }
 
 function normalizeModuleSubStatSourceIds(values?: string[]) {
@@ -183,7 +184,10 @@ function moduleSubStatsFromSourceIds(sourceIds: string[] | undefined, rarity: Pl
 }
 
 function formatGearStatValue(row: { option?: GearStatOption; value: number }) {
-  const value = Number.isInteger(row.value) ? row.value.toLocaleString("ja-JP") : row.value.toFixed(1);
+  if (isIntegerStatSource(row.option?.sourceStatId) || row.option?.statId === "unbalIntensity") {
+    return formatIntegerNumber(row.value);
+  }
+  const value = formatNumber(row.value);
   return row.option?.isPercent ? `${value}%` : value;
 }
 
@@ -204,8 +208,22 @@ function shortGearStatLabel(row: { option?: GearStatOption }) {
 }
 
 function formatStatValue(value: number, isPercent?: boolean) {
-  const formatted = Number.isInteger(value) ? value.toLocaleString("ja-JP") : value.toFixed(1);
+  const formatted = formatNumber(value);
   return isPercent ? `${formatted}%` : formatted;
+}
+
+function isIntegerStatSource(sourceStatId?: string | null) {
+  return sourceStatId === "MagAdd"
+    || sourceStatId === "MagBase"
+    || sourceStatId === "UnbalIntensityAdd"
+    || sourceStatId === "UnbalIntensityBase";
+}
+
+function formatModuleSubStatValue(value: number, option: ModuleStatOption) {
+  if (isIntegerStatSource(option.sourceStatId) || option.statId === "unbalIntensity") {
+    return formatIntegerNumber(value);
+  }
+  return formatStatValue(value, option.isPercent);
 }
 
 function isStatId(value: unknown): value is StatId {
@@ -743,6 +761,7 @@ export default function BuildCardApp() {
 
   async function downloadBuildPng() {
     if (!cardRef.current) return;
+    await waitForCardAssets(cardRef.current);
     const dataUrl = await toPng(cardRef.current, {
       cacheBust: true,
       pixelRatio: 2,
@@ -784,6 +803,21 @@ export default function BuildCardApp() {
       setMessage("PNGの書き出しに失敗しました");
       throw error;
     }
+  }
+
+  async function waitForCardAssets(root: HTMLElement) {
+    await document.fonts?.ready.catch(() => undefined);
+    const images = Array.from(root.querySelectorAll("img"));
+    await Promise.all(images.map((image) => {
+      if (image.complete && image.naturalWidth > 0) return Promise.resolve();
+      if (image.decode) return image.decode().catch(() => undefined);
+      return new Promise<void>((resolve) => {
+        const done = () => resolve();
+        image.addEventListener("load", done, { once: true });
+        image.addEventListener("error", done, { once: true });
+        window.setTimeout(done, 1500);
+      });
+    }));
   }
 
   return (
@@ -1031,7 +1065,7 @@ export default function BuildCardApp() {
                           ))}
                         </div>
                       </details>
-                      <span className="module-sub-value">{option && row ? formatStatValue(row.value, option.isPercent) : ""}</span>
+                      <span className="module-sub-value">{option && row ? formatModuleSubStatValue(row.value, option) : ""}</span>
                     </label>
                   );
                 })}
@@ -1330,7 +1364,7 @@ const BuildCard = forwardRef<HTMLDivElement, {
             <StatLine iconPath={statIconByKey("critRate")} label="クリティカル率" value={`${finalStats.critRate}%`} />
             <StatLine iconPath={statIconByKey("critDamage")} label="クリティカルダメージ" value={`${finalStats.critDamage}%`} />
             <StatLine iconPath={statIconByKey("chargeEfficiency")} label="チャージ効率" value={`${formatNumber(finalStats.chargeEfficiency)}%`} />
-            <StatLine iconPath={statIconByKey("cyclePower")} label="連環パワー" value={formatNumber(gearModuleStats.cyclePower)} />
+            <StatLine iconPath={statIconByKey("cyclePower")} label="連環パワー" value={formatIntegerNumber(gearModuleStats.cyclePower)} />
             <StatLine iconPath={statIconByKey("generalDamage")} label="汎用ダメージ強化" value={`${formatNumber(finalStats.generalDamage)}%`} />
             <StatLine iconPath={statIconByKey("attributeDamage")} label={attributeDamageLabel} value={`${formatNumber(finalStats.attributeDamage)}%`} />
           </div>
@@ -1374,7 +1408,7 @@ const BuildCard = forwardRef<HTMLDivElement, {
                 <span>Score</span>
                 <strong>{formatScore(score)}</strong>
               </div>
-              <StatLine iconPath={statIconByKey("cyclePower")} label="連環パワー" value={formatNumber(gearModuleStats.cyclePower)} />
+              <StatLine iconPath={statIconByKey("cyclePower")} label="連環パワー" value={formatIntegerNumber(gearModuleStats.cyclePower)} />
               <StatLine iconPath={statIconByKey("chargeEfficiency")} label="チャージ効率" value={`${formatNumber(gearModuleStats.chargeEfficiency)}%`} />
             </div>
           </div>
@@ -1504,7 +1538,11 @@ function StatLine({ iconPath, label, value }: { iconPath?: string; label: string
 }
 
 function formatNumber(value: number) {
-  return new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 1 }).format(value);
+  return new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 2 }).format(value);
+}
+
+function formatIntegerNumber(value: number) {
+  return new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 0 }).format(Math.trunc(value));
 }
 
 function formatScore(value: number) {

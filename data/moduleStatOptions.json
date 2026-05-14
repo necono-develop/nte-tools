@@ -10,19 +10,19 @@
     "isPercent": false,
     "valuesBySize": {
       "2": {
+        "blue": 5,
+        "purple": 6,
+        "orange": 8
+      },
+      "3": {
+        "blue": 7,
+        "purple": 10,
+        "orange": 12
+      },
+      "4": {
         "blue": 10,
         "purple": 13,
         "orange": 16
-      },
-      "3": {
-        "blue": 14,
-        "purple": 19,
-        "orange": 24
-      },
-      "4": {
-        "blue": 19,
-        "purple": 26,
-        "orange": 33
       }
     }
   },
@@ -64,19 +64,19 @@
     "isPercent": false,
     "valuesBySize": {
       "2": {
-        "blue": 120,
-        "purple": 160,
-        "orange": 200
+        "blue": 67,
+        "purple": 89,
+        "orange": 112
       },
       "3": {
-        "blue": 180,
-        "purple": 240,
-        "orange": 300
+        "blue": 100,
+        "purple": 134,
+        "orange": 168
       },
       "4": {
-        "blue": 240,
-        "purple": 320,
-        "orange": 400
+        "blue": 134,
+        "purple": 179,
+        "orange": 224
       }
     }
   },
@@ -253,18 +253,18 @@
     "isPercent": false,
     "valuesBySize": {
       "2": {
-        "blue": 7,
-        "purple": 10,
-        "orange": 13
+        "blue": 7.2,
+        "purple": 9.6,
+        "orange": 12.6
       },
       "3": {
-        "blue": 11,
-        "purple": 14,
-        "orange": 17
+        "blue": 10.8,
+        "purple": 14.4,
+        "orange": 16.8
       },
       "4": {
-        "blue": 14,
-        "purple": 19,
+        "blue": 14.4,
+        "purple": 19.2,
         "orange": 24
       }
     }
@@ -280,18 +280,18 @@
     "isPercent": false,
     "valuesBySize": {
       "2": {
-        "blue": 7,
-        "purple": 10,
-        "orange": 13
+        "blue": 7.2,
+        "purple": 9.6,
+        "orange": 12.6
       },
       "3": {
-        "blue": 11,
-        "purple": 14,
-        "orange": 17
+        "blue": 10.8,
+        "purple": 14.4,
+        "orange": 16.8
       },
       "4": {
-        "blue": 14,
-        "purple": 19,
+        "blue": 14.4,
+        "purple": 19.2,
         "orange": 24
       }
     }
