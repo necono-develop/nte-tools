@@ -98,9 +98,9 @@ export function calculateStats(
   }
   applyModuleSpecialization(character, modules, shapes, applyEquipment);
 
-  const attackBase = base.attack + Number(arcStats.attack ?? 0);
-  const hpBase = base.hp + Number(arcStats.hp ?? 0);
-  const defenseBase = base.defense + Number(arcStats.defense ?? 0);
+  const attackBase = Math.trunc(base.attack + Number(arcStats.attack ?? 0));
+  const hpBase = Math.trunc(base.hp + Number(arcStats.hp ?? 0));
+  const defenseBase = Math.trunc(base.defense + Number(arcStats.defense ?? 0));
   const attackPercent = equipment.attackPercent + Number(arcStats.attackPercent ?? 0);
   const hpPercent = equipment.hpPercent + Number(arcStats.hpPercent ?? 0);
   const defensePercent = equipment.defensePercent + Number(arcStats.defensePercent ?? 0);
