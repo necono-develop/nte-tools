@@ -342,9 +342,9 @@ function statScoreUnit(character: Character, stat: { sourceStatId?: string; stat
   const critRate = stat.statId === "critRate" || stat.sourceStatId === "CritBase" ? stat.value : 0;
   const generalDamage = stat.sourceStatId === "DamageUpGeneralBase" ? stat.value : 0;
   const attributeDamage = scoreAttributeDamageValue(character, stat);
-  const weighted = attackFlat * 0.5 + attackPercent * 0.8 + critDamage + critRate * 2 + generalDamage + attributeDamage;
+  const weighted = (attackFlat * 0.1 + attackPercent) / 2 + critDamage + critRate * 2 + generalDamage + attributeDamage;
   const critOnly = critRate * 2 + critDamage;
-  return Math.trunc((Math.max(weighted, critOnly) / 2) * 10) / 10;
+  return Math.trunc(Math.max(weighted, critOnly) * 10) / 10;
 }
 
 function gearModuleScore(character: Character, modules: PlacedModule[], gearRows: ReturnType<typeof buildGearRows>) {
@@ -1120,9 +1120,9 @@ export default function BuildCardApp() {
             <div className="score-help-popover" role="tooltip">
               <strong>Score計算式</strong>
               <span>対象: Gearのメイン/サブ + Moduleのサブ</span>
-              <span>各項目: max(重み付き合計, 会心合計) / 2</span>
+              <span>各項目: max(重み付き合計, 会心合計)</span>
               <span>重み付き合計:</span>
-              <span className="score-formula-line">攻撃力x0.5 + 攻撃力%x0.8</span>
+              <span className="score-formula-line">(攻撃力x0.1 + 攻撃力%) / 2</span>
               <span className="score-formula-line">+ クリダメ + クリ率x2</span>
               <span className="score-formula-line">+ 汎用ダメ + 有効属性ダメ</span>
               <span>会心合計: クリ率x2 + クリダメ</span>
