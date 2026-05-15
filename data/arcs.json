@@ -30,7 +30,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -256,7 +255,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -482,7 +480,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -708,7 +705,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -934,7 +930,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -1160,7 +1155,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -1386,7 +1380,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -1612,7 +1605,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -1838,7 +1830,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2064,7 +2055,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2290,7 +2280,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2516,7 +2505,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2742,7 +2730,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2968,7 +2955,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -3194,7 +3180,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -3420,7 +3405,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -3646,7 +3630,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -3872,7 +3855,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -4098,7 +4080,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -4324,7 +4305,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -4550,7 +4530,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -4776,7 +4755,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5002,7 +4980,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5228,7 +5205,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5454,7 +5430,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5680,7 +5655,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5906,7 +5880,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -6132,7 +6105,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -6358,7 +6330,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -6584,7 +6555,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -6810,7 +6780,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7036,7 +7005,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7262,7 +7230,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7488,7 +7455,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7714,7 +7680,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7940,7 +7905,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -8166,7 +8130,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -8392,7 +8355,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -8618,7 +8580,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -8844,7 +8805,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -9070,7 +9030,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -9296,7 +9255,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -9522,7 +9480,6 @@
       }
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80

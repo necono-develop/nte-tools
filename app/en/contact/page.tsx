@@ -4,7 +4,7 @@ import { LegalRoute } from "@/components/LegalRoute";
 export const metadata: Metadata = {
   title: "Contact",
   alternates: {
-    canonical: "/contact",
+    canonical: "/en/contact",
     languages: {
       ja: "/contact",
       en: "/en/contact",
@@ -13,6 +13,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactPage() {
-  return <LegalRoute locale="ja" page="contact" />;
+export default function ContactEnPage() {
+  return <LegalRoute locale="en" page="contact" />;
 }

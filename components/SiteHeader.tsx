@@ -1,18 +1,40 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { localizedPath, useI18n, type Locale } from "@/lib/i18n";
 
 const X_PROFILE_URL = "https://x.com/NTE_Tools";
 const DISCORD_INVITE_URL = "https://discord.gg/TZybt3NAah";
 
 export function SiteHeader({ current }: { current?: "home" | "buildcard" | "privacy" | "terms" | "contact" }) {
+  const { locale, setLocale, t, localeLabels } = useI18n();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const switchLocale = (nextLocale: Locale) => {
+    setLocale(nextLocale);
+    router.push(localizedPath(pathname, nextLocale));
+  };
+  const href = (path: string) => localizedPath(path, locale);
+
   return (
     <nav className="site-nav" aria-label="Main navigation">
-      <Link className="site-logo" href="/">NTE Tools</Link>
+      <Link className="site-logo" href={href("/")}>NTE Tools</Link>
       <div className="site-nav-links">
-        {current !== "buildcard" ? <Link href="/buildcard">Build Card</Link> : null}
-        {current !== "privacy" ? <Link href="/privacy">Privacy</Link> : null}
-        {current !== "terms" ? <Link href="/terms">Terms</Link> : null}
-        {current !== "contact" ? <Link href="/contact">Contact</Link> : null}
+        {current !== "buildcard" ? <Link href={href("/buildcard")}>{t.nav.buildcard}</Link> : null}
+        {current !== "privacy" ? <Link href={href("/privacy")}>{t.nav.privacy}</Link> : null}
+        {current !== "terms" ? <Link href={href("/terms")}>{t.nav.terms}</Link> : null}
+        {current !== "contact" ? <Link href={href("/contact")}>{t.nav.contact}</Link> : null}
       </div>
+      <label className="site-language-select">
+        <span>{t.nav.language}</span>
+        <select value={locale} onChange={(event) => switchLocale(event.target.value as Locale)}>
+          {(["ja", "en", "zhHans"] as const).map((key) => (
+            <option key={key} value={key}>{localeLabels[key]}</option>
+          ))}
+        </select>
+      </label>
       <div className="site-social-links" aria-label="Social links">
         <a href={X_PROFILE_URL} target="_blank" rel="noreferrer" aria-label="X NTE_Tools">X</a>
         <a href={DISCORD_INVITE_URL} target="_blank" rel="noreferrer" aria-label="Discord">

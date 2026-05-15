@@ -217,7 +217,6 @@
       "zhHans": "等离子"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -756,7 +755,6 @@
       "zhHans": "气态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -1287,7 +1285,6 @@
       "zhHans": "液态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -1816,7 +1813,6 @@
       "zhHans": "聚合"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2345,7 +2341,6 @@
       "zhHans": "聚合"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -2875,7 +2870,6 @@
       "zhHans": "液态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -3374,7 +3368,6 @@
       "zhHans": "液态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -3904,7 +3897,6 @@
       "zhHans": "聚合"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -4434,7 +4426,6 @@
       "zhHans": "固态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -4963,7 +4954,6 @@
       "zhHans": "等离子"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5463,7 +5453,6 @@
       "zhHans": "固态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -5992,7 +5981,6 @@
       "zhHans": "等离子"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -6522,7 +6510,6 @@
       "zhHans": "气态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7051,7 +7038,6 @@
       "zhHans": "气态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -7582,7 +7568,6 @@
       "zhHans": "固态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -8116,7 +8101,6 @@
       "zhHans": "固态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80
@@ -8650,7 +8634,6 @@
       "zhHans": "固态"
     },
     "levelStats": {
-      "status": "local_static_extract",
       "supportedLevels": {
         "min": 1,
         "max": 80

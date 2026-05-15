@@ -78,18 +78,31 @@ function lastModifiedFor(filePath) {
 }
 
 function priorityFor(route) {
-  if (route === "/") return 1;
-  if (route === "/buildcard") return 0.9;
+  const normalizedRoute = normalizeLocaleRoute(route);
+  if (normalizedRoute === "/") return route === "/" ? 1 : 0.8;
+  if (normalizedRoute === "/buildcard") return 0.9;
   return 0.4;
 }
 
 function changeFrequencyFor(route) {
-  if (route === "/" || route === "/buildcard") return "weekly";
+  const normalizedRoute = normalizeLocaleRoute(route);
+  if (normalizedRoute === "/" || normalizedRoute === "/buildcard") return "weekly";
   return "monthly";
 }
 
 function routeWeight(route) {
-  if (route === "/") return 0;
-  if (route === "/buildcard") return 1;
+  const normalizedRoute = normalizeLocaleRoute(route);
+  if (normalizedRoute === "/") return route === "/" ? 0 : 2;
+  if (normalizedRoute === "/buildcard") return route === "/buildcard" ? 1 : 3;
   return 10;
+}
+
+function normalizeLocaleRoute(route) {
+  if (route === "/en" || route.startsWith("/en/")) {
+    return route.replace(/^\/en(?=\/|$)/, "") || "/";
+  }
+  if (route === "/zh-hans" || route.startsWith("/zh-hans/")) {
+    return route.replace(/^\/zh-hans(?=\/|$)/, "") || "/";
+  }
+  return route;
 }

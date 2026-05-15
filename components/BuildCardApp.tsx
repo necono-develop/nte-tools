@@ -14,6 +14,7 @@ import statIconsJson from "@/data/statIcons.json";
 import statsJson from "@/data/stats.json";
 import { assetPath } from "@/lib/asset";
 import { calculateStats, canPlaceModule, getArcStatsAtLevel, occupiedCells } from "@/lib/build";
+import { localizeName, statLabel, useI18n, type Locale } from "@/lib/i18n";
 import type { Arc, BuildSave, Character, Gear, GearStatOption, LocaleText, Module, ModuleShape, PlacedModule, StatBlock, StatId } from "@/lib/types";
 
 const characters = charactersJson as unknown as Character[];
@@ -57,7 +58,7 @@ const moduleSubStatOptions: ModuleStatOption[] = gearStatOptions.subStats
   }))
   .filter((row) => row.statId || statIdFromSourceStatId(row.sourceStatId));
 const statIcons = statIconsJson as unknown as { byKey: Record<string, string>; byStatId: Record<string, string>; bySourceStatId: Record<string, string> };
-const stats = statsJson as unknown as { id: keyof StatBlock; label: { ja: string }; unit: string }[];
+const stats = statsJson as unknown as { id: keyof StatBlock; label: LocaleText; unit: string }[];
 
 const STORAGE_KEY = "nte-build-card-draft-v1";
 const PENDING_BUILD_ID = "NTE-BUILD-PENDING";
@@ -83,8 +84,8 @@ function rarityRank(rarity: string) {
   return 9;
 }
 
-function sortArcsByRarityAndName(values: Arc[]) {
-  return [...values].sort((a, b) => rarityRank(a.rarity) - rarityRank(b.rarity) || (a.name.ja ?? a.id).localeCompare(b.name.ja ?? b.id, "ja"));
+function sortArcsByRarityAndName(values: Arc[], locale: Locale) {
+  return [...values].sort((a, b) => rarityRank(a.rarity) - rarityRank(b.rarity) || localizeName(a.name, locale, a.id).localeCompare(localizeName(b.name, locale, b.id), locale === "zhHans" ? "zh-Hans" : locale));
 }
 
 function normalizeGearSubStats(values?: string[]) {
@@ -254,8 +255,8 @@ function gearStatIcon(row: ReturnType<typeof buildGearRows>["rows"][number]) {
   return statIconBySourceStatId(row.option?.sourceStatId) ?? statIconByStatId(row.option?.statId);
 }
 
-function localName(value: LocaleText | undefined, fallback = "") {
-  return value?.ja ?? value?.en ?? value?.zhHans ?? fallback;
+function localName(value: LocaleText | undefined, fallback = "", locale: Locale = "ja") {
+  return localizeName(value, locale, fallback);
 }
 
 function moduleColor(rarity?: PlacedModule["rarity"]) {
@@ -360,6 +361,7 @@ function gearModuleScore(character: Character, modules: PlacedModule[], gearRows
 }
 
 export default function BuildCardApp() {
+  const { locale, t } = useI18n();
   const [characterId, setCharacterId] = useState("");
   const [characterLevel, setCharacterLevel] = useState(80);
   const [gearId, setGearId] = useState("");
@@ -377,10 +379,14 @@ export default function BuildCardApp() {
   const [hoverCell, setHoverCell] = useState<{ x: number; y: number } | null>(null);
   const [buildId, setBuildId] = useState(PENDING_BUILD_ID);
   const [comment, setComment] = useState("");
-  const [message, setMessage] = useState("盤面をクリックしてモジュールを配置");
+  const [message, setMessage] = useState("");
   const cardRef = useRef<HTMLDivElement>(null);
   const previewFrameRef = useRef<HTMLDivElement>(null);
   const [previewScale, setPreviewScale] = useState(1);
+
+  useEffect(() => {
+    setMessage((current) => current || t.build.chooseBoardModule);
+  }, [t.build.chooseBoardModule]);
 
   const character = characters.find((row) => row.id === characterId) ?? characters[0];
   const gear = gears.find((row) => row.id === gearId) ?? gears[0];
@@ -395,17 +401,18 @@ export default function BuildCardApp() {
       const key = gearBaseKey(row);
       if (!map.has(key) || row.rarity === "S") map.set(key, row);
     }
-    return [...map.entries()].map(([id, row]) => ({ id, gear: row }));
-  }, []);
+    return [...map.entries()].map(([id, row]) => ({ id, gear: row }))
+      .sort((a, b) => localName(a.gear.name, a.id, locale).localeCompare(localName(b.gear.name, b.id, locale), locale === "zhHans" ? "zh-Hans" : locale));
+  }, [locale]);
   const selectedGearRankOptions = useMemo(
     () => gears.filter((row) => gearBaseKey(row) === effectiveGearBaseId).sort((a, b) => rarityRank(a.rarity) - rarityRank(b.rarity)),
     [effectiveGearBaseId],
   );
   const compatibleArcs = useMemo(() => {
     const filtered = arcs.filter((row) => character.weaponTypeId && row.typeId === character.weaponTypeId);
-    return sortArcsByRarityAndName(filtered.length ? filtered : arcs);
-  }, [character]);
-  const arcOptions = useMemo(() => showAllArcs ? sortArcsByRarityAndName(arcs) : compatibleArcs, [showAllArcs, compatibleArcs]);
+    return sortArcsByRarityAndName(filtered.length ? filtered : arcs, locale);
+  }, [character, locale]);
+  const arcOptions = useMemo(() => showAllArcs ? sortArcsByRarityAndName(arcs, locale) : compatibleArcs, [showAllArcs, compatibleArcs, locale]);
   const arcStats = useMemo(() => getArcStatsAtLevel(arc, arcLevel), [arc, arcLevel]);
   const gearRows = useMemo(() => buildGearRows(gear, gearMainStatId, gearSubStatIds, gearLevel), [gear, gearMainStatId, gearSubStatIds, gearLevel]);
   const finalStats = useMemo(() => calculateStats(character, gear, arc, arcLevel, modules, moduleShapes, gearRows.bonuses, characterLevel), [character, gear, arc, arcLevel, modules, gearRows, characterLevel]);
@@ -466,10 +473,10 @@ export default function BuildCardApp() {
       setModules((saved.modules ?? []).map(normalizePlacedModule));
       setComment(saved.comment ?? "");
       setBuildId(saved.meta?.buildId ?? createBuildId());
-      setMessage("ローカル保存された下書きを復元しました");
+      setMessage(t.build.restored);
     } catch {
       setBuildId(createBuildId());
-      setMessage("保存データを読み込めませんでした");
+      setMessage(t.build.loadFailed);
     }
   }, []);
 
@@ -538,7 +545,7 @@ export default function BuildCardApp() {
     const existing = occupied.get(`${x}:${y}`);
     if (existing) {
       setSelectedModuleId(existing.id);
-      setMessage("配置済みモジュールを選択しました");
+      setMessage(t.build.selectedModule);
       return;
     }
 
@@ -576,7 +583,7 @@ export default function BuildCardApp() {
     }
     setModules((current) => current.map((row) => row.id === moduleId ? next : row));
     setSelectedModuleId(moduleId);
-    setMessage("モジュールを移動しました");
+    setMessage(t.build.selectedModule);
   }
 
   function nudgeSelectedModule(dx: number, dy: number) {
@@ -620,7 +627,7 @@ export default function BuildCardApp() {
   function removeModule(moduleId: string) {
     setModules((current) => current.filter((row) => row.id !== moduleId));
     setSelectedModuleId((current) => current === moduleId ? null : current);
-    setMessage("モジュールを削除しました");
+    setMessage(t.build.delete);
   }
 
   function rotateSelected() {
@@ -633,7 +640,7 @@ export default function BuildCardApp() {
       return;
     }
     setModules((current) => current.map((row) => row.id === next.id ? next : row));
-    setMessage("モジュールを回転しました");
+    setMessage(t.build.rotate);
   }
 
   function removeSelected() {
@@ -748,7 +755,7 @@ export default function BuildCardApp() {
       meta: { buildId: nextBuildId, createdAt, updatedAt: now },
     };
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    setMessage("ローカルに保存しました");
+    setMessage(t.build.saved);
   }
 
   function resetBuild() {
@@ -764,7 +771,7 @@ export default function BuildCardApp() {
     setGearSubStatIds(normalizeGearSubStats());
     setArcLevel(80);
     setComment("");
-    setMessage("ビルドをリセットしました");
+    setMessage(t.build.resetDone);
   }
 
   async function downloadBuildPng() {
@@ -782,9 +789,9 @@ export default function BuildCardApp() {
   }
 
   async function exportPng() {
-    setMessage("PNGを書き出しています");
+    setMessage(t.build.exporting);
     await downloadBuildPng();
-    setMessage("PNGを書き出しました");
+    setMessage(t.build.exported);
   }
 
   function postToX() {
@@ -793,7 +800,7 @@ export default function BuildCardApp() {
       url: SITE_URL,
     });
     const intentUrl = `https://twitter.com/intent/tweet?${params.toString()}`;
-    setMessage("Xの投稿画面を開きます");
+    setMessage(t.build.openX);
     window.open(intentUrl, "_blank", "noopener,noreferrer");
   }
 
@@ -818,7 +825,7 @@ export default function BuildCardApp() {
         <div className="app-title">
           <div>
             <p className="eyebrow">NTE BUILD CARD</p>
-            <h1>ビルドカード作成</h1>
+            <h1>{t.build.title}</h1>
           </div>
           <div className="status-pill">{message}</div>
         </div>
@@ -827,18 +834,18 @@ export default function BuildCardApp() {
           <div className="input-section-head">
             <div>
               <span>01</span>
-              <h2>基本設定</h2>
+              <h2>{t.build.basicSettings}</h2>
             </div>
-            <p>キャラクターとArcを選択</p>
+            <p>{t.build.chooseCharacterArc}</p>
           </div>
           <div className="control-grid paired-control-grid">
             <div className="input-pair-card">
               <div className="pair-title">
-                <AssetChip image={character.assets.icon} title="Character" subtitle={characterCombatSummary(character)} />
+                <AssetChip image={character.assets.icon} title={t.build.character} subtitle={characterCombatSummary(character, locale, t.build)} />
               </div>
               <div className="pair-fields">
-                <SelectCard label="キャラクター" value={characterId} onChange={setCharacterId} placeholder="-- キャラを選択してください --">
-                  {characters.map((row) => <option key={row.id} value={row.id}>{row.name.ja}</option>)}
+                <SelectCard label={t.build.character} value={characterId} onChange={setCharacterId} placeholder={t.build.selectCharacter}>
+                  {characters.map((row) => <option key={row.id} value={row.id}>{localName(row.name, row.id, locale)}</option>)}
                 </SelectCard>
                 <LevelInput label="Lv." min={1} max={80} value={characterLevel} onCommit={setCharacterLevel} />
               </div>
@@ -846,18 +853,18 @@ export default function BuildCardApp() {
 
             <div className="input-pair-card">
               <div className="pair-title">
-                <AssetChip image={arc.assets.icon} title="Arc" subtitle={`${arc.rarity} / ${formatArcStats(arcStats)}`} />
+                <AssetChip image={arc.assets.icon} title="Arc" subtitle={`${arc.rarity} / ${formatArcStats(arcStats, locale, t.build)}`} />
               </div>
               <div className="pair-fields arc-pair-fields">
-                <SelectCard label="Arc" value={arcId} onChange={setArcId} placeholder="-- Arcを選択してください --">
-                  {arcOptions.map((row) => <option key={row.id} value={row.id}>{row.name.ja}</option>)}
+                <SelectCard label="Arc" value={arcId} onChange={setArcId} placeholder={t.build.selectArc}>
+                  {arcOptions.map((row) => <option key={row.id} value={row.id}>{localName(row.name, row.id, locale)}</option>)}
                 </SelectCard>
                 <LevelInput label="Lv." min={1} max={80} value={arcLevel} onCommit={setArcLevel} />
                 <div className="select-card compact-check">
                   <span>Filter</span>
                   <label>
                     <input type="checkbox" checked={showAllArcs} onChange={(event) => setShowAllArcs(event.target.checked)} />
-                    全Arc表示
+                    {t.build.showAllArcs}
                   </label>
                 </div>
               </div>
@@ -876,14 +883,14 @@ export default function BuildCardApp() {
           <div className="gear-config-grid">
             <div className="input-pair-card gear-identity-card">
               <div className="pair-title">
-                <AssetChip image={gear.assets.icon} title="Gear" subtitle={gear.name.ja ?? gear.id} />
+                <AssetChip image={gear.assets.icon} title="Gear" subtitle={localName(gear.name, gear.id, locale)} />
               </div>
               <div className="gear-identity-fields">
-                <SelectCard label="ギア名" value={selectedGearBaseId} onChange={(value) => updateGear(value)} placeholder="-- Gearを選択してください --">
-                  {gearBaseOptions.map((row) => <option key={row.id} value={row.id}>{row.gear.name.ja}</option>)}
+                <SelectCard label={t.build.gearName} value={selectedGearBaseId} onChange={(value) => updateGear(value)} placeholder={t.build.selectGear}>
+                  {gearBaseOptions.map((row) => <option key={row.id} value={row.id}>{localName(row.gear.name, row.id, locale)}</option>)}
                 </SelectCard>
                 <div className="gear-rank-level-row">
-                  <SelectCard label="ランク" value={gear.rarity} onChange={(value) => updateGear(selectedGearBaseId, value)}>
+                  <SelectCard label={t.build.rank} value={gear.rarity} onChange={(value) => updateGear(selectedGearBaseId, value)}>
                     {selectedGearRankOptions.map((row) => <option key={row.id} value={row.rarity}>{row.rarity}</option>)}
                   </SelectCard>
                   <LevelInput label="Lv." min={0} max={20} value={gearLevel} onCommit={setGearLevel} />
@@ -893,16 +900,16 @@ export default function BuildCardApp() {
 
             <div className="input-pair-card gear-effects-card">
               <div className="pair-title text-title">
-                <strong>ステータス設定</strong>
-                <span>{gearRows.mainStat.option ? `Main ${shortGearStatLabel(gearRows.mainStat)} / ${formatGearStatValue(gearRows.mainStat)}` : "Main 未選択"}</span>
+                <strong>{t.build.statsSettings}</strong>
+                <span>{gearRows.mainStat.option ? `Main ${shortGearStatLabel(gearRows.mainStat)} / ${formatGearStatValue(gearRows.mainStat)}` : t.build.mainUnselected}</span>
               </div>
               <div className="gear-stat-inputs">
-                <SelectCard label="メイン" value={gearMainStatId} onChange={setGearMainStatId} placeholder="-- 選択してください --" placeholderDisabled={false}>
-                  {gearStatOptions.mainStats.map((row) => <option key={row.sourceStatId} value={row.sourceStatId}>{row.names?.ja ?? row.sourceStatId}</option>)}
+                <SelectCard label={t.build.main} value={gearMainStatId} onChange={setGearMainStatId} placeholder={t.build.select} placeholderDisabled={false}>
+                  {gearStatOptions.mainStats.map((row) => <option key={row.sourceStatId} value={row.sourceStatId}>{localName(row.names, row.sourceStatId, locale)}</option>)}
                 </SelectCard>
                 {gearRows.subStats.map((row, index) => (
-                  <SelectCard key={index} label={`サブ ${index + 1}`} value={gearSubStatIds[index] ?? ""} onChange={(value) => updateGearSubStat(index, value)} placeholder="-- 選択してください --" placeholderDisabled={false}>
-                    {gearStatOptions.subStats.map((option) => <option key={option.sourceStatId} value={option.sourceStatId}>{option.names?.ja ?? option.sourceStatId}</option>)}
+                  <SelectCard key={index} label={`${t.build.sub} ${index + 1}`} value={gearSubStatIds[index] ?? ""} onChange={(value) => updateGearSubStat(index, value)} placeholder={t.build.select} placeholderDisabled={false}>
+                    {gearStatOptions.subStats.map((option) => <option key={option.sourceStatId} value={option.sourceStatId}>{localName(option.names, option.sourceStatId, locale)}</option>)}
                   </SelectCard>
                 ))}
               </div>
@@ -916,12 +923,12 @@ export default function BuildCardApp() {
               <span>03</span>
               <h2>Modules</h2>
             </div>
-            <p>{modules.length}/{character.moduleBoard.rules.maxModules} 配置中</p>
+            <p>{modules.length}/{character.moduleBoard.rules.maxModules} {t.build.placed}</p>
           </div>
           <div className="work-area">
             <div className="board-section">
               <div className="section-head">
-                <h2>モジュール配置</h2>
+                <h2>{t.build.modulePlacement}</h2>
               </div>
             <div className="module-board" style={{ gridTemplateColumns: `repeat(${character.moduleBoard.width}, minmax(0, 1fr))` }}>
               {Array.from({ length: character.moduleBoard.width * character.moduleBoard.height }, (_, index) => {
@@ -959,7 +966,7 @@ export default function BuildCardApp() {
                       <button
                         type="button"
                         className="cell-delete"
-                        title="削除"
+                        title={t.build.delete}
                         onClick={(event) => {
                           event.stopPropagation();
                           removeModule(module.id);
@@ -977,16 +984,16 @@ export default function BuildCardApp() {
             <aside className="side-editor">
             <div className="module-side-card">
               <div className="section-head">
-                <h2>追加モジュール</h2>
+                <h2>{t.build.addModule}</h2>
                 <span>{moduleRarity}</span>
               </div>
-              <SelectCard label="ランク" value={moduleRarity} onChange={(value) => setModuleRarity(value as PlacedModule["rarity"])}>
+              <SelectCard label={t.build.rank} value={moduleRarity} onChange={(value) => setModuleRarity(value as PlacedModule["rarity"])}>
                 {(["S", "A", "B"] as const).map((rarity) => <option key={rarity} value={rarity}>{rarity}</option>)}
               </SelectCard>
               <div className="shape-preview">
                 <img src={assetPath(selectedShape.asset)} alt="" />
               <div>
-                <strong>{localName(selectedShape.names, selectedShape.name)}</strong>
+                <strong>{localName(selectedShape.names, selectedShape.name, locale)}</strong>
               </div>
             </div>
               <div className="shape-palette">
@@ -1002,7 +1009,7 @@ export default function BuildCardApp() {
                       setBoardDrag(null);
                       setHoverCell(null);
                     }}
-                    title={localName(row.names, row.name)}
+                    title={localName(row.names, row.name, locale)}
                   >
                     <img src={assetPath(row.asset)} alt="" />
                   </button>
@@ -1012,14 +1019,14 @@ export default function BuildCardApp() {
 
             <div className="module-side-card">
               <div className="section-head">
-                <h2>選択中</h2>
-                {selectedModule ? <span>{selectedModule.rarity} Lv.{selectedModule.level}</span> : <span>なし</span>}
+                <h2>{t.build.selected}</h2>
+                {selectedModule ? <span>{selectedModule.rarity} Lv.{selectedModule.level}</span> : <span>{t.build.none}</span>}
               </div>
               {selectedModule ? (
                 <div className="module-form">
-                  <LevelInput label="レベル" min={0} max={20} value={selectedModule.level} onCommit={updateSelectedModuleLevel} className="" />
+                  <LevelInput label={t.build.level} min={0} max={20} value={selectedModule.level} onCommit={updateSelectedModuleLevel} className="" />
                   <label>
-                    ランク
+                    {t.build.rank}
                     <select value={selectedModule.rarity} onChange={(event) => updateSelectedModuleRarity(event.target.value as PlacedModule["rarity"])}>
                       {(["S", "A", "B"] as const).map((rarity) => <option key={rarity} value={rarity}>{rarity}</option>)}
                     </select>
@@ -1027,7 +1034,7 @@ export default function BuildCardApp() {
                   <div className="module-fixed-stats">
                     {selectedModule.mainStats.map((row) => (
                       <div key={row.sourceStatId ?? row.statId}>
-                        <span>{stats.find((stat) => stat.id === row.statId)?.label.ja ?? row.statId}</span>
+                        <span>{localName(stats.find((stat) => stat.id === row.statId)?.label, row.statId, locale)}</span>
                         <strong>{formatNumber(row.value)}</strong>
                       </div>
                     ))}
@@ -1039,21 +1046,21 @@ export default function BuildCardApp() {
                     const row = option ? moduleSubStatsFromSourceIds([selectedSourceId], selectedModule.rarity, shapeSize)[0] : undefined;
                   return (
                     <label key={index}>
-                      サブ {index + 1}
+                      {t.build.sub} {index + 1}
                       <details className="module-sub-picker">
                         <summary className="module-sub-trigger">
-                          {option?.names?.ja ?? "-- 選択してください --"}
+                          {localName(option?.names, t.build.select, locale)}
                         </summary>
                         <div className="module-sub-menu">
                           <button type="button" className={!selectedSourceId ? "selected" : ""} onClick={(event) => {
                             updateSelectedModuleSubStat(index, "");
                             event.currentTarget.closest("details")?.removeAttribute("open");
-                          }}>-- 選択してください --</button>
+                          }}>{t.build.select}</button>
                           {moduleSubStatOptions.map((candidate) => (
                             <button type="button" key={candidate.sourceStatId} className={selectedSourceId === candidate.sourceStatId ? "selected" : ""} onClick={(event) => {
                               updateSelectedModuleSubStat(index, candidate.sourceStatId);
                               event.currentTarget.closest("details")?.removeAttribute("open");
-                            }}>{candidate.names?.ja ?? candidate.sourceStatId}</button>
+                            }}>{localName(candidate.names, candidate.sourceStatId, locale)}</button>
                           ))}
                         </div>
                       </details>
@@ -1061,23 +1068,23 @@ export default function BuildCardApp() {
                     </label>
                   );
                 })}
-                  <div className="module-move-pad" aria-label="モジュール移動">
+                  <div className="module-move-pad" aria-label={t.build.moveModule}>
                     <span />
-                    <button type="button" onClick={() => nudgeSelectedModule(0, -1)} title="上へ移動"><ArrowUp size={18} /></button>
+                    <button type="button" onClick={() => nudgeSelectedModule(0, -1)} title={t.build.moveUp}><ArrowUp size={18} /></button>
                     <span />
-                    <button type="button" onClick={() => nudgeSelectedModule(-1, 0)} title="左へ移動"><ArrowLeft size={18} /></button>
-                    <button type="button" onClick={rotateSelected} title="回転"><RotateCw size={18} /></button>
-                    <button type="button" onClick={() => nudgeSelectedModule(1, 0)} title="右へ移動"><ArrowRight size={18} /></button>
+                    <button type="button" onClick={() => nudgeSelectedModule(-1, 0)} title={t.build.moveLeft}><ArrowLeft size={18} /></button>
+                    <button type="button" onClick={rotateSelected} title={t.build.rotate}><RotateCw size={18} /></button>
+                    <button type="button" onClick={() => nudgeSelectedModule(1, 0)} title={t.build.moveRight}><ArrowRight size={18} /></button>
                     <span />
-                    <button type="button" onClick={() => nudgeSelectedModule(0, 1)} title="下へ移動"><ArrowDown size={18} /></button>
+                    <button type="button" onClick={() => nudgeSelectedModule(0, 1)} title={t.build.moveDown}><ArrowDown size={18} /></button>
                     <span />
                   </div>
                   <div className="icon-row">
-                    <button type="button" className="icon-button danger" onClick={removeSelected} title="削除"><Trash2 size={18} /></button>
+                    <button type="button" className="icon-button danger" onClick={removeSelected} title={t.build.delete}><Trash2 size={18} /></button>
                   </div>
                 </div>
               ) : (
-                <p className="muted">盤面上のブロックを選択すると詳細を編集できます。</p>
+                <p className="muted">{t.build.chooseBoardModule}</p>
               )}
             </div>
             </aside>
@@ -1088,24 +1095,24 @@ export default function BuildCardApp() {
           <div className="input-section-head">
             <div>
               <span>04</span>
-              <h2>保存 / 出力</h2>
+              <h2>{t.build.saveOutput}</h2>
             </div>
-            <p>下書き保存と画像書き出し</p>
+            <p>{t.build.saveOutputSub}</p>
           </div>
           <label className="comment-card">
-            <span>カードコメント</span>
+            <span>{t.build.comment}</span>
             <textarea
               value={comment}
               onChange={(event) => setComment(event.target.value.slice(0, 48))}
-              placeholder="コメントを入力"
+              placeholder={t.build.commentPlaceholder}
               rows={2}
             />
           </label>
           <div className="action-row">
-            <button type="button" onClick={saveLocal}><Save size={18} />保存</button>
-            <button type="button" onClick={resetBuild}><X size={18} />リセット</button>
+            <button type="button" onClick={saveLocal}><Save size={18} />{t.build.save}</button>
+            <button type="button" onClick={resetBuild}><X size={18} />{t.build.reset}</button>
             <button type="button" className="primary" onClick={exportPng}><Download size={18} />PNG</button>
-            <button type="button" className="social-action x-action" onClick={postToX}><Share2 size={18} />Xでポスト</button>
+            <button type="button" className="social-action x-action" onClick={postToX}><Share2 size={18} />{t.build.postX}</button>
           </div>
         </section>
       </section>
@@ -1114,21 +1121,21 @@ export default function BuildCardApp() {
         <div className="preview-toolbar">
           <span>4:5 Preview</span>
           <div className="score-help">
-            <button type="button" aria-label="Score計算式">
+            <button type="button" aria-label={t.build.scoreFormula}>
               <Info size={16} />
             </button>
             <div className="score-help-popover" role="tooltip">
-              <strong>Score計算式</strong>
-              <span>対象: Gearのメイン/サブ + Moduleのサブ</span>
-              <span>各項目: max(重み付き合計, 会心合計)</span>
-              <span>重み付き合計:</span>
-              <span className="score-formula-line">(攻撃力x0.1 + 攻撃力%) / 2</span>
-              <span className="score-formula-line">+ クリダメ + クリ率x2</span>
-              <span className="score-formula-line">+ 汎用ダメ + 有効属性ダメ</span>
-              <span>会心合計: クリ率x2 + クリダメ</span>
-              <span>小数第1位で切り捨て</span>
-              <span>属性ダメージはキャラクター属性と一致するものだけ加算</span>
-            </div>
+
+              <strong>{t.build.scoreFormula}</strong>
+              <span>{t.build.scoreTarget}</span>
+              <span>{t.build.scoreEach}</span>
+              <span>{t.build.weighted}</span>
+              <span className="score-formula-line">{t.build.scoreAttack}</span>
+              <span className="score-formula-line">{t.build.scoreCrit}</span>
+              <span className="score-formula-line">{t.build.scoreDamage}</span>
+              <span>{t.build.scoreCritOnly}</span>
+              <span>{t.build.scoreRound}</span>
+              <span>{t.build.scoreAttr}</span>            </div>
           </div>
         </div>
         <div
@@ -1153,6 +1160,8 @@ export default function BuildCardApp() {
               gearRows={gearRows}
               buildId={buildId}
               comment={comment}
+              locale={locale}
+              labels={t.build}
             />
           </div>
         </div>
@@ -1243,20 +1252,25 @@ function AssetChip({ image, title, subtitle }: { image: string; title: string; s
   );
 }
 
-function characterAttributeLabel(character: Character) {
-  return character.attribute ? `${character.attribute}属性` : "属性未確認";
+type BuildLabels = ReturnType<typeof useI18n>["t"]["build"];
+
+function characterAttributeLabel(character: Character, locale: Locale, labels: BuildLabels) {
+  const name = localName(character.attributeNames, character.attribute, locale);
+  if (!name) return labels.unknownAttribute;
+  return locale === "en" ? name : `${name}${labels.attributeSuffix}`;
 }
 
-function characterArcTypeLabel(character: Character) {
-  return character.arcType ?? "弧盤未確認";
+function characterArcTypeLabel(character: Character, locale: Locale, labels: BuildLabels) {
+  return localName(character.weaponTypeNames, character.arcType ?? character.weaponType ?? "", locale) || labels.unknownArcType;
 }
 
-function characterCombatSummary(character: Character) {
-  return `${characterAttributeLabel(character)} / ${characterArcTypeLabel(character)}`;
+function characterCombatSummary(character: Character, locale: Locale, labels: BuildLabels) {
+  return `${characterAttributeLabel(character, locale, labels)} / ${characterArcTypeLabel(character, locale, labels)}`;
 }
 
-function characterAttributeDamageLabel(character: Character) {
-  return character.attribute ? `${character.attribute}異能ダメージ強化` : "属性異能ダメージ強化";
+function characterAttributeDamageLabel(character: Character, locale: Locale, labels: BuildLabels) {
+  const name = localName(character.attributeNames, character.attribute, locale);
+  return name ? `${name}${labels.attributeDamageSuffix}` : labels.unknownAttributeDamage;
 }
 
 const BuildCard = forwardRef<HTMLDivElement, {
@@ -1271,13 +1285,15 @@ const BuildCard = forwardRef<HTMLDivElement, {
   gearRows: ReturnType<typeof buildGearRows>;
   buildId: string;
   comment: string;
+  locale: Locale;
+  labels: BuildLabels;
 }>(function BuildCard(
-  { character, characterLevel, gear, arc, modules, moduleShapes, finalStats, arcLevel, gearRows, buildId, comment },
+  { character, characterLevel, gear, arc, modules, moduleShapes, finalStats, arcLevel, gearRows, buildId, comment, locale, labels },
   ref: Ref<HTMLDivElement>,
 ) {
-  const attributeLabel = characterAttributeLabel(character);
-  const arcTypeLabel = characterArcTypeLabel(character);
-  const attributeDamageLabel = characterAttributeDamageLabel(character);
+  const attributeLabel = characterAttributeLabel(character, locale, labels);
+  const arcTypeLabel = characterArcTypeLabel(character, locale, labels);
+  const attributeDamageLabel = characterAttributeDamageLabel(character, locale, labels);
   const gearModuleStats = gearModuleTotals(modules, gearRows);
   const score = gearModuleScore(character, modules, gearRows);
   const moduleBoardCells = new Map(character.moduleBoard.cells.map((cell) => [`${cell.x}:${cell.y}`, cell]));
@@ -1331,33 +1347,33 @@ const BuildCard = forwardRef<HTMLDivElement, {
           <div className="character-block">
             <div>
               <span className="accent-rule" />
-              <h3>{character.name.ja}</h3>
+              <h3>{localName(character.name, character.slug, locale)}</h3>
             </div>
             <div className="level-badge">Lv.{characterLevel}</div>
           </div>
 
           <div className="trait-grid">
-            <InfoPill label="属性" value={attributeLabel} />
-            <InfoPill label="弧盤" value={arcTypeLabel} />
+            <InfoPill label={labels.attribute} value={attributeLabel} />
+            <InfoPill label={labels.arcType} value={arcTypeLabel} />
           </div>
 
           <div className="card-panel arc-panel">
             <PanelTitle title="Arc" />
             <div className="arc-grid">
-              <ArcFeature arc={arc} arcLevel={arcLevel} />
+              <ArcFeature arc={arc} arcLevel={arcLevel} locale={locale} />
             </div>
           </div>
 
           <div className="card-panel stat-panel-card">
             <PanelTitle title="Main Stats" />
             <StatLine iconPath={statIconByKey("hp")} label="HP" value={formatNumber(finalStats.hp)} />
-            <StatLine iconPath={statIconByKey("attack")} label="攻撃力" value={formatNumber(finalStats.attack)} />
-            <StatLine iconPath={statIconByKey("defense")} label="防御力" value={formatNumber(finalStats.defense)} />
-            <StatLine iconPath={statIconByKey("critRate")} label="クリティカル率" value={`${finalStats.critRate}%`} />
-            <StatLine iconPath={statIconByKey("critDamage")} label="クリティカルダメージ" value={`${finalStats.critDamage}%`} />
-            <StatLine iconPath={statIconByKey("chargeEfficiency")} label="チャージ効率" value={`${formatNumber(finalStats.chargeEfficiency)}%`} />
-            <StatLine iconPath={statIconByKey("cyclePower")} label="連環パワー" value={formatIntegerNumber(gearModuleStats.cyclePower)} />
-            <StatLine iconPath={statIconByKey("generalDamage")} label="汎用ダメージ強化" value={`${formatNumber(finalStats.generalDamage)}%`} />
+            <StatLine iconPath={statIconByKey("attack")} label={labels.attack} value={formatNumber(finalStats.attack)} />
+            <StatLine iconPath={statIconByKey("defense")} label={labels.defense} value={formatNumber(finalStats.defense)} />
+            <StatLine iconPath={statIconByKey("critRate")} label={labels.critRate} value={`${finalStats.critRate}%`} />
+            <StatLine iconPath={statIconByKey("critDamage")} label={labels.critDamage} value={`${finalStats.critDamage}%`} />
+            <StatLine iconPath={statIconByKey("chargeEfficiency")} label={labels.chargeEfficiency} value={`${formatNumber(finalStats.chargeEfficiency)}%`} />
+            <StatLine iconPath={statIconByKey("cyclePower")} label={labels.cyclePower} value={formatIntegerNumber(gearModuleStats.cyclePower)} />
+            <StatLine iconPath={statIconByKey("generalDamage")} label={labels.generalDamage} value={`${formatNumber(finalStats.generalDamage)}%`} />
             <StatLine iconPath={statIconByKey("attributeDamage")} label={attributeDamageLabel} value={`${formatNumber(finalStats.attributeDamage)}%`} />
           </div>
         </div>
@@ -1368,7 +1384,7 @@ const BuildCard = forwardRef<HTMLDivElement, {
           <PanelTitle title="Gear / Modules" />
           <div className="gear-modules-layout">
             <div className="gear-detail-card">
-              <GearFeature gear={gear} rows={gearRows} />
+              <GearFeature gear={gear} rows={gearRows} locale={locale} />
             </div>
             <div className="module-board-wrap">
               <div
@@ -1400,8 +1416,8 @@ const BuildCard = forwardRef<HTMLDivElement, {
                 <span>Score</span>
                 <strong>{formatScore(score)}</strong>
               </div>
-              <StatLine iconPath={statIconByKey("cyclePower")} label="連環パワー" value={formatIntegerNumber(gearModuleStats.cyclePower)} />
-              <StatLine iconPath={statIconByKey("chargeEfficiency")} label="チャージ効率" value={`${formatNumber(gearModuleStats.chargeEfficiency)}%`} />
+              <StatLine iconPath={statIconByKey("cyclePower")} label={labels.cyclePower} value={formatIntegerNumber(gearModuleStats.cyclePower)} />
+              <StatLine iconPath={statIconByKey("chargeEfficiency")} label={labels.chargeEfficiency} value={`${formatNumber(gearModuleStats.chargeEfficiency)}%`} />
             </div>
           </div>
         </div>
@@ -1410,7 +1426,7 @@ const BuildCard = forwardRef<HTMLDivElement, {
       <footer className="showcase-footer">
         <div>
           <strong>NTE Tools</strong>
-          <span>ビルド検索・比較・シミュレーション</span>
+          <span>{labels.toolsSub}</span>
         </div>
         <div className="comment-strip">{comment.trim()}</div>
         <img className="qr-code" src={assetPath(QR_IMAGE_PATH)} alt="nte-tools.com QR code" />
@@ -1437,13 +1453,13 @@ function InfoPill({ label, value }: { label: string; value: string }) {
   );
 }
 
-function GearFeature({ gear, rows }: { gear: Gear; rows: ReturnType<typeof buildGearRows> }) {
+function GearFeature({ gear, rows, locale }: { gear: Gear; rows: ReturnType<typeof buildGearRows>; locale: Locale }) {
   return (
     <div className="gear-feature">
       <div className="rarity">{gear.rarity}</div>
       <img src={assetPath(gear.assets.icon)} alt="" />
       <div className="gear-feature-body">
-        <strong>{gear.name.ja ?? gear.id}</strong>
+        <strong>{localName(gear.name, gear.id, locale)}</strong>
         <GearStatDisplay label="Main" row={rows.mainStat} />
         {rows.subStats.map((row, index) => <GearStatDisplay key={index} label={`Sub ${index + 1}`} row={row} />)}
       </div>
@@ -1458,7 +1474,7 @@ function GearStatDisplay({ label, row }: { label: string; row: ReturnType<typeof
   return (
     <div className="gear-stat-row">
       <span title={label}><StatIcon iconPath={gearStatIcon(row)} /></span>
-      <em title={row.option?.names?.ja ?? row.option?.sourceStatId ?? "-"}>{shortGearStatLabel(row)}</em>
+      <em title={row.option?.sourceStatId ?? "-"}>{shortGearStatLabel(row)}</em>
       <strong>{formatGearStatValue(row)}</strong>
     </div>
   );
@@ -1475,14 +1491,14 @@ function MiniFeature({ image, title, caption, rarity, variant }: { image: string
   );
 }
 
-function ArcFeature({ arc, arcLevel }: { arc: Arc; arcLevel: number }) {
+function ArcFeature({ arc, arcLevel, locale }: { arc: Arc; arcLevel: number; locale: Locale }) {
   const statRows = buildArcStatRows(arc, arcLevel).slice(0, 2);
   return (
     <div className="mini-feature arc-feature">
       <div className="rarity">{arc.rarity}</div>
       <div className="arc-level-badge">Lv. {arcLevel}</div>
       <img src={assetPath(arc.assets.icon)} alt="" />
-      <strong>{arc.name.ja ?? arc.id}</strong>
+      <strong>{localName(arc.name, arc.id, locale)}</strong>
       <div className="arc-feature-stats" aria-label="Arc stats">
         {statRows.map((row) => (
           <div key={row.statId} className="arc-stat-badge">
@@ -1551,28 +1567,16 @@ function clampCharacterLevel(value: number) {
   return Math.max(1, Math.min(80, Math.round(value)));
 }
 
-function formatArcStats(values: Partial<Record<StatId, number>>) {
-  const labels: Partial<Record<StatId, string>> = {
-    hp: "HP",
-    attack: "攻撃力",
-    defense: "防御力",
-    critRate: "会心率",
-    critDamage: "会心ダメ",
-  };
+function formatArcStats(values: Partial<Record<StatId, number>>, locale: Locale, labels: BuildLabels) {
   const percentStats = new Set<StatId>(["critRate", "critDamage", "chargeEfficiency", "hpPercent", "attackPercent", "defensePercent"]);
   const entries = (Object.entries(values) as [StatId, number][])
     .filter(([, value]) => Number.isFinite(value))
-    .map(([key, value]) => `${arcStatLabel(key, labels)} ${formatNumber(value)}${percentStats.has(key) ? "%" : ""}`);
-  return entries.length > 0 ? entries.join(" / ") : "未取得";
+    .map(([key, value]) => `${arcStatLabel(key, locale)} ${formatNumber(value)}${percentStats.has(key) ? "%" : ""}`);
+  return entries.length > 0 ? entries.join(" / ") : labels.unavailable;
 }
 
-function arcStatLabel(statId: StatId, labels: Partial<Record<StatId, string>>) {
-  if (statId === "hpPercent") return "HP%";
-  if (statId === "attackPercent") return "攻撃力%";
-  if (statId === "defensePercent") return "防御力%";
-  if (statId === "chargeEfficiency") return "チャージ効率";
-  if (statId === "unbalIntensity") return "連環パワー";
-  return labels[statId] ?? statId;
+function arcStatLabel(statId: StatId, locale: Locale) {
+  return statLabel(statId, locale);
 }
 
 function formatArcStatValue(statId: StatId, value: number, isPercent = false) {

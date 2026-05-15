@@ -147,6 +147,35 @@ a {
   gap: 7px;
 }
 
+.site-language-select {
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #11151b;
+  padding: 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.site-language-select select {
+  min-width: 92px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  outline: none;
+}
+
+.site-language-select option {
+  background: #11151b;
+  color: var(--text);
+}
+
 .site-social-links a {
   width: 34px;
   height: 34px;

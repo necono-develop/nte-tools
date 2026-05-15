@@ -4,7 +4,7 @@ import { LegalRoute } from "@/components/LegalRoute";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   alternates: {
-    canonical: "/privacy",
+    canonical: "/zh-hans/privacy",
     languages: {
       ja: "/privacy",
       en: "/en/privacy",
@@ -13,6 +13,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PrivacyPage() {
-  return <LegalRoute locale="ja" page="privacy" />;
+export default function PrivacyZhHansPage() {
+  return <LegalRoute locale="zhHans" page="privacy" />;
 }
