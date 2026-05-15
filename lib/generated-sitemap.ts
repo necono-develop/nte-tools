@@ -6,91 +6,91 @@ export const SITE_URL = "https://nte-tools.com";
 export const SITE_ROUTES = [
   {
     "route": "/",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 1,
     "changeFrequency": "weekly"
   },
   {
     "route": "/buildcard",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.9,
     "changeFrequency": "weekly"
   },
   {
     "route": "/en",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.8,
     "changeFrequency": "weekly"
   },
   {
     "route": "/zh-hans",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.8,
     "changeFrequency": "weekly"
   },
   {
     "route": "/en/buildcard",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.9,
     "changeFrequency": "weekly"
   },
   {
     "route": "/zh-hans/buildcard",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.9,
     "changeFrequency": "weekly"
   },
   {
     "route": "/contact",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/en/contact",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/en/privacy",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/en/terms",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/privacy",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/terms",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/zh-hans/contact",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/zh-hans/privacy",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   },
   {
     "route": "/zh-hans/terms",
-    "lastModified": "2026-05-15",
+    "lastModified": "2026-05-16",
     "priority": 0.4,
     "changeFrequency": "monthly"
   }
