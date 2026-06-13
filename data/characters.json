@@ -5738,6 +5738,504 @@
     }
   },
   {
+    "id": "char_1004",
+    "slug": "lacrimosa",
+    "name": {
+      "ja": "レクイエム",
+      "en": "Lacrimosa",
+      "zhHans": "安魂曲"
+    },
+    "rarity": "S",
+    "element": "闇",
+    "role": "アタッカー",
+    "assets": {
+      "icon": "assets/characters/lacrimosa/icon.webp",
+      "portrait": "assets/characters/lacrimosa/portrait.webp",
+      "card": "assets/characters/lacrimosa/card.webp"
+    },
+    "fashionPortraits": [
+      "assets/characters/lacrimosa/fashion/portrait_01.webp"
+    ],
+    "theme": {
+      "primary": "#f05a7b",
+      "secondary": "#ffc7d4",
+      "deep": "#240f16",
+      "accent": "#ffffff"
+    },
+    "baseStats": {
+      "chargeEfficiency": 100,
+      "unbalIntensity": 0,
+      "critRate": 5,
+      "critDamage": 50
+    },
+    "moduleBoard": {
+      "width": 5,
+      "height": 4,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        }
+      ],
+      "rules": {
+        "allowRotation": true,
+        "maxModules": 10
+      },
+      "ownerGridCount": 3,
+      "specialization": {
+        "typeName": {
+          "ja": "ギアステータス",
+          "en": "Console Attributes",
+          "zhHans": "空幕属性"
+        },
+        "description": {
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
+          "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
+        },
+        "specialDescription": {
+          "ja": "Ⅲ型特化",
+          "en": "Type III Specialization",
+          "zhHans": "Ⅲ型特化"
+        },
+        "stats": [
+          {
+            "sourceStatId": "DamageUpChaosBase",
+            "names": {
+              "ja": "闇異能ダメージ強化",
+              "en": "Chaos DMG Bonus",
+              "zhHans": "暗属性异能伤害增强"
+            },
+            "value": 10
+          }
+        ]
+      }
+    },
+    "nameSource": {
+      "internalKey": "004_lacrimosa",
+      "fashionAliases": [
+        "anhunqu"
+      ],
+      "skillNamespace": "Lacrimosa_SkillDes"
+    },
+    "arcType": "液体",
+    "attribute": "闇",
+    "elementKey": "Chaos",
+    "attributeNames": {
+      "ja": "闇",
+      "en": "Chaos",
+      "zhHans": "暗"
+    },
+    "arcTypeId": "2",
+    "weaponTypeId": "2",
+    "weaponType": "液体",
+    "weaponTypeNames": {
+      "ja": "液体",
+      "en": "Liquid",
+      "zhHans": "液态"
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "statId": "hp",
+          "sourceStatId": "HPMaxBase",
+          "names": {
+            "ja": "HP",
+            "en": "HP",
+            "zhHans": "生命值"
+          },
+          "isPercent": false,
+          "values": [
+            1320,
+            1426,
+            1531,
+            1637,
+            1742,
+            1848,
+            1954,
+            2059,
+            2165,
+            2270,
+            2376,
+            2482,
+            2587,
+            2693,
+            2798,
+            2904,
+            3010,
+            3115,
+            3221,
+            3326,
+            4488,
+            4594,
+            4699,
+            4805,
+            4910,
+            5016,
+            5122,
+            5227,
+            5333,
+            5438,
+            6600,
+            6706,
+            6811,
+            6917,
+            7022,
+            7128,
+            7234,
+            7339,
+            7445,
+            7550,
+            8712,
+            8818,
+            8923,
+            9029,
+            9134,
+            9240,
+            9346,
+            9451,
+            9557,
+            9662,
+            10824,
+            10930,
+            11035,
+            11141,
+            11246,
+            11352,
+            11458,
+            11563,
+            11669,
+            11774,
+            12936,
+            13042,
+            13147,
+            13253,
+            13358,
+            13464,
+            13570,
+            13675,
+            13781,
+            13886,
+            15048,
+            15154,
+            15259,
+            15365,
+            15470,
+            15576,
+            15682,
+            15787,
+            15893,
+            15998
+          ]
+        },
+        {
+          "statId": "attack",
+          "sourceStatId": "AtkBase",
+          "names": {
+            "ja": "攻撃力",
+            "en": "ATK",
+            "zhHans": "攻击力"
+          },
+          "isPercent": false,
+          "values": [
+            80,
+            84,
+            88,
+            92,
+            96,
+            100,
+            104,
+            108,
+            112,
+            116,
+            120,
+            124,
+            128,
+            132,
+            136,
+            140,
+            144,
+            148,
+            152,
+            156,
+            200,
+            204,
+            208,
+            212,
+            216,
+            220,
+            224,
+            228,
+            232,
+            236,
+            280,
+            284,
+            288,
+            292,
+            296,
+            300,
+            304,
+            308,
+            312,
+            316,
+            360,
+            364,
+            368,
+            372,
+            376,
+            380,
+            384,
+            388,
+            392,
+            396,
+            440,
+            444,
+            448,
+            452,
+            456,
+            460,
+            464,
+            468,
+            472,
+            476,
+            520,
+            524,
+            528,
+            532,
+            536,
+            540,
+            544,
+            548,
+            552,
+            556,
+            600,
+            604,
+            608,
+            612,
+            616,
+            620,
+            624,
+            628,
+            632,
+            636
+          ]
+        },
+        {
+          "statId": "defense",
+          "sourceStatId": "DefBase",
+          "names": {
+            "ja": "防御力",
+            "en": "DEF",
+            "zhHans": "防御力"
+          },
+          "isPercent": false,
+          "values": [
+            75,
+            81,
+            87,
+            93,
+            99,
+            105,
+            111,
+            117,
+            123,
+            129,
+            135,
+            141,
+            147,
+            153,
+            159,
+            165,
+            171,
+            177,
+            183,
+            189,
+            255,
+            261,
+            267,
+            273,
+            279,
+            285,
+            291,
+            297,
+            303,
+            309,
+            375,
+            381,
+            387,
+            393,
+            399,
+            405,
+            411,
+            417,
+            423,
+            429,
+            495,
+            501,
+            507,
+            513,
+            519,
+            525,
+            531,
+            537,
+            543,
+            549,
+            615,
+            621,
+            627,
+            633,
+            639,
+            645,
+            651,
+            657,
+            663,
+            669,
+            735,
+            741,
+            747,
+            753,
+            759,
+            765,
+            771,
+            777,
+            783,
+            789,
+            855,
+            861,
+            867,
+            873,
+            879,
+            885,
+            891,
+            897,
+            903,
+            909
+          ]
+        }
+      ]
+    }
+  },
+  {
     "id": "char_1070",
     "slug": "mitsuki",
     "name": {

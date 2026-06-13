@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T23:34:04.909Z",
+  "generatedAt": "2026-06-13T02:09:15.913Z",
   "sourceSite": "public-site",
   "outputSite": "public-release",
   "jsonFiles": [
@@ -15,6 +15,6 @@
     "stats.json",
     "weapons.json"
   ],
-  "assetCount": 224,
+  "assetCount": 229,
   "warnings": []
 }

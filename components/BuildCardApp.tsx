@@ -343,9 +343,9 @@ function statScoreUnit(character: Character, stat: { sourceStatId?: string; stat
   const critRate = stat.statId === "critRate" || stat.sourceStatId === "CritBase" ? stat.value : 0;
   const generalDamage = stat.sourceStatId === "DamageUpGeneralBase" ? stat.value : 0;
   const attributeDamage = scoreAttributeDamageValue(character, stat);
-  const weighted = (attackFlat * 0.1 + attackPercent) / 2 + critDamage + critRate * 2 + generalDamage + attributeDamage;
+  const weighted = attackFlat * 0.5 + attackPercent * 0.8 + critDamage + critRate * 2 + generalDamage + attributeDamage;
   const critOnly = critRate * 2 + critDamage;
-  return Math.trunc(Math.max(weighted, critOnly) * 10) / 10;
+  return Math.trunc((Math.max(weighted, critOnly) / 2) * 10) / 10;
 }
 
 function gearModuleScore(character: Character, modules: PlacedModule[], gearRows: ReturnType<typeof buildGearRows>) {
@@ -1125,7 +1125,6 @@ export default function BuildCardApp() {
               <Info size={16} />
             </button>
             <div className="score-help-popover" role="tooltip">
-
               <strong>{t.build.scoreFormula}</strong>
               <span>{t.build.scoreTarget}</span>
               <span>{t.build.scoreEach}</span>
@@ -1135,7 +1134,8 @@ export default function BuildCardApp() {
               <span className="score-formula-line">{t.build.scoreDamage}</span>
               <span>{t.build.scoreCritOnly}</span>
               <span>{t.build.scoreRound}</span>
-              <span>{t.build.scoreAttr}</span>            </div>
+              <span>{t.build.scoreAttr}</span>
+            </div>
           </div>
         </div>
         <div
