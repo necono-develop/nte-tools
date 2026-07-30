@@ -19,13 +19,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「レコードの電気霊」",
         "en": "Haunted Record",
+        "ja": "「レコードの電気霊」",
         "zhHans": "「附电灵」"
       },
       "description": {
-        "ja": "装備者の「バイレールスキル」の与ダメージ+<lv>{0}</>。",
         "en": "Grants the wearer a <lv>{0}</> Redirect Skill DMG bonus.",
+        "ja": "装備者の「バイレールスキル」の与ダメージ+<lv>{0}</>。",
         "zhHans": "装备者「变轨技能」造成的伤害提高<lv>{0}</>。"
       }
     },
@@ -244,13 +244,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「アラクネ」",
         "en": "Arachne",
+        "ja": "「アラクネ」",
         "zhHans": "「阿拉克涅」"
       },
       "description": {
-        "ja": "HP+<lv>{0}</>。\n装備者が「EXレール終結」を発動すると、自身の与える精神ダメージ+<lv>{1}</>（<lv>{2}</>秒持続）。",
         "en": "Increases Max HP by <lv>{0}</>.\nIncreases Mental DMG dealt by <lv>{1}</> for <lv>{2}</>s after the wearer casts an Ultimate.",
+        "ja": "HP+<lv>{0}</>。\n装備者が「EXレール終結」を発動すると、自身の与える精神ダメージ+<lv>{1}</>（<lv>{2}</>秒持続）。",
         "zhHans": "生命值提高<lv>{0}</>。\n装备者释放「极轨终结」以后，自身造成的心灵伤害提高<lv>{1}</>，持续<lv>{2}</>秒。"
       }
     },
@@ -469,13 +469,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「音ゲー魔王」",
         "en": "Beat King",
+        "ja": "「音ゲー魔王」",
         "zhHans": "「音霸魔王」"
       },
       "description": {
-        "ja": "装備者が待機中、現在操作中のキャラの攻撃力+<lv>{0}</>、装備者がダメージを与えるたびに、現在操作中のキャラの攻撃力+<lv>{1}</>（最大<lv>4</>スタックまで、<lv>{2}</>秒ごとに最大<lv>1</>スタック）。装備者が操作キャラに切り替わると、この効果は消失する。\r\n装備者が操作キャラの場合、魂異能ダメージ+<lv>{3}</>、「通常攻撃」で魂異能ダメージを与えるたびに、自身の魂異能ダメージ+<lv>{4}</>（最大<lv>10</>スタックまで）。この効果は<lv>0.3</>秒に1回しか発動しない。キャラ切り替え時に効果はリセットされる。",
         "en": "Increases the active character's ATK by <lv>{0}</> while the wearer is off-field, and increases the active character's ATK by <lv>{1}</> when the wearer deals damage, up to <lv>4</> stacks and triggering at most <lv>once</> every <lv>{2}</>s. Resets the effect when the wearer becomes the active character.\r\nIncreases Psyche DMG by <lv>{3}</> while the wearer is the active character, and increases Psyche DMG by <lv>{4}</> when dealing Psyche DMG with a Basic Attack, up to <lv>10</> stacks. Triggers at most once every <lv>0.3</>s. Resets the effect when switching characters.",
+        "ja": "装備者が待機中、現在操作中のキャラの攻撃力+<lv>{0}</>、装備者がダメージを与えるたびに、現在操作中のキャラの攻撃力+<lv>{1}</>（最大<lv>4</>スタックまで、<lv>{2}</>秒ごとに最大<lv>1</>スタック）。装備者が操作キャラに切り替わると、この効果は消失する。\r\n装備者が操作キャラの場合、魂異能ダメージ+<lv>{3}</>、「通常攻撃」で魂異能ダメージを与えるたびに、自身の魂異能ダメージ+<lv>{4}</>（最大<lv>10</>スタックまで）。この効果は<lv>0.3</>秒に1回しか発動しない。キャラ切り替え時に効果はリセットされる。",
         "zhHans": "装备者位于后台时，当前控制的角色攻击力提高<lv>{0}</>，且装备者每次造成伤害都会使当前控制角色攻击力提高<lv>{1}</>，最多叠加<lv>4</>层，每<lv>{2}</>秒最多叠加<lv>1</>次，当装备者被切换为当前控制角色时候，该效果消失。\r\n当装备者为当前控制角色时，魂属性异能伤害提升<lv>{3}</>，且每次「普通攻击」造成魂属性异能伤害都会使自身魂属性异能伤害提升<lv>{4}</>，最多叠加<lv>10</>层，每<lv>0.3</>秒最多触发一次，切换角色时效果消失。"
       }
     },
@@ -694,13 +694,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「ビターケーキ」",
         "en": "\"Bittercake\"",
+        "ja": "「ビターケーキ」",
         "zhHans": "「苦蛋糕」"
       },
       "description": {
-        "ja": "装備者が攻撃を受けると、自身の防御力+<lv>{0}</>（<lv>{1}</>秒持続、クールダウン<lv>{2}</>秒）",
         "en": "Increases wearer's DEF by <lv>{0}</> for <lv>{1}</>s when taking damage. Triggers at most once every <lv>{2}</>s.",
+        "ja": "装備者が攻撃を受けると、自身の防御力+<lv>{0}</>（<lv>{1}</>秒持続、クールダウン<lv>{2}</>秒）",
         "zhHans": "装备者受到攻击时，自身防御力提升<lv>{0}</>，持续<lv>{1}</>秒，<lv>{2}</>秒内最多触发一次。"
       }
     },
@@ -919,13 +919,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「魔の書」",
         "en": "\"Black Tome\"",
+        "ja": "「魔の書」",
         "zhHans": "「黑之书」"
       },
       "description": {
-        "ja": "ブレイクパワー+<lv>{0}</>。\r\n通常時、調弧「魔の書」は2本の鎖で封印されており、チーム内の任意のキャラが「サポートスキル」を発動するたびに、鎖を1本解除できる。2本の鎖が全て解除されると、調弧「魔の書」が使用可能になる。\r\n調弧「魔の書」：魔の書を召喚する。魔の書はフィールドに<lv>{1}</>秒間存在し、<lv>{2}</>秒ごとに敵を1体指定する。指定された敵に対して、装備者が与える闇異能ダメージ+<lv>{3}</>。指定された敵がブレイクダメージを受けた場合、魔の書はその敵に装備者の攻撃力の<lv>{4}</>にあたる闇異能ダメージを与える。",
         "en": "Increases Break Intensity by <lv>{0}</>.\r\nSeals Arc: Black Tome with two chains by default. Unleashes 1 chain each time any character on the team casts a Support Skill. Makes Arc: Black Tome available when all two chains are unleashed.\r\nArc: Black Tome — Summons the Black Tome for <lv>{1}</>s. Designates an enemy every <lv>{2}</>s. Increases the wearer's Chaos DMG dealt to designated enemies by <lv>{3}</>. Deals Chaos DMG equal to <lv>{4}</> of the wearer's ATK to designated enemies when they take Break Damage.",
+        "ja": "ブレイクパワー+<lv>{0}</>。\r\n通常時、調弧「魔の書」は2本の鎖で封印されており、チーム内の任意のキャラが「サポートスキル」を発動するたびに、鎖を1本解除できる。2本の鎖が全て解除されると、調弧「魔の書」が使用可能になる。\r\n調弧「魔の書」：魔の書を召喚する。魔の書はフィールドに<lv>{1}</>秒間存在し、<lv>{2}</>秒ごとに敵を1体指定する。指定された敵に対して、装備者が与える闇異能ダメージ+<lv>{3}</>。指定された敵がブレイクダメージを受けた場合、魔の書はその敵に装備者の攻撃力の<lv>{4}</>にあたる闇異能ダメージを与える。",
         "zhHans": "倾陷强度提升<lv>{0}</>。\r\n常态下调弧·「黑之书」被两根锁链封锁，每当队伍中任意角色释放「援护技」时，可以解除一根锁链。两根锁链全部解除后可使用调弧·「黑之书」。\r\n调弧·「黑之书」：召唤黑之书，黑之书存在于场上<lv>{1}</>秒，每<lv>{2}</>秒指定一个敌人，装备者对被指定的敌人造成的暗属性异能伤害提高<lv>{3}</>。当被指定的敌人受到倾陷伤害的时候，黑之书对其造成装备者<lv>{4}</>攻击力的暗属性异能伤害。"
       }
     },
@@ -1144,13 +1144,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「爆発キャンディ」",
         "en": "Popping Candy",
+        "ja": "「爆発キャンディ」",
         "zhHans": "「爆炸糖」"
       },
       "description": {
-        "ja": "装備者が「EXレール終結」を発動後、自身の攻撃力+<lv>{0}</>（<lv>{1}</>秒持続）。この効果はスタックしない。",
         "en": "Increases ATK by <lv>{0}</> for <lv>{1}</>s after the wearer casts an Ultimate. Effect does not stack.",
+        "ja": "装備者が「EXレール終結」を発動後、自身の攻撃力+<lv>{0}</>（<lv>{1}</>秒持続）。この効果はスタックしない。",
         "zhHans": "装备者释放「极轨终结」后，自身攻击力提高<lv>{0}</>，持续<lv>{1}</>秒。该效果不可叠加。"
       }
     },
@@ -1369,13 +1369,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「ポップ」",
         "en": "\"Bopp\"",
+        "ja": "「ポップ」",
         "zhHans": "「波普」"
       },
       "description": {
-        "ja": "装備者が「サポートスキル」を発動すると、与ダメージ+<lv>{1}</>（<lv>{0}</>秒持続）。この効果は<lv>{2}</>秒に1回しか発動しない。",
         "en": "Increases wearer's damage dealt by <lv>{1}</> for <lv>{0}s</> after casting Support Skill. Triggers at most once every <lv>{2}s</>.",
+        "ja": "装備者が「サポートスキル」を発動すると、与ダメージ+<lv>{1}</>（<lv>{0}</>秒持続）。この効果は<lv>{2}</>秒に1回しか発動しない。",
         "zhHans": "装备者释放「援护技」后<lv>{0}</>秒内，造成的伤害提高<lv>{1}</>。每<lv>{2}</>秒最多触发一次。"
       }
     },
@@ -1594,13 +1594,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「ボクシングキャンディ」",
         "en": "Jawbreaker's Candy",
+        "ja": "「ボクシングキャンディ」",
         "zhHans": "「拳击糖」"
       },
       "description": {
-        "ja": "装備者の与えるダメージ+<lv>{0}</>、HPが50％未満の敵に対しては、この効果が+<lv>{1}</>まで増加する。",
         "en": "Increases the wearer's DMG by <lv>{0}</>. Increases this effect to <lv>{1}</> against enemies with HP below 50%.",
+        "ja": "装備者の与えるダメージ+<lv>{0}</>、HPが50％未満の敵に対しては、この効果が+<lv>{1}</>まで増加する。",
         "zhHans": "装备者造成的伤害增加<lv>{0}</>，对于生命值低于50%的敌人，该效果提升至<lv>{1}</>。"
       }
     },
@@ -1819,13 +1819,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「斑蝶」",
         "en": "Swallowtail",
+        "ja": "「斑蝶」",
         "zhHans": "「斑蝶」"
       },
       "description": {
-        "ja": "霊異能ダメージ+<lv>{0}</>。\n装備者のマーカーダメージ+<lv>{1}</>、「EXレール終結」発動時、マーカーダメージアップ効果が<lv>{2}</>に変化する（<lv>{3}</>秒持続）。この効果はスタックしない。",
         "en": "Increases Anima DMG by <lv>{0}</>.\nIncreases the wearer's Attachment DMG by <lv>{1}</>. Increases the Attachment DMG bonus to <lv>{2}</> for <lv>{3}</>s when the wearer casts an Ultimate. Effect does not stack.",
+        "ja": "霊異能ダメージ+<lv>{0}</>。\n装備者のマーカーダメージ+<lv>{1}</>、「EXレール終結」発動時、マーカーダメージアップ効果が<lv>{2}</>に変化する（<lv>{3}</>秒持続）。この効果はスタックしない。",
         "zhHans": "灵属性异能伤害提升<lv>{0}</>。\n装备者的附着物伤害提升<lv>{1}</>，释放「极轨终结」时，附着物伤害提升效果变为<lv>{2}</>，持续<lv>{3}</>秒，该效果不可叠加。"
       }
     },
@@ -2044,13 +2044,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「カードボードキャッスル」",
         "en": "Cardboard Castle",
+        "ja": "「カードボードキャッスル」",
         "zhHans": "「瓦楞城堡」"
       },
       "description": {
-        "ja": "装備者が「バイレールスキル」を発動後、自身の治療効率+<lv>{0}</>（<lv>{1}</>秒持続）。この効果はスタックしない。",
         "en": "Increases Healing Bonus by <lv>{0}</> for <lv>{1}</>s after the wearer casts a Redirect Skill. Effect does not stack.",
+        "ja": "装備者が「バイレールスキル」を発動後、自身の治療効率+<lv>{0}</>（<lv>{1}</>秒持続）。この効果はスタックしない。",
         "zhHans": "装备者释放「变轨技能」后，自身治疗效率提升<lv>{0}</>，持续<lv>{1}</>秒，该效果不可叠加。"
       }
     },
@@ -2269,14 +2269,14 @@
     },
     "effect": {
       "name": {
-        "ja": "「ピッキー」",
         "en": "Picky",
+        "ja": "「ピッキー」",
         "zhHans": "「撬撬」"
       },
       "description": {
-        "ja": "装備者が「バイレールスキル」を発動後、ブレイクパワー+<lv>{0}</>（<lv>{1}</>秒持続）。この効果はスタックしない。\n調弧「ピッキー」を使用可能。\n調弧「ピッキー」：「ピッキー」を召喚し、周囲にある鍵のかかったオブジェクトを全て解錠する。",
-        "en": "Increases Break Intensity by <lv>{0}</> for <lv>{1}</>s after the wearer casts a Redirect Skill. Effect does not stack.\nUnlocks Arc: Picky.\nArc: Picky — Summons Picky to unlock all nearby lockable objects.",
-        "zhHans": "装备者释放「变轨技能」后，倾陷强度提升<lv>{0}</>，持续<lv>{1}</>秒，该效果不可叠加。\n可使用调弧·「撬撬」。\n调弧·「撬撬」：召唤「撬撬」，打开周围所有可以撬锁的物体。"
+        "en": "Increases Break Intensity by <lv>{0}</> for <lv>{1}</>s after the wearer uses a Redirect Skill. Effect does not stack.\r\nAllows use of Arc - Picky. (Cooldown: <lv>{1}</>s).\r\nArc - Picky: Summons Picky to pry open all nearby lockable objects.",
+        "ja": "装備者が「バイレールスキル」を発動後、ブレイクパワー+<lv>{0}</>（<lv>{1}</>秒持続）。この効果はスタックしない。\r\n調弧「ピッキー」を使用可能。（クールダウン時間<lv>{1}</>秒）\r\n調弧「ピッキー」：「ピッキー」を召喚し、周囲にある鍵のかかったオブジェクトを全て解錠する。",
+        "zhHans": "装备者释放「变轨技能」后，倾陷强度提升<lv>{0}</>，持续<lv>{1}</>秒，该效果不可叠加。\r\n可使用调弧·「撬撬」。（冷却时间<lv>{1}</>秒）\r\n调弧·「撬撬」：召唤「撬撬」，打开周围所有可以撬锁的物体。"
       }
     },
     "levelStats": {
@@ -2494,13 +2494,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「デコンポーザー」",
         "en": "\"Decomposer\"",
+        "ja": "「デコンポーザー」",
         "zhHans": "「分解者」"
       },
       "description": {
-        "ja": "装備者がブレイク耐性を減少させると、自身のブレイクパワー+<lv>{0}</>（<lv>{1}</>秒持続、クールダウン<lv>{2}</>秒）",
         "en": "Increases wearer's Break Intensity by <lv>{0}</> for <lv>{1}</>s when reducing Break. Triggers at most once every <lv>{2}</>s.",
+        "ja": "装備者がブレイク耐性を減少させると、自身のブレイクパワー+<lv>{0}</>（<lv>{1}</>秒持続、クールダウン<lv>{2}</>秒）",
         "zhHans": "装备者削减倾陷值时，自身提高<lv>{0}</>倾陷强度，持续<lv>{1}</>秒，<lv>{2}</>秒内最多触发一次。"
       }
     },
@@ -2700,6 +2700,232 @@
     }
   },
   {
+    "id": "fork_GoldWool",
+    "name": {
+      "ja": "オムニ・デザイア",
+      "en": "What's Desired",
+      "zhHans": "众人追寻之物"
+    },
+    "rarity": "S",
+    "tier": "S",
+    "quality": "orange",
+    "typeId": "5",
+    "weaponTypeId": null,
+    "assets": {
+      "icon": "assets/arcs/fork_GoldWool/icon.webp"
+    },
+    "baseStats": {
+      "attack": 570,
+      "critRate": 24
+    },
+    "effect": {
+      "name": {
+        "en": "Golden Fleece",
+        "ja": "「金の羊毛」",
+        "zhHans": "「金羊毛」"
+      },
+      "description": {
+        "en": "Increases the wearer's Lakshana DMG by <lv>{0}</>. Increases the wearer's CRIT DMG by <lv>{1}</> for <lv>{2}</>s when they cast a Redirect Skill or Ultimate. Resets the duration when triggered again.",
+        "ja": "装備者の相異能ダメージ+<lv>{0}</>。装備者が「バイレールスキル」または「EXレール終結」を発動時、自身のクリティカルダメージ+<lv>{1}</>（<lv>{2}</>秒持続）。発動するごとに持続時間が更新される。",
+        "zhHans": "装备者造成的相属性异能伤害增加<lv>{0}</>。装备者释放「变轨技能」或「极轨终结」的时候，自身暴击伤害提高<lv>{1}</>，持续<lv>{2}</>秒，重复触发刷新持续时间。"
+      }
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "slot": 1,
+          "statId": "attack",
+          "sourceStatId": "AtkBase",
+          "names": {
+            "ja": "攻撃力",
+            "en": "ATK",
+            "zhHans": "攻击力"
+          },
+          "isPercent": false,
+          "values": [
+            37,
+            42,
+            46,
+            51,
+            56,
+            61,
+            66,
+            70,
+            75,
+            80,
+            85,
+            90,
+            94,
+            99,
+            104,
+            109,
+            114,
+            118,
+            123,
+            128,
+            159,
+            164,
+            168,
+            173,
+            178,
+            183,
+            188,
+            192,
+            197,
+            202,
+            232,
+            237,
+            241,
+            246,
+            251,
+            256,
+            261,
+            265,
+            270,
+            275,
+            306,
+            311,
+            315,
+            320,
+            325,
+            330,
+            335,
+            339,
+            344,
+            349,
+            379,
+            384,
+            388,
+            393,
+            398,
+            403,
+            408,
+            412,
+            417,
+            422,
+            453,
+            458,
+            462,
+            467,
+            472,
+            477,
+            482,
+            486,
+            491,
+            496,
+            527,
+            532,
+            536,
+            541,
+            546,
+            551,
+            556,
+            560,
+            565,
+            570
+          ]
+        },
+        {
+          "slot": 2,
+          "statId": "critRate",
+          "sourceStatId": "CritBase",
+          "names": {
+            "ja": "クリティカル率",
+            "en": "CRIT Rate",
+            "zhHans": "暴击率"
+          },
+          "isPercent": true,
+          "values": [
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ]
+        }
+      ]
+    }
+  },
+  {
     "id": "fork_jiaojuan",
     "name": {
       "ja": "輝かしい日々",
@@ -2719,13 +2945,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「フィルムMANISH」",
         "en": "Film - MANISH",
+        "ja": "「フィルムMANISH」",
         "zhHans": "「胶卷-MANISHI」"
       },
       "description": {
-        "ja": "ブレイクパワー+<lv>{0}</>。\n装備者がブレイク中のユニットに与えるダメージ+<lv>{1}</>。",
         "en": "Increases Break Intensity by <lv>{0}</>.\nIncreases DMG by <lv>{1}</> against Broken units.",
+        "ja": "ブレイクパワー+<lv>{0}</>。\n装備者がブレイク中のユニットに与えるダメージ+<lv>{1}</>。",
         "zhHans": "倾陷强度提升<lv>{0}</>。\n装备者攻击倾陷单位造成的伤害提升<lv>{1}</>。"
       }
     },
@@ -2944,13 +3170,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「沈黙の庭園」",
         "en": "Silent Garden",
+        "ja": "「沈黙の庭園」",
         "zhHans": "「静默庭园」"
       },
       "description": {
-        "ja": "装備者がダメージを受けていない状態でHPを失った後、クリティカルダメージ+<lv>{1}</>（<lv>{0}</>秒持続、最大<lv>4</>スタックまで）。また、調弧「沈黙の庭園」が使用可能になる。\r\n調弧「沈黙の庭園」：現在HPの<lv>{2}</>を消費し、以下の攻撃のいずれかをランダムで発動する（クールダウン<lv>{3}</>秒）：\r\n痛烈な叱責：容赦ない叱責が暴雨の落葉の如く降り注ぎ、ターゲットに攻撃力の<lv>{4}</>にあたる呪異能ダメージを<lv>5</>回与える。\r\n止まらぬ雑言：鋭く辛辣な言葉が茨の如くターゲットを突き刺し、攻撃力の<lv>{5}</>に当たる呪異能ダメージを連続<lv>6</>回与える（最後の一撃はダメージ2倍）。",
         "en": "Increases CRIT DMG by <lv>{1}</> for <lv>{0}</>s when the wearer's HP is reduced without taking damage, up to <lv>4</> stacks. Unlocks Arc: Silent Garden.\r\nConsumes <lv>{2}</> of current HP and randomly performs one of the following attacks (CD <lv>{3}</>s) in Arc: Silent Garden:\r\nHarsh Rebuke: Rains merciless rebukes like leaves in a storm, dealing <lv>5</> instances of Incantation DMG of <lv>{4}</> ATK.\r\nIncessant Nagging: Pierces targets with sharp, cutting words like thorns, dealing <lv>6</> instances of Incantation DMG of <lv>{5}</> ATK; the final instance deals double damage.",
+        "ja": "装備者がダメージを受けていない状態でHPを失った後、クリティカルダメージ+<lv>{1}</>（<lv>{0}</>秒持続、最大<lv>4</>スタックまで）。また、調弧「沈黙の庭園」が使用可能になる。\r\n調弧「沈黙の庭園」：現在HPの<lv>{2}</>を消費し、以下の攻撃のいずれかをランダムで発動する（クールダウン<lv>{3}</>秒）：\r\n痛烈な叱責：容赦ない叱責が暴雨の落葉の如く降り注ぎ、ターゲットに攻撃力の<lv>{4}</>にあたる呪異能ダメージを<lv>5</>回与える。\r\n止まらぬ雑言：鋭く辛辣な言葉が茨の如くターゲットを突き刺し、攻撃力の<lv>{5}</>に当たる呪異能ダメージを連続<lv>6</>回与える（最後の一撃はダメージ2倍）。",
         "zhHans": "装备者在未受到伤害的情况下失去生命值后<lv>{0}</>秒内获得<lv>{1}</>暴击伤害提升，至多叠加<lv>4</>次；可使用调弧·「静默庭园」\r\n调弧·「静默庭园」：扣除自身<lv>{2}</>当前生命值，随机释放以下一种攻击（冷却时间<lv>{3}</>秒）：\r\n厉声呵斥：不留情面的呵斥如暴雨中的落叶接二连三，对目标造成<lv>5</>次<lv>{4}</>攻击力的咒系伤害。\r\n喋喋不休：尖锐刻薄的话语如荆棘般不断刺穿目标，对目标连续造成<lv>6</>次基础伤害为<lv>{5}</>攻击力的咒系伤害，最后一次攻击造成双倍伤害。"
       }
     },
@@ -3169,13 +3395,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「妖面箏」",
         "en": "Ghostly Kite",
+        "ja": "「妖面箏」",
         "zhHans": "「诡面筝」"
       },
       "description": {
-        "ja": "装備者が「バイレールスキル」を発動後、攻撃力+<lv>{0}</>、「延滞」と「浸染」の影響を受けているユニットに与える相異能ダメージ+<lv>{1}</>（<lv>{2}</>秒持続）。この効果はスタックしない。",
         "en": "Increases ATK by <lv>{0}</> and Lakshana DMG to targets affected by Remora and Stain by <lv>{1}</> for <lv>{2}</>s after the wearer casts a Redirect Skill. Effect does not stack.",
+        "ja": "装備者が「バイレールスキル」を発動後、攻撃力+<lv>{0}</>、「延滞」と「浸染」の影響を受けているユニットに与える相異能ダメージ+<lv>{1}</>（<lv>{2}</>秒持続）。この効果はスタックしない。",
         "zhHans": "装备者释放「变轨技能」后攻击力提高<lv>{0}</>，且对受到「延滞」和「浸染」影响的单位造成的相属性异能伤害提高<lv>{1}</>，持续<lv>{2}</>秒，该效果无法叠加。"
       }
     },
@@ -3394,13 +3620,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「ナイトキャンディ」",
         "en": "Knight's Candy",
+        "ja": "「ナイトキャンディ」",
         "zhHans": "「骑士糖」"
       },
       "description": {
-        "ja": "装備者がクリティカルを発生させるたびに、自身のクリティカルダメージ+<lv>{0}</>（<lv>{1}</>秒持続、最大<lv>10</>スタックまで）。スタック追加時に持続時間が更新される。",
         "en": "Increases wearer's CRIT DMG by <lv>{0}</> for <lv>{1}</>s after landing a critical hit, up to <lv>10</> stacks. Resets the duration when triggered again.",
+        "ja": "装備者がクリティカルを発生させるたびに、自身のクリティカルダメージ+<lv>{0}</>（<lv>{1}</>秒持続、最大<lv>10</>スタックまで）。スタック追加時に持続時間が更新される。",
         "zhHans": "装备者每次造成暴击后自身暴击伤害提高<lv>{0}</>，持续<lv>{1}</>秒，最多叠加<lv>10</>层，重复触发刷新持续时间。"
       }
     },
@@ -3619,13 +3845,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「天空回遊」",
         "en": "Tidal Ascension",
+        "ja": "「天空回遊」",
         "zhHans": "「起潮洄天」"
       },
       "description": {
-        "ja": "チームに<lv>3</>種類以上の異なる異能系統が存在する場合、装備者の攻撃力+<lv>{0}</>、防御力+<lv>{1}</>、HP+<lv>{2}</>。",
         "en": "Grants the wearer <lv>{0}</> ATK, <lv>{1}</> DEF, and <lv>{2}</> HP when the team has at least <lv>3</> different Esper Types.",
+        "ja": "チームに<lv>3</>種類以上の異なる異能系統が存在する場合、装備者の攻撃力+<lv>{0}</>、防御力+<lv>{1}</>、HP+<lv>{2}</>。",
         "zhHans": "当编队存在不少于<lv>3</>个不同异能属性的时候，装备者获得<lv>{0}</>攻击力，<lv>{1}</>防御力，<lv>{2}</>生命值。"
       }
     },
@@ -3844,13 +4070,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「霊感喰い」",
         "en": "Inspiration Terminator",
+        "ja": "「霊感喰い」",
         "zhHans": "「灵感终结者」"
       },
       "description": {
-        "ja": "装備者が「バイレールスキル」を発動すると、自身が終結エネルギーを<lv>{0}</>獲得する。この効果は<lv>{1}</>秒に1回しか発動しない。",
         "en": "Grants the wearer <lv>{0}</> Ultimate Energy when casting a Redirect Skill. Triggers up to once every <lv>{1}</>s.",
+        "ja": "装備者が「バイレールスキル」を発動すると、自身が終結エネルギーを<lv>{0}</>獲得する。この効果は<lv>{1}</>秒に1回しか発動しない。",
         "zhHans": "装备者释放「变轨技能」后，自身获得<lv>{0}</>点终结能量，该效果每<lv>{1}</>秒最多触发一次。"
       }
     },
@@ -4050,6 +4276,232 @@
     }
   },
   {
+    "id": "fork_LunarPhase",
+    "name": {
+      "ja": "紅き蜃気楼",
+      "en": "Blushing Mirage",
+      "zhHans": "穿过胭红蜃景"
+    },
+    "rarity": "S",
+    "tier": "S",
+    "quality": "orange",
+    "typeId": "5",
+    "weaponTypeId": null,
+    "assets": {
+      "icon": "assets/arcs/fork_LunarPhase/icon.webp"
+    },
+    "baseStats": {
+      "attack": 570,
+      "critRate": 24
+    },
+    "effect": {
+      "name": {
+        "en": "Moonphase Shift",
+        "ja": "「月相変転」",
+        "zhHans": "「月相嬗变」"
+      },
+      "description": {
+        "en": "Increases ATK by <lv>{0}</>. \nAfter casting Ultimate, increases the wearer's Cosmos DMG dealt by <lv>{1}</> and allows the wearer to ignore <lv>{2}</> of enemy DEF for <lv>{3}</>s. Resets the duration when triggered again.",
+        "ja": "攻撃力+<lv>{0}</>。\n装備者が「EXレール終結」を発動した後、自身が与える光異能ダメージ+<lv>{1}</>、敵の防御力を<lv>{2}</>無視する。<lv>{3}</>秒持続。重複して発動すると持続時間が更新される。",
+        "zhHans": "攻击力提高<lv>{0}</>。\n装备者释放「极轨终结」后，自身造成的光属性异能伤害增加<lv>{1}</>，并且造成的伤害无视敌人<lv>{2}</>防御，持续<lv>{3}</>秒，重复触发刷新持续时间。"
+      }
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "slot": 1,
+          "statId": "attack",
+          "sourceStatId": "AtkBase",
+          "names": {
+            "ja": "攻撃力",
+            "en": "ATK",
+            "zhHans": "攻击力"
+          },
+          "isPercent": false,
+          "values": [
+            37,
+            42,
+            46,
+            51,
+            56,
+            61,
+            66,
+            70,
+            75,
+            80,
+            85,
+            90,
+            94,
+            99,
+            104,
+            109,
+            114,
+            118,
+            123,
+            128,
+            159,
+            164,
+            168,
+            173,
+            178,
+            183,
+            188,
+            192,
+            197,
+            202,
+            232,
+            237,
+            241,
+            246,
+            251,
+            256,
+            261,
+            265,
+            270,
+            275,
+            306,
+            311,
+            315,
+            320,
+            325,
+            330,
+            335,
+            339,
+            344,
+            349,
+            379,
+            384,
+            388,
+            393,
+            398,
+            403,
+            408,
+            412,
+            417,
+            422,
+            453,
+            458,
+            462,
+            467,
+            472,
+            477,
+            482,
+            486,
+            491,
+            496,
+            527,
+            532,
+            536,
+            541,
+            546,
+            551,
+            556,
+            560,
+            565,
+            570
+          ]
+        },
+        {
+          "slot": 2,
+          "statId": "critRate",
+          "sourceStatId": "CritBase",
+          "names": {
+            "ja": "クリティカル率",
+            "en": "CRIT Rate",
+            "zhHans": "暴击率"
+          },
+          "isPercent": true,
+          "values": [
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            9.6,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            14.4,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            16.8,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            19.2,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            21.6,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ]
+        }
+      ]
+    }
+  },
+  {
     "id": "fork_mamen",
     "name": {
       "ja": "思考ニャン",
@@ -4069,13 +4521,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「マモン」",
         "en": "Mammon",
+        "ja": "「マモン」",
         "zhHans": "「玛门」"
       },
       "description": {
-        "ja": "装備者の所持ファンスが<lv>{0}</>につき、光異能ダメージ+<lv>{1}</>（最大<lv>10</>スタックまで）",
         "en": "Increases Cosmos DMG by <lv>{1}</> for every <lv>{0}</> Fons the wearer holds, up to <lv>10</> stacks.",
+        "ja": "装備者の所持ファンスが<lv>{0}</>につき、光異能ダメージ+<lv>{1}</>（最大<lv>10</>スタックまで）",
         "zhHans": "装备者每持有<lv>{0}</>方斯，光属性异能伤害提高<lv>{1}</>，最多叠加<lv>10</>层。"
       }
     },
@@ -4294,13 +4746,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「モルフィックス」",
         "en": "Morphix",
+        "ja": "「モルフィックス」",
         "zhHans": "「墨菲克斯」"
       },
       "description": {
-        "ja": "チャージ効率+<lv>{0}</>。\r\n装備者が「EXレール終結」を発動すると、チーム全員の攻撃力+<lv>{2}</>（<lv>{1}</>秒持続）。敵がその「EXレール終結」による妨害効果を受けた場合、チーム全員の攻撃力が追加で+<lv>{3}</>。同名効果はスタック不可。",
         "en": "Increases Charge Efficiency by <lv>{0}</>.\r\nIncreases Team ATK by <lv>{2}</> for <lv>{1}</>s after the wearer casts an Ultimate. Increases Team ATK by an additional <lv>{3}</> if enemies are controlled by the Ultimate. Effects with the same name do not stack.",
+        "ja": "チャージ効率+<lv>{0}</>。\r\n装備者が「EXレール終結」を発動すると、チーム全員の攻撃力+<lv>{2}</>（<lv>{1}</>秒持続）。敵がその「EXレール終結」による妨害効果を受けた場合、チーム全員の攻撃力が追加で+<lv>{3}</>。同名効果はスタック不可。",
         "zhHans": "充能效率提升<lv>{0}</>。\r\n装备者释放「极轨终结」后<lv>{1}</>秒内，全队攻击力提升<lv>{2}</>；若敌人受到该「极轨终结」的控制效果，全队额外提升<lv>{3}</>攻击力。同名效果无法叠加。"
       }
     },
@@ -4519,13 +4971,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「水星図」",
         "en": "Aqua Astra",
+        "ja": "「水星図」",
         "zhHans": "「水星图」"
       },
       "description": {
-        "ja": "装備者の与える魂異能ダメージ+<lv>{0}</>。装備者が魂異能ダメージを与えると、自身のクリティカルダメージ+<lv>{1}</>（<lv>{2}</>秒持続、最大<lv>10</>スタックまで）。<lv>0.1</>秒ごとに最大1スタック。",
         "en": "Increases the wearer's Psyche DMG by <lv>{0}</>. Increases Crit DMG dealt by <lv>{1}</> for <lv>{2}</>s when dealing Psyche DMG, up to <lv>10</> stacks. Triggers at most once every <lv>0.1</>s.",
+        "ja": "装備者の与える魂異能ダメージ+<lv>{0}</>。装備者が魂異能ダメージを与えると、自身のクリティカルダメージ+<lv>{1}</>（<lv>{2}</>秒持続、最大<lv>10</>スタックまで）。<lv>0.1</>秒ごとに最大1スタック。",
         "zhHans": "装备者造成的魂属性异能伤害增加<lv>{0}</>。装备者造成魂属性异能伤害的时候，自身暴击伤害提高<lv>{1}</>，持续<lv>{2}</>秒，最多叠加<lv>10</>层，每<lv>0.1</>秒最多叠加一层。"
       }
     },
@@ -4744,13 +5196,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「モーターキャンディ」",
         "en": "Motor Candy",
+        "ja": "「モーターキャンディ」",
         "zhHans": "「机车糖」"
       },
       "description": {
-        "ja": "装備者が操作キャラの場合、<lv>{0}</>秒ごとに攻撃力+<lv>{1}</>（最大<lv>5</>スタックまで）。装備者が控えに戻ると、効果はリセットされる。",
         "en": "Increases <lv>{1}</> ATK every <lv>{0}</>s while the wearer is the active character, up to <lv>5</> stacks. Resets when the wearer leaves the field.",
+        "ja": "装備者が操作キャラの場合、<lv>{0}</>秒ごとに攻撃力+<lv>{1}</>（最大<lv>5</>スタックまで）。装備者が控えに戻ると、効果はリセットされる。",
         "zhHans": "当装备者为当前控制角色时，每<lv>{0}</>秒获得<lv>{1}</>攻击力提升，该效果最多叠加<lv>5</>层，装备者离场后清零。"
       }
     },
@@ -4969,13 +5421,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「ナクペイダ」",
         "en": "Nacupeda",
+        "ja": "「ナクペイダ」",
         "zhHans": "「纳库佩达」"
       },
       "description": {
-        "ja": "HP+<lv>{0}</>。\n装備者が「EXレール終結」を発動時、以下の効果からランダムで1つ獲得する：\n1．チーム内でHP割合が最も低いキャラのHPを最大HPの<lv>{1}</>分回復する。\n2．装備者の最大HPの<lv>{2}</>分のシールドを獲得する（<lv>{3}</>秒持続）。\n3．チーム全員のHPを<lv>{4}</>回復する。\nこの効果は<lv>{5}</>秒に1回しか発動しない。",
         "en": "Increases HP by <lv>{0}</>.\nGrants one of the following random effects when the wearer casts an Ultimate:\n1. Recovers <lv>{1}</> of Max HP for the team member with the lowest HP percentage.\n2. Grants a Shield equal to <lv>{2}</> of the wearer's Max HP for <lv>{3}</>s.\n3. Recovers <lv>{4}</> HP for all team members.\nTriggers once every <lv>{5}</>s.",
+        "ja": "HP+<lv>{0}</>。\n装備者が「EXレール終結」を発動時、以下の効果からランダムで1つ獲得する：\n1．チーム内でHP割合が最も低いキャラのHPを最大HPの<lv>{1}</>分回復する。\n2．装備者の最大HPの<lv>{2}</>分のシールドを獲得する（<lv>{3}</>秒持続）。\n3．チーム全員のHPを<lv>{4}</>回復する。\nこの効果は<lv>{5}</>秒に1回しか発動しない。",
         "zhHans": "生命值提高<lv>{0}</>。\n装备者释放「极轨终结」时，获得以下随机一个效果：\n1.使队伍中血量百分比最低的角色回复其<lv>{1}</>最大生命值。\n2.获得一个装备者<lv>{2}</>最大生命值的护盾,持续<lv>{3}</>秒。\n3.使全队角色回复<lv>{4}</>生命值。\n该效果每<lv>{5}</>秒最多触发一次。"
       }
     },
@@ -5194,13 +5646,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「巣囚鳥」",
         "en": "Nestbound Bird",
+        "ja": "「巣囚鳥」",
         "zhHans": "「囿巢鸟」"
       },
       "description": {
-        "ja": "装備者が「EXレール終結」を敵に命中させると、「警告の視線」を付与する。付与された敵の与えるダメージ-<lv>18％</>（<lv>20</>秒持続）。この効果はスタックしない。",
         "en": "Applies Warning Gaze on enemies hit by the wearer's Ultimate. Marked enemies deal <lv>18%</> reduced damage for <lv>20</>s. Effect does not stack.",
+        "ja": "装備者が「EXレール終結」を敵に命中させると、「警告の視線」を付与する。付与された敵の与えるダメージ-<lv>18％</>（<lv>20</>秒持続）。この効果はスタックしない。",
         "zhHans": "装备者释放「极轨终结」命中的敌人会被赋予标记「警告视线」，被标记的敌人造成的伤害降低<lv>18%</>，持续<lv>20</>秒，该效果不可叠加。"
       }
     },
@@ -5419,13 +5871,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「ノノス」",
         "en": "Noros",
+        "ja": "「ノノス」",
         "zhHans": "「诺诺斯」"
       },
       "description": {
-        "ja": "装備者が「バイレールスキル」を発動すると、自身の攻撃力+<lv>{0}</>（<lv>{1}</>秒持続、クールダウン<lv>{2}</>秒）",
         "en": "Increases wearer's ATK by <lv>{0}</> for <lv>{1}</>s when casting a Redirect Skill. Triggers up to once every <lv>{2}</>s.",
+        "ja": "装備者が「バイレールスキル」を発動すると、自身の攻撃力+<lv>{0}</>（<lv>{1}</>秒持続、クールダウン<lv>{2}</>秒）",
         "zhHans": "装备者释放「变轨技能」后，自身攻击力提升<lv>{0}</>，持续<lv>{1}</>秒，<lv>{2}</>秒内最多触发一次。"
       }
     },
@@ -5644,13 +6096,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「オラオラグローブ」",
         "en": "Ora Puncher",
+        "ja": "「オラオラグローブ」",
         "zhHans": "「欧拉拳套」"
       },
       "description": {
-        "ja": "装備者が「通常攻撃」でダメージを与えるたびに、自身の「通常攻撃」の与ダメージ+<lv>{1}</>（<lv>{0}</>秒持続、最大<lv>10</>スタックまで）。各スタックの効果の持続時間は個別に計算される。",
         "en": "Increases the wearer's Basic Attack DMG by <lv>{1}</> for <lv>{0}</>s after each Basic Attack, up to <lv>10</> stacks. Each stack's duration is calculated independently, and is not reset when new stacks are gained.",
+        "ja": "装備者が「通常攻撃」でダメージを与えるたびに、自身の「通常攻撃」の与ダメージ+<lv>{1}</>（<lv>{0}</>秒持続、最大<lv>10</>スタックまで）。各スタックの効果の持続時間は個別に計算される。",
         "zhHans": "装备者每次「普通攻击」造成伤害后<lv>{0}</>秒内，自身「普通攻击」伤害提升<lv>{1}</>，最多叠加<lv>10</>层，每层效果单独结算持续时间。"
       }
     },
@@ -5869,13 +6321,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「紙ヒコーキ戦隊」",
         "en": "Paper Squadron",
+        "ja": "「紙ヒコーキ戦隊」",
         "zhHans": "「纸翼战队」"
       },
       "description": {
-        "ja": "装備者の「バイレールスキル」と「EXレール終結」が与える霊異能ダメージ+<lv>{0}</>。",
         "en": "Increases Anima DMG dealt by the wearer's Redirect Skill and Ultimate by <lv>{0}</>.",
+        "ja": "装備者の「バイレールスキル」と「EXレール終結」が与える霊異能ダメージ+<lv>{0}</>。",
         "zhHans": "装备者的「变轨技能」和「极轨终结」造成的灵属性异能伤害提升<lv>{0}</>。"
       }
     },
@@ -6094,13 +6546,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「通行正義」",
         "en": "Justice Executioner",
+        "ja": "「通行正義」",
         "zhHans": "「通行正义」"
       },
       "description": {
-        "ja": "攻撃力+<lv>{0}</>。\nボスユニットに与えるダメージ+<lv>{1}</>。\n調弧「見回りラット」を使用可能。\n調弧「見回りラット」：「見回りラット」を召喚して戦闘を支援させる。「見回りラット」は継続的に攻撃を行い、毎回の攻撃で装備者の攻撃力の<lv>{2}</>にあたるダメージを与える（<lv>30</>秒持続、クールダウン<lv>{3}</>秒）。",
         "en": "Increases ATK by <lv>{0}</>.\nIncreases damage dealt to Bosses by <lv>{1}</>.\nUnlocks Arc: Officer Whisker.\nArc: Officer Whisker — Summons Officer Whisker to assist in combat. Officer Whisker continuously attacks enemies, dealing <lv>{2}</> of the wearer's ATK as damage per hit. Lasts <lv>30</>s. Cooldown: <lv>{3}</>s.",
+        "ja": "攻撃力+<lv>{0}</>。\nボスユニットに与えるダメージ+<lv>{1}</>。\n調弧「見回りラット」を使用可能。\n調弧「見回りラット」：「見回りラット」を召喚して戦闘を支援させる。「見回りラット」は継続的に攻撃を行い、毎回の攻撃で装備者の攻撃力の<lv>{2}</>にあたるダメージを与える（<lv>30</>秒持続、クールダウン<lv>{3}</>秒）。",
         "zhHans": "攻击力提高<lv>{0}</>。\n对boss单位造成的伤害提高<lv>{1}</>。\n可使用调弧·「巡哨鼠鼠」。\n调弧·「巡哨鼠鼠」：召唤「巡哨鼠鼠」协助作战，「巡哨鼠鼠」持续攻击造成伤害，每次攻击造成装备者<lv>{2}</>的伤害。持续<lv>30</>秒，冷却时间<lv>{3}</>秒。"
       }
     },
@@ -6319,13 +6771,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「原核体」",
         "en": "Protocore",
+        "ja": "「原核体」",
         "zhHans": "「原核体」"
       },
       "description": {
-        "ja": "装備者の「通常攻撃」が与えるダメージ+<lv>{0}</>。",
         "en": "Increases the wearer's Basic Attack damage by <lv>{0}</>.",
+        "ja": "装備者の「通常攻撃」が与えるダメージ+<lv>{0}</>。",
         "zhHans": "装备者「普通攻击」造成的伤害提高<lv>{0}</>。"
       }
     },
@@ -6544,13 +6996,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「日蝕」",
         "en": "Eclipse",
+        "ja": "「日蝕」",
         "zhHans": "「日蚀」"
       },
       "description": {
-        "ja": "装備者の攻撃力+<lv>{0}</>。また、調弧「日蝕」が使用可能になる。\r\n調弧「日蝕」：日蝕の力を一時的に行使し、<lv>{1}</>秒間の日蝕を引き起こす。日蝕の間、装備者が敵を1体撃破するたびに終結エネルギーが<lv>{2}</>回復する。期間中に最大<lv>{3}</>回まで発動可能（クールダウン<lv>{4}</>秒）。",
         "en": "Increases wearer's ATK by <lv>{0}</>. Unlocks Arc: Eclipse.\r\nArc: Eclipse — The wearer creates a <lv>{1}</>s Eclipse. During the Eclipse, each enemy defeated restores <lv>{2}</> Ultimate Energy, up to <lv>{3}</> times. (cooldown: <lv>{4}</>s).",
+        "ja": "装備者の攻撃力+<lv>{0}</>。また、調弧「日蝕」が使用可能になる。\r\n調弧「日蝕」：日蝕の力を一時的に行使し、<lv>{1}</>秒間の日蝕を引き起こす。日蝕の間、装備者が敵を1体撃破するたびに終結エネルギーが<lv>{2}</>回復する。期間中に最大<lv>{3}</>回まで発動可能（クールダウン<lv>{4}</>秒）。",
         "zhHans": "装备者的攻击力提升<lv>{0}</>，可使用调弧·「日蚀」。\r\n调弧·「日蚀」：装备者可暂时利用日蚀的能力创造一场持续<lv>{1}</>秒的日蚀。在日蚀持续期间，装备者每击杀一名敌方单位可恢复<lv>{2}</>点终结能量，持续时间内最多触发<lv>{3}</>次。(冷却时间<lv>{4}</>秒)。"
       }
     },
@@ -6769,13 +7221,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「落拓のバラ」",
         "en": "Bohemian Rose",
+        "ja": "「落拓のバラ」",
         "zhHans": "「落拓玫瑰」"
       },
       "description": {
+        "en": "Increases ATK by <lv>{0}</>.\nGrants 1 stack of Chaos Thorn each time the wearer deals DoT. Increases CRIT DMG by <lv>{1}</> per stack for <lv>{2}</>s. Triggers at most <lv>once</> every <lv>0.3</>s, up to <lv>10</> stacks, and refreshes the duration when retriggered. Grants <lv>10</> stacks of Chaos Thorn immediately when the wearer casts a Redirect Skill.\nExtends the Broken state of a Broken enemy by <lv>{3}</>s when the wearer deals damage to them (triggers at most once per Break Effect).",
         "ja": "攻撃力+<lv>{0}</>。\n装備者が継続ダメージを与えるたびに「暗棘」+1スタック、クリティカルダメージ+<lv>{1}</>（<lv>{2}</>秒持続、最大<lv>10</>スタックまで）。この効果は<lv>0.3秒</>に<lv>1</>回しか発動しない。スタック追加時に持続時間が更新される。装備者が「バイレールスキル」発動すると、即座に「暗棘」を<lv>10</>スタック獲得する。\n装備者がブレイク状態にある敵にダメージを与えた場合は、敵のブレイク状態を<lv>{3}</>秒延長する。（この効果は、敵1体のブレイク状態につき1回のみ発動可能）",
-        "en": "Increases ATK by <lv>{0}</>.\nGrants 1 stack of Chaos Thorn each time the wearer deals DoT. Increases CRIT DMG by <lv>{1}</> per stack for <lv>{2}</>s. Triggers at most <lv>once</> every <lv>0.3</>s, up to <lv>10</> stacks and refreshes the duration when retriggered. Grants <lv>10</> stacks of Chaos Thorn immediately when the wearer casts a Redirect Skill.\nExtends the Broken state of a Broken enemy by <lv>{3}</>s when the wearer deals damage to them (triggers at most once per Break Effect).",
         "zhHans": "攻击力提高<lv>{0}</>。\n装备者每次造成持续伤害时获得一层「暗棘」，暴击伤害提高<lv>{1}</>，持续<lv>{2}</>秒，每<lv>0.3</>秒最多触发<lv>1</>次，至多叠加<lv>10</>层，重复触发刷新持续时间；当装备者释放「变轨技能」的时候，会立刻获得<lv>10</>层「暗棘」。\n当装备者对处于倾陷状态的敌人造成伤害的时候，会让敌人的倾陷状态延长<lv>{3}</>秒。(单次倾陷效果内最多触发一次。)"
       }
     },
@@ -6994,13 +7446,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「夏刑草」",
         "en": "Solifugae Vita",
+        "ja": "「夏刑草」",
         "zhHans": "「夏刑草」"
       },
       "description": {
-        "ja": "装備者がシールドを付与されている場合、攻撃力+<lv>{0}</>。",
         "en": "Increases ATK by <lv>{0}</> while the wearer has a Shield.",
+        "ja": "装備者がシールドを付与されている場合、攻撃力+<lv>{0}</>。",
         "zhHans": "当装备者具有护盾的时候，攻击力提升<lv>{0}</>。"
       }
     },
@@ -7219,13 +7671,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「蜘識蔵家」",
         "en": "Spider Knowledge Collector",
+        "ja": "「蜘識蔵家」",
         "zhHans": "「蜘识藏家」"
       },
       "description": {
-        "ja": "装備者が「通常攻撃」でダメージを与えると、自身に「蜘識」を<lv>1</>スタック付与する（最大<lv>8</>スタックまで、クールダウン<lv>0.5</>秒）。\r\n装備者が「EXレール終結」を発動時、全ての「蜘識」を消費する。消費した「蜘識」<lv>1</>スタックにつき、チーム全員の攻撃力+<lv>{1}</>（<lv>{0}</>秒持続）。もし<lv>8</>スタック消費した場合は、さらにチーム全員の攻撃力+<lv>{2}</>。",
         "en": "Grants the wearer <lv>1</> stack of Spider Knowledge when dealing damage with Basic Attacks, up to <lv>8</> stacks (up to <lv>1</> stack every <lv>0.5</>s). All stacks are consumed when casting Ultimate. Increases the entire team's ATK by <lv>{1}</> for <lv>{0}</>s <lv>per</> stack consumed. Increases ATK by an additional <lv>{2}</> when <lv>8</> stacks are consumed.",
+        "ja": "装備者が「通常攻撃」でダメージを与えると、自身に「蜘識」を<lv>1</>スタック付与する（最大<lv>8</>スタックまで、クールダウン<lv>0.5</>秒）。\r\n装備者が「EXレール終結」を発動時、全ての「蜘識」を消費する。消費した「蜘識」<lv>1</>スタックにつき、チーム全員の攻撃力+<lv>{1}</>（<lv>{0}</>秒持続）。もし<lv>8</>スタック消費した場合は、さらにチーム全員の攻撃力+<lv>{2}</>。",
         "zhHans": "装备者通过「普通攻击」造成伤害可使自身获得<lv>1</>层「蜘识」，最多叠加<lv>8</>层，每<lv>0.5</>秒最多获得<lv>1</>层「蜘识」。装备者释放「极轨终结」时消耗所有「蜘识」，每消耗<lv>1</>层「蜘识」可以让全队在<lv>{0}</>秒内攻击力提升<lv>{1}</>；若消耗的「蜘识」数量为<lv>8</>，则额外使全队攻击力提升<lv>{2}</>。"
       }
     },
@@ -7444,13 +7896,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「シーフキャンディ」",
         "en": "Thief's Candy",
+        "ja": "「シーフキャンディ」",
         "zhHans": "「盗贼糖」"
       },
       "description": {
-        "ja": "装備者が極限回避を行うたびに、自身の与えるダメージ+<lv>{0}</>（<lv>{1}</>秒持続、最大<lv>3</>スタックまで）。スタック追加時に持続時間が更新される。",
         "en": "Increases wearer's damage by <lv>{0}</> for <lv>{1}</>s after performing a Critical Dodge, up to <lv>3</> stacks. Resets the duration when triggered again.",
+        "ja": "装備者が極限回避を行うたびに、自身の与えるダメージ+<lv>{0}</>（<lv>{1}</>秒持続、最大<lv>3</>スタックまで）。スタック追加時に持続時間が更新される。",
         "zhHans": "装备者每次极限闪避后自身造成的伤害提高<lv>{0}</>，持续<lv>{1}</>秒，最多叠加<lv>3</>层，重复触发刷新持续时间。"
       }
     },
@@ -7669,13 +8121,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「司令虎符」",
         "en": "Commander Tiger Talisman",
+        "ja": "「司令虎符」",
         "zhHans": "「司令虎符」"
       },
       "description": {
-        "ja": "攻撃力+<lv>{0}</>。\n「バイレールスキル」または「EXレール終結」を使用すると、自身の「通常攻撃」と「極限反撃」の与ダメージ+<lv>{1}</>（<lv>{2}</>秒持続、最大<lv>2</>スタックまで）。\n「バイレールスキル」使用時に「左虎符」を、「EXレール終結」使用時に「右虎符」を獲得する。一方を獲得してから<lv>{3}</>秒以内にもう一方を獲得した場合、調弧「司令虎符」が使用可能になる。\n調弧「司令虎符」：ボスユニットに与えるダメージ+<lv>{4}</>（<lv>{5}</>秒持続）。",
         "en": "Increases ATK by <lv>{0}</>.\nIncreases Basic Attack and Critical Riposte damage by <lv>{1}</> for <lv>{2}</>s when casting a Redirect Skill or Ultimate, up to <lv>2</> stacks.\nGrants a Left Tiger Talisman when casting Redirect Skill and a Right Tiger Talisman when casting Ultimate.\nUnlocks Commander Tiger Talisman if the wearer obtains the other type of talisman within <lv>{3}</>s of gaining one.\nArc: Commander Tiger Talisman — Increases the wearer's damage to Bosses by <lv>{4}</> for <lv>{5}</>s.",
+        "ja": "攻撃力+<lv>{0}</>。\n「バイレールスキル」または「EXレール終結」を使用すると、自身の「通常攻撃」と「極限反撃」の与ダメージ+<lv>{1}</>（<lv>{2}</>秒持続、最大<lv>2</>スタックまで）。\n「バイレールスキル」使用時に「左虎符」を、「EXレール終結」使用時に「右虎符」を獲得する。一方を獲得してから<lv>{3}</>秒以内にもう一方を獲得した場合、調弧「司令虎符」が使用可能になる。\n調弧「司令虎符」：ボスユニットに与えるダメージ+<lv>{4}</>（<lv>{5}</>秒持続）。",
         "zhHans": "攻击力提高<lv>{0}</>。\n释放「变轨技能」或「极轨终结」使自身的「普通攻击」和「极限反击」造成伤害提高<lv>{1}</>，持续<lv>{2}</>秒，该效果最多叠加<lv>2</>层。\n释放「变轨技能」可以获得\"左虎符\"，释放「极轨终结」，可以获得\"右虎符\"。\n若在获得一种虎符的<lv>{3}</>秒内获得另一种虎符，则可使用调弧：「司令虎符」。\n调弧·「司令虎符」：装备者对Boss单位造成的伤害提升<lv>{4}</>，持续<lv>{5}</>秒。"
       }
     },
@@ -7894,13 +8346,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「時間外の時間」",
         "en": "Time Beyond Time",
+        "ja": "「時間外の時間」",
         "zhHans": "「时间之外的时间」"
       },
       "description": {
-        "ja": "攻撃力+<lv>{0}</>。\r\n装備者が「バイレールスキル」を発動後、「荒時の迷宮」状態に入り、現在の「荒時」をクリアする。「荒時の迷宮」状態中に仲間が「バイレールスキル」または「サポートスキル」を発動すると、そのたびに「荒時」を<lv>1</>スタック獲得する（最大<lv>3</>スタックまで）。「荒時の迷宮」状態中に「EXレール終結」を発動すると、全ての「荒時」を消費して「荒時の迷宮」を終了し、「EXレール終結」のクリティカルダメージ+<lv>{1}</>。<lv>1</>スタックにつき、装備者の「EXレール終結」が与えるクリティカルダメージが追加で+<lv>{2}</>。一度に<lv>3</>スタックの「荒時」を消費した場合、追加でダメージ計算時に敵の防御力を<lv>{3}</>無視する（<lv>{4}</>秒持続）。",
         "en": "Increases ATK by <lv>{0}</>.\r\nEnters Wastelab and clears current Wastetime when the wearer casts a Redirect Skill. While in Wastelab, allies gain <lv>1</> stack of Wastetime each time they use a Redirect or Support Skill, up to <lv>3</> stacks. When the wearer uses their Ultimate in Wastelab, they exit Wastelab and consume all Wastetime, increasing Ultimate Crit DMG by <lv>{1}</>, plus an additional <lv>{2}</> per Wastetime consumed. Consuming <lv>3</> Wastetime stacks at once grants an extra <lv>{3}</> DEF Ignore for <lv>{4}</>s.",
+        "ja": "攻撃力+<lv>{0}</>。\r\n装備者が「バイレールスキル」を発動後、「荒時の迷宮」状態に入り、現在の「荒時」をクリアする。「荒時の迷宮」状態中に仲間が「バイレールスキル」または「サポートスキル」を発動すると、そのたびに「荒時」を<lv>1</>スタック獲得する（最大<lv>3</>スタックまで）。「荒時の迷宮」状態中に「EXレール終結」を発動すると、全ての「荒時」を消費して「荒時の迷宮」を終了し、「EXレール終結」のクリティカルダメージ+<lv>{1}</>。<lv>1</>スタックにつき、装備者の「EXレール終結」が与えるクリティカルダメージが追加で+<lv>{2}</>。一度に<lv>3</>スタックの「荒時」を消費した場合、追加でダメージ計算時に敵の防御力を<lv>{3}</>無視する（<lv>{4}</>秒持続）。",
         "zhHans": "攻击力提高<lv>{0}</>。\r\n装备者释放「变轨技能」后，进入「荒时迷宫」状态并清除当前「荒时」。当装备者处于「荒时迷宫」时，队友每次释放「变轨技能」或「援护技」都将获得<lv>1</>层「荒时」，至多<lv>3</>层。当装备者处于「荒时迷宫」内释放「极轨终结」时，退出「荒时迷宫」并消耗所有「荒时」，使「极轨终结」造成的暴击伤害提升<lv>{1}</>，每消耗1层「荒时」使装备者「极轨终结」造成的暴击伤害额外提升<lv>{2}</>；若一次性消耗了<lv>3</>层「荒时」，则额外获得<lv>{3}</>无视防御效果，持续<lv>{4}</>秒。"
       }
     },
@@ -8119,13 +8571,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「団三郎」",
         "en": "Danzaburou",
+        "ja": "「団三郎」",
         "zhHans": "「团三郎」"
       },
       "description": {
-        "ja": "チーム内に装備者と同じ異能系統のキャラ（自身を含む）が<lv>3</>体以上いる場合、その異能系統の全キャラのブレイクパワー+<lv>{0}</>。この効果によるブレイクパワー上昇はスタックしない。",
         "en": "Increases Break Intensity by <lv>{0}</> for all characters of the same Esper Type as the wearer (including the wearer) when the team has <lv>3</> or more such characters. This effect does not stack.",
+        "ja": "チーム内に装備者と同じ異能系統のキャラ（自身を含む）が<lv>3</>体以上いる場合、その異能系統の全キャラのブレイクパワー+<lv>{0}</>。この効果によるブレイクパワー上昇はスタックしない。",
         "zhHans": "当队伍中与装备者异能属性相同的角色数量大于等于<lv>3</>个(包含自身)，所有该异能属性的角色倾陷强度提升<lv>{0}</>，通过该途径获得的倾陷强度提升不可叠加。"
       }
     },
@@ -8344,13 +8796,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「だっこツル」",
         "en": "Huggy Vines",
+        "ja": "「だっこツル」",
         "zhHans": "「抱抱藤」"
       },
       "description": {
-        "ja": "装備者が敵を撃破時、自身のHPを<lv>{0}</>回復する（クールダウン<lv>{1}</>秒）",
         "en": "Restores wearer's HP by <lv>{0}</> upon defeating an enemy. Triggers at most once every <lv>{1}</>s.",
+        "ja": "装備者が敵を撃破時、自身のHPを<lv>{0}</>回復する（クールダウン<lv>{1}</>秒）",
         "zhHans": "装备者击杀敌人时，回复自身<lv>{0}</>生命值，<lv>{1}</>秒内最多触发一次。"
       }
     },
@@ -8569,13 +9021,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「深藍の嘆き」",
         "en": "Deep Blue Sorrow",
+        "ja": "「深藍の嘆き」",
         "zhHans": "「深蓝之恸」"
       },
       "description": {
-        "ja": "攻撃力+<lv>{0}</>。\n装備者がブレイク状態にある敵に与えるダメージ+<lv>{1}</>。敵がブレイク状態の間に撃破された場合、装備者のHPを<lv>{2}</>回復する。この効果は<lv>{3}</>秒に<lv>1</>回しか発動しない。",
         "en": "Increases ATK by <lv>{0}</>.\nIncreases the wearer's damage to Broken enemies by <lv>{1}</>. Restores <lv>{2}</> HP to the wearer if a Broken enemy is defeated. Triggers at most <lv>once</> every <lv>{3}</>s.",
+        "ja": "攻撃力+<lv>{0}</>。\n装備者がブレイク状態にある敵に与えるダメージ+<lv>{1}</>。敵がブレイク状態の間に撃破された場合、装備者のHPを<lv>{2}</>回復する。この効果は<lv>{3}</>秒に<lv>1</>回しか発動しない。",
         "zhHans": "攻击力提高<lv>{0}</>。\n装备者对处于倾陷状态的敌人造成的伤害提高<lv>{1}</>，如果敌人在倾陷状态下被击杀，则回复装备者<lv>{2}</>生命值，该效果<lv>{3}</>秒内最多触发<lv>1</>次。"
       }
     },
@@ -8794,13 +9246,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「スパイラ」",
         "en": "Hypervortex",
+        "ja": "「スパイラ」",
         "zhHans": "「极漩」"
       },
       "description": {
-        "ja": "装備者の「バイレールスキル」と「EXレール終結」による光異能ダメージ+<lv>{0}</>。\r\n装備者が「バイレールスキル」を発動後、自身の連環パワー+<lv>{1}</>（<lv>{2}</>秒持続）。スタック追加時に持続時間が更新される。",
         "en": "Deals <lv>{0}</> increased Cosmos DMG with the wearer's Redirect Skill and Ultimate.\r\nIncreases the wearer's Cycle Intensity by <lv>{1}</> for <lv>{2}</>s after casting a Redirect Skill. Resets the duration when triggered again.",
+        "ja": "装備者の「バイレールスキル」と「EXレール終結」による光異能ダメージ+<lv>{0}</>。\r\n装備者が「バイレールスキル」を発動後、自身の連環パワー+<lv>{1}</>（<lv>{2}</>秒持続）。スタック追加時に持続時間が更新される。",
         "zhHans": "装备者的「变轨技能」和「极轨终结」造成的光属性异能伤害增加<lv>{0}</>。\r\n装备者释放「变轨技能」后，自身环合强度提高<lv>{1}</>，持续<lv>{2}</>秒，重复触发刷新持续时间。"
       }
     },
@@ -9019,13 +9471,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「額縁ヴォイド」",
         "en": "Picture Frame",
+        "ja": "「額縁ヴォイド」",
         "zhHans": "「无画框」"
       },
       "description": {
-        "ja": "装備者のHPが50％以上の場合、攻撃力+<lv>{0}</>。50％未満の場合、防御力+<lv>{1}</>。",
         "en": "Increases ATK by <lv>{0}</> when the wearer’s HP is above 50%; increases DEF by <lv>{1}</> when HP is below 50%.",
+        "ja": "装備者のHPが50％以上の場合、攻撃力+<lv>{0}</>。50％未満の場合、防御力+<lv>{1}</>。",
         "zhHans": "装备者生命值高于50%的时候攻击力提高<lv>{0}</>；生命值低于50%的时候，防御力提高<lv>{1}</>。"
       }
     },
@@ -9244,13 +9696,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「デュラハン」",
         "en": "Headless Rider",
+        "ja": "「デュラハン」",
         "zhHans": "「无首铁驭」"
       },
       "description": {
-        "ja": "相異能ダメージ+<lv>{3}</>。\r\n「EXレール終結」を発動すると、装備者の「バイレールスキル」と「EXレール終結」の与ダメージ+<lv>{0}</>（<lv>{1}</>秒持続）。効果発動中、「バイレールスキル」を発動するたびに、装備者の「バイレールスキル」の与ダメージ+<lv>{2}</>（この方法によるダメージ増加は最大<lv>2</>スタックまで）。",
         "en": "Increases Lakshana DMG by <lv>{3}</>.\r\nIncreases the wearer's Redirect Skill and Ultimate DMG by <lv>{0}</> for <lv>{1}</>s after casting Ultimate. Increases the wearer’s Redirect Skill DMG by <lv>{2}</> per cast while active, up to 2 stacks.",
+        "ja": "相異能ダメージ+<lv>{3}</>。\r\n「EXレール終結」を発動すると、装備者の「バイレールスキル」と「EXレール終結」の与ダメージ+<lv>{0}</>（<lv>{1}</>秒持続）。効果発動中、「バイレールスキル」を発動するたびに、装備者の「バイレールスキル」の与ダメージ+<lv>{2}</>（この方法によるダメージ増加は最大<lv>2</>スタックまで）。",
         "zhHans": "相属性异能伤害提升<lv>{3}</>。\r\n释放「极轨终结」后，装备者「变轨技能」和「极轨终结」造成伤害提升<lv>{0}</>，持续<lv>{1}</>秒。效果生效期间，每次释放「变轨技能」，装备者的「变轨技能」造成伤害提升<lv>{2}</>，通过这一方式获得的伤害提升最多叠加两次。"
       }
     },
@@ -9469,13 +9921,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「血染めの妖刀」",
         "en": "Crimson Hexblade",
+        "ja": "「血染めの妖刀」",
         "zhHans": "「血染妖刀」"
       },
       "description": {
-        "ja": "装備者がレール反撃を発動した時、追加で攻撃力の<lv>{0}</>にあたる呪異能ダメージを1回与える。",
         "en": "Deals additional Incantation DMG equal to <lv>{0}</> of ATK when the wearer triggers a Parry Attack.",
+        "ja": "装備者がレール反撃を発動した時、追加で攻撃力の<lv>{0}</>にあたる呪異能ダメージを1回与える。",
         "zhHans": "装备者触发承轨反击时额外附带一次<lv>{0}</>攻击力的咒属性异能伤害。"
       }
     },
@@ -9694,13 +10146,13 @@
     },
     "effect": {
       "name": {
-        "ja": "「レインマン」",
         "en": "\"Rainman\"",
+        "ja": "「レインマン」",
         "zhHans": "「雨人」"
       },
       "description": {
-        "ja": "HP+<lv>{0}</>。\r\n装備者のHPが50％以上の場合、自身のシールド強度+<lv>{1}</>。",
         "en": "Increases HP by <lv>{0}</>.\r\nStrengthens shields by <lv>{1}</> while the wearer's HP is above 50%.",
+        "ja": "HP+<lv>{0}</>。\r\n装備者のHPが50％以上の場合、自身のシールド強度+<lv>{1}</>。",
         "zhHans": "生命值提升<lv>{0}</>。\r\n当装备者生命值高于50%的时候，自身获得<lv>{1}</>护盾强化。"
       }
     },
@@ -9894,6 +10346,232 @@
             52.5,
             52.5,
             52.5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "fork_Door",
+    "name": {
+      "ja": "偽りの門",
+      "en": "The Wrong Gate",
+      "zhHans": "错误的门"
+    },
+    "rarity": "S",
+    "tier": "S",
+    "quality": "orange",
+    "typeId": "2",
+    "weaponTypeId": null,
+    "assets": {
+      "icon": "assets/arcs/fork_Door/icon.webp"
+    },
+    "baseStats": {
+      "attack": 570,
+      "attackPercent": 30
+    },
+    "effect": {
+      "name": {
+        "en": "Reverie Gate",
+        "ja": "「随想の門」",
+        "zhHans": "「随想之门」"
+      },
+      "description": {
+        "en": "Increases ATK by <lv>{0}</>.\r\nWhen the wearer performs healing, increases the wearer's Anima DMG dealt by <lv>{2}</> and all allies' DMG dealt by <lv>{1}</> for <lv>{3}</>s. Resets the duration when triggered again. Effects with the same name do not stack.",
+        "ja": "攻撃力+<lv>{0}</>。\r\n装備者が治療を行う時、自身の与える霊異能ダメージ+<lv>{2}</>、チーム内の他のキャラの与ダメージ+<lv>{1}</>（<lv>{3}</>秒持続、スタック不可）スタック追加時に持続時間が更新される。",
+        "zhHans": "攻击力提高<lv>{0}</>。\r\n装备者造成治疗的时候，自身造成的灵属性异能伤害增加<lv>{2}</>，编队其他角色获得通用增伤<lv>{1}</>，持续<lv>{3}</>秒，同名效果无法叠加，重复触发刷新持续时间。"
+      }
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "slot": 1,
+          "sourceStatId": "AtkBase",
+          "statId": "attack",
+          "names": {
+            "ja": "攻撃力",
+            "en": "ATK",
+            "zhHans": "攻击力"
+          },
+          "isPercent": false,
+          "values": [
+            37,
+            42,
+            46,
+            51,
+            56,
+            61,
+            66,
+            70,
+            75,
+            80,
+            85,
+            90,
+            94,
+            99,
+            104,
+            109,
+            114,
+            118,
+            123,
+            128,
+            159,
+            164,
+            168,
+            173,
+            178,
+            183,
+            188,
+            192,
+            197,
+            202,
+            232,
+            237,
+            241,
+            246,
+            251,
+            256,
+            261,
+            265,
+            270,
+            275,
+            306,
+            311,
+            315,
+            320,
+            325,
+            330,
+            335,
+            339,
+            344,
+            349,
+            379,
+            384,
+            388,
+            393,
+            398,
+            403,
+            408,
+            412,
+            417,
+            422,
+            453,
+            458,
+            462,
+            467,
+            472,
+            477,
+            482,
+            486,
+            491,
+            496,
+            527,
+            532,
+            536,
+            541,
+            546,
+            551,
+            556,
+            560,
+            565,
+            570
+          ]
+        },
+        {
+          "slot": 2,
+          "sourceStatId": "AtkUp",
+          "statId": "attackPercent",
+          "names": {
+            "ja": "攻撃力％",
+            "en": "ATK %",
+            "zhHans": "攻击力％"
+          },
+          "isPercent": true,
+          "values": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            15,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            21,
+            21,
+            21,
+            21,
+            21,
+            21,
+            21,
+            21,
+            21,
+            21,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30
           ]
         }
       ]

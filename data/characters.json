@@ -9,7 +9,6 @@
     },
     "rarity": "S",
     "element": "霊",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/nanally/icon.webp",
       "portrait": "assets/characters/nanally/portrait.webp",
@@ -166,18 +165,18 @@
       "ownerGridCount": 2,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅡ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type II Module equipped.",
+          "ja": "駆動ブロックⅡ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅱ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅱ型特化",
           "en": "Type II Specialization",
+          "ja": "Ⅱ型特化",
           "zhHans": "Ⅱ型特化"
         },
         "stats": [
@@ -192,13 +191,6 @@
           }
         ]
       }
-    },
-    "nameSource": {
-      "internalKey": "010_nanally",
-      "fashionAliases": [
-        "nanali"
-      ],
-      "skillNamespace": "Nanally_SkillDes"
     },
     "arcType": "プラズマ",
     "attribute": "霊",
@@ -511,7 +503,6 @@
     },
     "rarity": "S",
     "element": "光",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/chiz/icon.webp",
       "portrait": "assets/characters/chiz/portrait.webp",
@@ -704,18 +695,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -730,13 +721,6 @@
           }
         ]
       }
-    },
-    "nameSource": {
-      "internalKey": "073_rabbit",
-      "fashionAliases": [
-        "xiaozhi"
-      ],
-      "skillNamespace": "Chiichan_SkillDes"
     },
     "attribute": "光",
     "arcType": "気体",
@@ -1049,7 +1033,6 @@
     },
     "rarity": "A",
     "element": "霊",
-    "role": "サポート",
     "assets": {
       "icon": "assets/characters/mint/icon.webp",
       "portrait": "assets/characters/mint/portrait.webp",
@@ -1234,18 +1217,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -1261,14 +1244,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "019_mint",
-      "fashionAliases": [
-        "bohe"
-      ],
-      "skillNamespace": "Mint_SkillDes"
-    },
-    "arcType": "液体",
+    "arcType": "リキッド",
     "attribute": "霊",
     "elementKey": "Anima",
     "attributeNames": {
@@ -1278,9 +1254,9 @@
     },
     "arcTypeId": "2",
     "weaponTypeId": "2",
-    "weaponType": "液体",
+    "weaponType": "リキッド",
     "weaponTypeNames": {
-      "ja": "液体",
+      "ja": "リキッド",
       "en": "Liquid",
       "zhHans": "液态"
     },
@@ -1579,7 +1555,6 @@
     },
     "rarity": "A",
     "element": "呪",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/adler/icon.webp",
       "portrait": "assets/characters/adler/portrait.webp",
@@ -1762,18 +1737,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -1789,14 +1764,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "033_adler_new",
-      "fashionAliases": [
-        "adele"
-      ],
-      "skillNamespace": "Adler_SkillDes"
-    },
-    "arcType": "集合",
+    "arcType": "重合体",
     "attribute": "呪",
     "elementKey": "Incantation",
     "attributeNames": {
@@ -1806,10 +1774,10 @@
     },
     "arcTypeId": "5",
     "weaponTypeId": "5",
-    "weaponType": "集合",
+    "weaponType": "重合体",
     "weaponTypeNames": {
-      "ja": "集合",
-      "en": "Synthesis",
+      "ja": "重合体",
+      "en": "Polymer",
       "zhHans": "聚合"
     },
     "levelStats": {
@@ -2107,7 +2075,6 @@
     },
     "rarity": "S",
     "element": "呪",
-    "role": "サポート",
     "assets": {
       "icon": "assets/characters/baicang/icon.webp",
       "portrait": "assets/characters/baicang/portrait.webp",
@@ -2290,18 +2257,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -2317,14 +2284,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "023_cang",
-      "fashionAliases": [
-        "baizang"
-      ],
-      "skillNamespace": "Cang_SkillDes"
-    },
-    "arcType": "集合",
+    "arcType": "重合体",
     "attribute": "呪",
     "elementKey": "Incantation",
     "attributeNames": {
@@ -2334,10 +2294,10 @@
     },
     "arcTypeId": "5",
     "weaponTypeId": "5",
-    "weaponType": "集合",
+    "weaponType": "重合体",
     "weaponTypeNames": {
-      "ja": "集合",
-      "en": "Synthesis",
+      "ja": "重合体",
+      "en": "Polymer",
       "zhHans": "聚合"
     },
     "levelStats": {
@@ -2635,7 +2595,6 @@
     },
     "rarity": "S",
     "element": "闇",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/daffodil/icon.webp",
       "portrait": "assets/characters/daffodil/portrait.webp",
@@ -2819,18 +2778,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -2846,14 +2805,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "054_daffodill",
-      "fashionAliases": [
-        "dafudier"
-      ],
-      "skillNamespace": "Daffodill_SkillDes"
-    },
-    "arcType": "液体",
+    "arcType": "リキッド",
     "attribute": "闇",
     "elementKey": "Chaos",
     "attributeNames": {
@@ -2863,9 +2815,9 @@
     },
     "arcTypeId": "2",
     "weaponTypeId": "2",
-    "weaponType": "液体",
+    "weaponType": "リキッド",
     "weaponTypeNames": {
-      "ja": "液体",
+      "ja": "リキッド",
       "en": "Liquid",
       "zhHans": "液态"
     },
@@ -3164,7 +3116,6 @@
     },
     "rarity": "A",
     "element": "光",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/edgar/icon.webp",
       "portrait": "assets/characters/edgar/portrait.webp",
@@ -3317,18 +3268,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -3344,14 +3295,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "021_edgar",
-      "fashionAliases": [
-        "aidejia"
-      ],
-      "skillNamespace": "Edgar_SkillDes"
-    },
-    "arcType": "液体",
+    "arcType": "リキッド",
     "attribute": "光",
     "elementKey": "Cosmos",
     "attributeNames": {
@@ -3361,9 +3305,9 @@
     },
     "arcTypeId": "2",
     "weaponTypeId": "2",
-    "weaponType": "液体",
+    "weaponType": "リキッド",
     "weaponTypeNames": {
-      "ja": "液体",
+      "ja": "リキッド",
       "en": "Liquid",
       "zhHans": "液态"
     },
@@ -3662,7 +3606,6 @@
     },
     "rarity": "S",
     "element": "魂",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/fadia/icon.webp",
       "portrait": "assets/characters/fadia/portrait.webp",
@@ -3846,18 +3789,18 @@
       "ownerGridCount": 2,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅡ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type II Module equipped.",
+          "ja": "駆動ブロックⅡ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅱ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅱ型特化",
           "en": "Type II Specialization",
+          "ja": "Ⅱ型特化",
           "zhHans": "Ⅱ型特化"
         },
         "stats": [
@@ -3873,14 +3816,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "039_fadia",
-      "fashionAliases": [
-        "fadiya"
-      ],
-      "skillNamespace": "Fadia_SkillDes"
-    },
-    "arcType": "集合",
+    "arcType": "重合体",
     "attribute": "魂",
     "elementKey": "Psyche",
     "attributeNames": {
@@ -3890,10 +3826,10 @@
     },
     "arcTypeId": "5",
     "weaponTypeId": "5",
-    "weaponType": "集合",
+    "weaponType": "重合体",
     "weaponTypeNames": {
-      "ja": "集合",
-      "en": "Synthesis",
+      "ja": "重合体",
+      "en": "Polymer",
       "zhHans": "聚合"
     },
     "levelStats": {
@@ -4191,7 +4127,6 @@
     },
     "rarity": "A",
     "element": "魂",
-    "role": "サポート",
     "assets": {
       "icon": "assets/characters/haniel/icon.webp",
       "portrait": "assets/characters/haniel/portrait.webp",
@@ -4374,18 +4309,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -4401,15 +4336,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "020_haniel_1",
-      "fashionAliases": [
-        "haniya",
-        "naniya"
-      ],
-      "skillNamespace": "Haniel_SkillDes"
-    },
-    "arcType": "固体",
+    "arcType": "ソリッド",
     "attribute": "魂",
     "elementKey": "Psyche",
     "attributeNames": {
@@ -4419,9 +4346,9 @@
     },
     "arcTypeId": "1",
     "weaponTypeId": "1",
-    "weaponType": "固体",
+    "weaponType": "ソリッド",
     "weaponTypeNames": {
-      "ja": "固体",
+      "ja": "ソリッド",
       "en": "Solid",
       "zhHans": "固态"
     },
@@ -4720,7 +4647,6 @@
     },
     "rarity": "S",
     "element": "相",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/hathor/icon.webp",
       "portrait": "assets/characters/hathor/portrait.webp",
@@ -4903,18 +4829,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -4929,13 +4855,6 @@
           }
         ]
       }
-    },
-    "nameSource": {
-      "internalKey": "025_hathor_1",
-      "fashionAliases": [
-        "hasuoer"
-      ],
-      "skillNamespace": "Hathor_SkillDes"
     },
     "arcType": "プラズマ",
     "attribute": "相",
@@ -5248,7 +5167,6 @@
     },
     "rarity": "S",
     "element": "霊",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/jiuyuan/icon.webp",
       "portrait": "assets/characters/jiuyuan/portrait.webp",
@@ -5402,18 +5320,18 @@
       "ownerGridCount": 2,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅡ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type II Module equipped.",
+          "ja": "駆動ブロックⅡ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅱ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅱ型特化",
           "en": "Type II Specialization",
+          "ja": "Ⅱ型特化",
           "zhHans": "Ⅱ型特化"
         },
         "stats": [
@@ -5429,14 +5347,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "055_kuhara",
-      "fashionAliases": [
-        "jiuyuan"
-      ],
-      "skillNamespace": "Kuhara_SkillDes"
-    },
-    "arcType": "固体",
+    "arcType": "ソリッド",
     "attribute": "霊",
     "elementKey": "Anima",
     "attributeNames": {
@@ -5446,9 +5357,9 @@
     },
     "arcTypeId": "1",
     "weaponTypeId": "1",
-    "weaponType": "固体",
+    "weaponType": "ソリッド",
     "weaponTypeNames": {
-      "ja": "固体",
+      "ja": "ソリッド",
       "en": "Solid",
       "zhHans": "固态"
     },
@@ -5747,7 +5658,6 @@
     },
     "rarity": "S",
     "element": "闇",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/lacrimosa/icon.webp",
       "portrait": "assets/characters/lacrimosa/portrait.webp",
@@ -5900,18 +5810,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -5927,14 +5837,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "004_lacrimosa",
-      "fashionAliases": [
-        "anhunqu"
-      ],
-      "skillNamespace": "Lacrimosa_SkillDes"
-    },
-    "arcType": "液体",
+    "arcType": "リキッド",
     "attribute": "闇",
     "elementKey": "Chaos",
     "attributeNames": {
@@ -5944,9 +5847,9 @@
     },
     "arcTypeId": "2",
     "weaponTypeId": "2",
-    "weaponType": "液体",
+    "weaponType": "リキッド",
     "weaponTypeNames": {
-      "ja": "液体",
+      "ja": "リキッド",
       "en": "Liquid",
       "zhHans": "液态"
     },
@@ -6245,7 +6148,6 @@
     },
     "rarity": "A",
     "element": "魂",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/mitsuki/icon.webp",
       "portrait": "assets/characters/mitsuki/portrait.webp",
@@ -6428,18 +6330,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -6454,13 +6356,6 @@
           }
         ]
       }
-    },
-    "nameSource": {
-      "internalKey": "070_mitsuki",
-      "fashionAliases": [
-        "haiyue"
-      ],
-      "skillNamespace": "Mitsuki_SkillDes"
     },
     "arcType": "プラズマ",
     "attribute": "魂",
@@ -6773,7 +6668,6 @@
     },
     "rarity": "S",
     "element": "呪",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/sakiri/icon.webp",
       "portrait": "assets/characters/sakiri/portrait.webp",
@@ -6957,18 +6851,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -6983,13 +6877,6 @@
           }
         ]
       }
-    },
-    "nameSource": {
-      "internalKey": "003_sagiri_1",
-      "fashionAliases": [
-        "zaowu"
-      ],
-      "skillNamespace": "Sagiri_SkillDes"
     },
     "arcType": "気体",
     "attribute": "呪",
@@ -7302,7 +7189,6 @@
     },
     "rarity": "A",
     "element": "相",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/skia/icon.webp",
       "portrait": "assets/characters/skia/portrait.webp",
@@ -7485,18 +7371,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -7511,13 +7397,6 @@
           }
         ]
       }
-    },
-    "nameSource": {
-      "internalKey": "008_skia",
-      "fashionAliases": [
-        "yi"
-      ],
-      "skillNamespace": "Skia_SkillDes"
     },
     "arcType": "気体",
     "attribute": "相",
@@ -7830,7 +7709,6 @@
     },
     "rarity": "S",
     "element": "光",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/xun/icon.webp",
       "portrait": "assets/characters/xun/portrait.webp",
@@ -8015,18 +7893,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -8042,14 +7920,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "052_jin",
-      "fashionAliases": [
-        "xun"
-      ],
-      "skillNamespace": "Jin_SkillDes"
-    },
-    "arcType": "固体",
+    "arcType": "ソリッド",
     "attribute": "光",
     "elementKey": "Cosmos",
     "attributeNames": {
@@ -8059,9 +7930,9 @@
     },
     "arcTypeId": "1",
     "weaponTypeId": "1",
-    "weaponType": "固体",
+    "weaponType": "ソリッド",
     "weaponTypeNames": {
-      "ja": "固体",
+      "ja": "ソリッド",
       "en": "Solid",
       "zhHans": "固态"
     },
@@ -8360,7 +8231,6 @@
     },
     "rarity": "S",
     "element": "光",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/zero_female/icon.webp",
       "portrait": "assets/characters/zero_female/portrait.webp",
@@ -8548,18 +8418,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -8575,14 +8445,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "051_female",
-      "fashionAliases": [
-        "nvzhu"
-      ],
-      "skillNamespace": "Female051_SkillDes"
-    },
-    "arcType": "固体",
+    "arcType": "ソリッド",
     "attribute": "光",
     "elementKey": "Cosmos",
     "attributeNames": {
@@ -8592,9 +8455,9 @@
     },
     "arcTypeId": "1",
     "weaponTypeId": "1",
-    "weaponType": "固体",
+    "weaponType": "ソリッド",
     "weaponTypeNames": {
-      "ja": "固体",
+      "ja": "ソリッド",
       "en": "Solid",
       "zhHans": "固态"
     },
@@ -8893,7 +8756,6 @@
     },
     "rarity": "S",
     "element": "光",
-    "role": "アタッカー",
     "assets": {
       "icon": "assets/characters/zero_male/icon.webp",
       "portrait": "assets/characters/zero_male/portrait.webp",
@@ -9081,18 +8943,18 @@
       "ownerGridCount": 3,
       "specialization": {
         "typeName": {
-          "ja": "ギアステータス",
           "en": "Console Attributes",
+          "ja": "ギアステータス",
           "zhHans": "空幕属性"
         },
         "description": {
-          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
           "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
         },
         "specialDescription": {
-          "ja": "Ⅲ型特化",
           "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
           "zhHans": "Ⅲ型特化"
         },
         "stats": [
@@ -9108,14 +8970,7 @@
         ]
       }
     },
-    "nameSource": {
-      "internalKey": "046_male",
-      "fashionAliases": [
-        "nanzhu"
-      ],
-      "skillNamespace": null
-    },
-    "arcType": "固体",
+    "arcType": "ソリッド",
     "attribute": "光",
     "elementKey": "Cosmos",
     "attributeNames": {
@@ -9125,9 +8980,9 @@
     },
     "arcTypeId": "1",
     "weaponTypeId": "1",
-    "weaponType": "固体",
+    "weaponType": "ソリッド",
     "weaponTypeNames": {
-      "ja": "固体",
+      "ja": "ソリッド",
       "en": "Solid",
       "zhHans": "固态"
     },
@@ -9324,6 +9179,1545 @@
         {
           "statId": "defense",
           "sourceStatId": "DefBase",
+          "names": {
+            "ja": "防御力",
+            "en": "DEF",
+            "zhHans": "防御力"
+          },
+          "isPercent": false,
+          "values": [
+            75,
+            81,
+            87,
+            93,
+            99,
+            105,
+            111,
+            117,
+            123,
+            129,
+            135,
+            141,
+            147,
+            153,
+            159,
+            165,
+            171,
+            177,
+            183,
+            189,
+            255,
+            261,
+            267,
+            273,
+            279,
+            285,
+            291,
+            297,
+            303,
+            309,
+            375,
+            381,
+            387,
+            393,
+            399,
+            405,
+            411,
+            417,
+            423,
+            429,
+            495,
+            501,
+            507,
+            513,
+            519,
+            525,
+            531,
+            537,
+            543,
+            549,
+            615,
+            621,
+            627,
+            633,
+            639,
+            645,
+            651,
+            657,
+            663,
+            669,
+            735,
+            741,
+            747,
+            753,
+            759,
+            765,
+            771,
+            777,
+            783,
+            789,
+            855,
+            861,
+            867,
+            873,
+            879,
+            885,
+            891,
+            897,
+            903,
+            909
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "char_1071",
+    "slug": "chaos",
+    "name": {
+      "ja": "カオス",
+      "en": "Chaos",
+      "zhHans": "卡厄斯"
+    },
+    "rarity": "S",
+    "element": "相",
+    "assets": {
+      "icon": "assets/characters/chaos/icon.webp",
+      "portrait": "assets/characters/chaos/portrait.webp",
+      "card": "assets/characters/chaos/card.webp"
+    },
+    "fashionPortraits": [
+      "assets/characters/chaos/fashion/portrait_01.webp"
+    ],
+    "theme": {
+      "primary": "#8a53ff",
+      "secondary": "#d2b6ff",
+      "deep": "#130d24",
+      "accent": "#ffffff"
+    },
+    "baseStats": {
+      "critRate": 5,
+      "critDamage": 50,
+      "chargeEfficiency": 100,
+      "unbalIntensity": 0
+    },
+    "moduleBoard": {
+      "width": 5,
+      "height": 5,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "normal",
+          "enabled": false
+        }
+      ],
+      "rules": {
+        "allowRotation": true,
+        "maxModules": 10
+      },
+      "ownerGridCount": 3,
+      "specialization": {
+        "typeName": {
+          "en": "Console Attributes",
+          "ja": "ギアステータス",
+          "zhHans": "空幕属性"
+        },
+        "description": {
+          "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
+          "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
+        },
+        "specialDescription": {
+          "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
+          "zhHans": "Ⅲ型特化"
+        },
+        "stats": [
+          {
+            "sourceStatId": "CritDamageBase",
+            "names": {
+              "ja": "??????????",
+              "en": "CRIT DMG",
+              "zhHans": "????"
+            },
+            "value": 16
+          }
+        ]
+      }
+    },
+    "arcType": "重合体",
+    "attribute": "相",
+    "elementKey": "Lakshana",
+    "attributeNames": {
+      "ja": "相",
+      "en": "Lakshana",
+      "zhHans": "相"
+    },
+    "arcTypeId": "5",
+    "weaponTypeId": "5",
+    "weaponType": "重合体",
+    "weaponTypeNames": {
+      "ja": "重合体",
+      "en": "Polymer",
+      "zhHans": "聚合"
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "slot": 1,
+          "statId": "hp",
+          "sourceStatId": "HPMaxBase",
+          "names": {
+            "ja": "HP",
+            "en": "HP",
+            "zhHans": "???"
+          },
+          "isPercent": false,
+          "values": [
+            1300,
+            1404,
+            1508,
+            1612,
+            1716,
+            1820,
+            1924,
+            2028,
+            2132,
+            2236,
+            2340,
+            2444,
+            2548,
+            2652,
+            2756,
+            2860,
+            2964,
+            3068,
+            3172,
+            3276,
+            4420,
+            4524,
+            4628,
+            4732,
+            4836,
+            4940,
+            5044,
+            5148,
+            5252,
+            5356,
+            6500,
+            6604,
+            6708,
+            6812,
+            6916,
+            7020,
+            7124,
+            7228,
+            7332,
+            7436,
+            8580,
+            8684,
+            8788,
+            8892,
+            8996,
+            9100,
+            9204,
+            9308,
+            9412,
+            9516,
+            10660,
+            10764,
+            10868,
+            10972,
+            11076,
+            11180,
+            11284,
+            11388,
+            11492,
+            11596,
+            12740,
+            12844,
+            12948,
+            13052,
+            13156,
+            13260,
+            13364,
+            13468,
+            13572,
+            13676,
+            14820,
+            14924,
+            15028,
+            15132,
+            15236,
+            15340,
+            15444,
+            15548,
+            15652,
+            15756
+          ]
+        },
+        {
+          "slot": 2,
+          "statId": "attack",
+          "sourceStatId": "AtkBase",
+          "names": {
+            "ja": "???",
+            "en": "ATK",
+            "zhHans": "???"
+          },
+          "isPercent": false,
+          "values": [
+            80,
+            84,
+            88,
+            92,
+            96,
+            100,
+            104,
+            108,
+            112,
+            116,
+            120,
+            124,
+            128,
+            132,
+            136,
+            140,
+            144,
+            148,
+            152,
+            156,
+            200,
+            204,
+            208,
+            212,
+            216,
+            220,
+            224,
+            228,
+            232,
+            236,
+            280,
+            284,
+            288,
+            292,
+            296,
+            300,
+            304,
+            308,
+            312,
+            316,
+            360,
+            364,
+            368,
+            372,
+            376,
+            380,
+            384,
+            388,
+            392,
+            396,
+            440,
+            444,
+            448,
+            452,
+            456,
+            460,
+            464,
+            468,
+            472,
+            476,
+            520,
+            524,
+            528,
+            532,
+            536,
+            540,
+            544,
+            548,
+            552,
+            556,
+            600,
+            604,
+            608,
+            612,
+            616,
+            620,
+            624,
+            628,
+            632,
+            636
+          ]
+        },
+        {
+          "slot": 3,
+          "statId": "defense",
+          "sourceStatId": "DefBase",
+          "names": {
+            "ja": "???",
+            "en": "DEF",
+            "zhHans": "???"
+          },
+          "isPercent": false,
+          "values": [
+            76,
+            82,
+            88,
+            94,
+            100,
+            106,
+            112,
+            119,
+            125,
+            131,
+            137,
+            143,
+            149,
+            155,
+            161,
+            167,
+            173,
+            179,
+            185,
+            192,
+            259,
+            265,
+            271,
+            277,
+            283,
+            289,
+            295,
+            301,
+            307,
+            313,
+            380,
+            386,
+            393,
+            399,
+            405,
+            411,
+            417,
+            423,
+            429,
+            435,
+            501,
+            507,
+            513,
+            519,
+            526,
+            532,
+            538,
+            544,
+            550,
+            556,
+            623,
+            629,
+            635,
+            641,
+            647,
+            653,
+            659,
+            666,
+            672,
+            678,
+            745,
+            751,
+            757,
+            763,
+            769,
+            775,
+            781,
+            787,
+            793,
+            800,
+            867,
+            873,
+            879,
+            885,
+            891,
+            897,
+            903,
+            909,
+            915,
+            921
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "char_1076",
+    "slug": "shinku",
+    "name": {
+      "ja": "真紅",
+      "en": "Shinku",
+      "zhHans": "真红"
+    },
+    "rarity": "S",
+    "element": "光",
+    "assets": {
+      "icon": "assets/characters/shinku/icon.webp",
+      "portrait": "assets/characters/shinku/portrait.webp",
+      "card": "assets/characters/shinku/card.webp"
+    },
+    "fashionPortraits": [
+      "assets/characters/shinku/fashion/portrait_01.webp"
+    ],
+    "theme": {
+      "primary": "#d93445",
+      "secondary": "#ff9aa5",
+      "deep": "#241010",
+      "accent": "#ffffff"
+    },
+    "baseStats": {
+      "critRate": 5,
+      "critDamage": 50,
+      "chargeEfficiency": 100,
+      "unbalIntensity": 0
+    },
+    "moduleBoard": {
+      "width": 5,
+      "height": 4,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        }
+      ],
+      "rules": {
+        "allowRotation": true,
+        "maxModules": 10
+      },
+      "ownerGridCount": 3,
+      "specialization": {
+        "typeName": {
+          "en": "Console Attributes",
+          "ja": "ギアステータス",
+          "zhHans": "空幕属性"
+        },
+        "description": {
+          "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
+          "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
+        },
+        "specialDescription": {
+          "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
+          "zhHans": "Ⅲ型特化"
+        },
+        "stats": [
+          {
+            "sourceStatId": "CritDamageBase",
+            "names": {
+              "ja": "??????????",
+              "en": "CRIT DMG",
+              "zhHans": "????"
+            },
+            "value": 16
+          }
+        ]
+      }
+    },
+    "arcType": "重合体",
+    "attribute": "光",
+    "elementKey": "Cosmos",
+    "attributeNames": {
+      "ja": "光",
+      "en": "Cosmos",
+      "zhHans": "光"
+    },
+    "arcTypeId": "5",
+    "weaponTypeId": "5",
+    "weaponType": "重合体",
+    "weaponTypeNames": {
+      "ja": "重合体",
+      "en": "Polymer",
+      "zhHans": "聚合"
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "slot": 1,
+          "statId": "hp",
+          "sourceStatId": "HPMaxBase",
+          "names": {
+            "ja": "HP",
+            "en": "HP",
+            "zhHans": "???"
+          },
+          "isPercent": false,
+          "values": [
+            1330,
+            1436,
+            1543,
+            1649,
+            1756,
+            1862,
+            1968,
+            2075,
+            2181,
+            2288,
+            2394,
+            2500,
+            2607,
+            2713,
+            2820,
+            2926,
+            3032,
+            3139,
+            3245,
+            3352,
+            4522,
+            4628,
+            4735,
+            4841,
+            4948,
+            5054,
+            5160,
+            5267,
+            5373,
+            5480,
+            6650,
+            6756,
+            6863,
+            6969,
+            7076,
+            7182,
+            7288,
+            7395,
+            7501,
+            7608,
+            8778,
+            8884,
+            8991,
+            9097,
+            9204,
+            9310,
+            9416,
+            9523,
+            9629,
+            9736,
+            10906,
+            11012,
+            11119,
+            11225,
+            11332,
+            11438,
+            11544,
+            11651,
+            11757,
+            11864,
+            13034,
+            13140,
+            13247,
+            13353,
+            13460,
+            13566,
+            13672,
+            13779,
+            13885,
+            13992,
+            15162,
+            15268,
+            15375,
+            15481,
+            15588,
+            15694,
+            15800,
+            15907,
+            16013,
+            16120
+          ]
+        },
+        {
+          "slot": 2,
+          "statId": "attack",
+          "sourceStatId": "AtkBase",
+          "names": {
+            "ja": "???",
+            "en": "ATK",
+            "zhHans": "???"
+          },
+          "isPercent": false,
+          "values": [
+            80,
+            84,
+            88,
+            92,
+            96,
+            100,
+            104,
+            108,
+            112,
+            116,
+            120,
+            124,
+            128,
+            132,
+            136,
+            140,
+            144,
+            148,
+            152,
+            156,
+            200,
+            204,
+            208,
+            212,
+            216,
+            220,
+            224,
+            228,
+            232,
+            236,
+            280,
+            284,
+            288,
+            292,
+            296,
+            300,
+            304,
+            308,
+            312,
+            316,
+            360,
+            364,
+            368,
+            372,
+            376,
+            380,
+            384,
+            388,
+            392,
+            396,
+            440,
+            444,
+            448,
+            452,
+            456,
+            460,
+            464,
+            468,
+            472,
+            476,
+            520,
+            524,
+            528,
+            532,
+            536,
+            540,
+            544,
+            548,
+            552,
+            556,
+            600,
+            604,
+            608,
+            612,
+            616,
+            620,
+            624,
+            628,
+            632,
+            636
+          ]
+        },
+        {
+          "slot": 3,
+          "statId": "defense",
+          "sourceStatId": "DefBase",
+          "names": {
+            "ja": "???",
+            "en": "DEF",
+            "zhHans": "???"
+          },
+          "isPercent": false,
+          "values": [
+            74,
+            80,
+            86,
+            92,
+            98,
+            104,
+            110,
+            115,
+            121,
+            127,
+            133,
+            139,
+            145,
+            151,
+            157,
+            163,
+            169,
+            175,
+            181,
+            186,
+            251,
+            257,
+            263,
+            269,
+            275,
+            281,
+            287,
+            293,
+            299,
+            305,
+            370,
+            376,
+            381,
+            387,
+            393,
+            399,
+            405,
+            411,
+            417,
+            423,
+            489,
+            495,
+            501,
+            507,
+            512,
+            518,
+            524,
+            530,
+            536,
+            542,
+            607,
+            613,
+            619,
+            625,
+            631,
+            637,
+            643,
+            648,
+            654,
+            660,
+            725,
+            731,
+            737,
+            743,
+            749,
+            755,
+            761,
+            767,
+            773,
+            778,
+            843,
+            849,
+            855,
+            861,
+            867,
+            873,
+            879,
+            885,
+            891,
+            897
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "char_1075",
+    "slug": "irohi",
+    "name": {
+      "ja": "イロヒ",
+      "en": "Iroi",
+      "zhHans": "伊洛伊"
+    },
+    "rarity": "S",
+    "element": "霊",
+    "assets": {
+      "icon": "assets/characters/irohi/icon.webp",
+      "portrait": "assets/characters/irohi/portrait.webp",
+      "card": "assets/characters/irohi/card.webp"
+    },
+    "fashionPortraits": [
+      "assets/characters/irohi/fashion/portrait_01.webp"
+    ],
+    "theme": {
+      "primary": "#ef4f91",
+      "secondary": "#9ee4d1",
+      "deep": "#172228",
+      "accent": "#ffffff"
+    },
+    "baseStats": {
+      "critRate": 5,
+      "critDamage": 50,
+      "chargeEfficiency": 100,
+      "unbalIntensity": 0
+    },
+    "moduleBoard": {
+      "width": 5,
+      "height": 5,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "normal",
+          "enabled": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "normal",
+          "enabled": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "normal",
+          "enabled": false
+        }
+      ],
+      "rules": {
+        "allowRotation": true,
+        "maxModules": 10
+      },
+      "ownerGridCount": 3,
+      "specialization": {
+        "typeName": {
+          "en": "Console Attributes",
+          "ja": "ギアステータス",
+          "zhHans": "空幕属性"
+        },
+        "description": {
+          "en": "Increases {0} by {1}% for each Type III Module equipped.",
+          "ja": "駆動ブロックⅢ型を1つ装着するごとに、{0}+{1}％",
+          "zhHans": "每装配一个Ⅲ型驱动，使{0}增加{1}%"
+        },
+        "specialDescription": {
+          "en": "Type III Specialization",
+          "ja": "Ⅲ型特化",
+          "zhHans": "Ⅲ型特化"
+        },
+        "stats": [
+          {
+            "sourceStatId": "AtkUp",
+            "names": {
+              "ja": "攻撃力",
+              "en": "ATK",
+              "zhHans": "攻击力"
+            },
+            "value": 10
+          }
+        ]
+      }
+    },
+    "arcType": "リキッド",
+    "attribute": "霊",
+    "elementKey": "Anima",
+    "attributeNames": {
+      "ja": "霊",
+      "en": "Anima",
+      "zhHans": "灵"
+    },
+    "arcTypeId": "2",
+    "weaponTypeId": "2",
+    "weaponType": "リキッド",
+    "weaponTypeNames": {
+      "ja": "リキッド",
+      "en": "Liquid",
+      "zhHans": "液态"
+    },
+    "levelStats": {
+      "supportedLevels": {
+        "min": 1,
+        "max": 80
+      },
+      "statSlots": [
+        {
+          "slot": 1,
+          "sourceStatId": "HPMaxBase",
+          "statId": "hp",
+          "names": {
+            "ja": "HP",
+            "en": "HP",
+            "zhHans": "生命值"
+          },
+          "isPercent": false,
+          "values": [
+            1420,
+            1534,
+            1647,
+            1761,
+            1874,
+            1988,
+            2102,
+            2215,
+            2329,
+            2442,
+            2556,
+            2670,
+            2783,
+            2897,
+            3010,
+            3124,
+            3238,
+            3351,
+            3465,
+            3578,
+            4828,
+            4942,
+            5055,
+            5169,
+            5282,
+            5396,
+            5510,
+            5623,
+            5737,
+            5850,
+            7100,
+            7214,
+            7327,
+            7441,
+            7554,
+            7668,
+            7782,
+            7895,
+            8009,
+            8122,
+            9372,
+            9486,
+            9599,
+            9713,
+            9826,
+            9940,
+            10054,
+            10167,
+            10281,
+            10394,
+            11644,
+            11758,
+            11871,
+            11985,
+            12098,
+            12212,
+            12326,
+            12439,
+            12553,
+            12666,
+            13916,
+            14030,
+            14143,
+            14257,
+            14370,
+            14484,
+            14598,
+            14711,
+            14825,
+            14938,
+            16188,
+            16302,
+            16415,
+            16529,
+            16642,
+            16756,
+            16870,
+            16983,
+            17097,
+            17210
+          ]
+        },
+        {
+          "slot": 2,
+          "sourceStatId": "AtkBase",
+          "statId": "attack",
+          "names": {
+            "ja": "攻撃力",
+            "en": "ATK",
+            "zhHans": "攻击力"
+          },
+          "isPercent": false,
+          "values": [
+            75,
+            79,
+            83,
+            86,
+            90,
+            94,
+            98,
+            101,
+            105,
+            109,
+            113,
+            116,
+            120,
+            124,
+            128,
+            131,
+            135,
+            139,
+            143,
+            146,
+            188,
+            192,
+            196,
+            199,
+            203,
+            207,
+            211,
+            214,
+            218,
+            222,
+            263,
+            266,
+            270,
+            274,
+            278,
+            281,
+            285,
+            289,
+            293,
+            296,
+            338,
+            342,
+            346,
+            349,
+            353,
+            357,
+            361,
+            364,
+            368,
+            372,
+            413,
+            416,
+            420,
+            424,
+            428,
+            431,
+            435,
+            439,
+            443,
+            446,
+            488,
+            492,
+            496,
+            499,
+            503,
+            507,
+            511,
+            514,
+            518,
+            522,
+            563,
+            566,
+            570,
+            574,
+            578,
+            581,
+            585,
+            589,
+            593,
+            596
+          ]
+        },
+        {
+          "slot": 3,
+          "sourceStatId": "DefBase",
+          "statId": "defense",
           "names": {
             "ja": "防御力",
             "en": "DEF",

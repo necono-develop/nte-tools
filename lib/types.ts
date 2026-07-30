@@ -31,7 +31,7 @@ export type StatBlock = {
 };
 
 export type CharacterAttribute = "相" | "光" | "闇" | "魂" | "霊" | "呪";
-export type CharacterArcType = "プラズマ" | "個体" | "液体" | "気体" | "集合";
+export type CharacterArcType = "ソリッド" | "リキッド" | "プラズマ" | "気体" | "重合体";
 
 export type BoardCell = {
   x: number;
@@ -70,7 +70,6 @@ export type Character = {
   rarity: string;
   element: string;
   elementKey?: string;
-  role: string;
   attribute?: CharacterAttribute;
   attributeNames?: LocaleText;
   arcTypeId?: string | null;
